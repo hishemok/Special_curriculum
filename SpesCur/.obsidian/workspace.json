@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "1f84a764bf9647a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a3b4b40191a34051",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db57e2ad7740913e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Work Schedule.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Work Schedule"
+            }
+          },
+          {
+            "id": "69cb8e3fc3344b9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 1"
+            }
+          },
+          {
+            "id": "4dac0549fd57a64a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          },
+          {
+            "id": "c45311d19c228c58",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d2f97d85ffc5781",
+    "type": "split",
+    "children": [
+      {
+        "id": "2120e91bb1c71e05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "698fcf40fdf7514b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4d0c8f86a432c4ea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b0d8c70446cce270",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "74f533c2c78a4c5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "df89dcb21a66349e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23a82959ac3a07d2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Work Schedule.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Work Schedule"
+            }
+          },
+          {
+            "id": "358fd964e31eefd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Work Schedule.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Work Schedule"
+            }
+          },
+          {
+            "id": "43e3cc755f844074",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "00a4b366e45464f4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Work Schedule.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Work Schedule"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "69cb8e3fc3344b9f",
+  "lastOpenFiles": [
+    "Pasted image 20250217174540.png",
+    "Pasted image 20250217173503.png",
+    "Pasted image 20250217160138.png",
+    "Pasted image 20250212150903.png",
+    "Pasted image 20250212132322.png",
+    "Pasted image 20250212132302.png",
+    "Work Schedule.md",
+    "Chapter 1.md",
+    "Welcome.md",
+    "Pasted image 20250211141125.png"
+  ]
+}
