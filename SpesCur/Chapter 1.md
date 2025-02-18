@@ -340,6 +340,72 @@ Thus, quantum gates provide the foundation for quantum computation, enabling com
 ![[Pasted image 20250217174540.png]]
 
 
+### 1.3.5 Classical Versus Quantum Gates
+
+The gate-sequences in quantum algorithms have certain similarities to those used in classical computing, with a few differences.
+
+The classical NOT gate flips a bit (0 <-> 1)
+The quantum X (often called "guantum NOT gate")gate swaps the amplitudes of the qubits wavefunction.  It behaves like a classical NOT gate only when applied to $\ket 0$ and $\ket 1$.
+
+All Quantum gates are unitary and thus reversible
+Classical logic gates like NAND and NOR are not reversible and have no direct quantum counterpart.
+
+Irreversible processes, such as measurement and energy loss, are describes using amplitude damping and phase damping.
+
+Quantum circuits are written left to right, but mathematically applied right to left
+
+A universal classical gate set include NAND or NOR
+A universal quantum gate set consists of:
+	Arbitrary single-qubit rotations
+	At least one entangling two-qubit gate
+Any two-qubit gate can be decomposed into a sequence of CNOT gates using Krauss-Cirac decomposition.
+
+### 1.3.5.1 Minimum Gate Sets
+A universal quantum gate set is
+$$
+\mathcal G_0 = [X_\theta,Y_\theta,Z_\theta,Ph_\theta,CNOT]
+$$
+where $Ph_\theta = e^{i\theta}$ applies an overall phase $\theta$ to a single qubit. 
+Another gate set:
+$$
+\mathcal G_1 = [H,S,T,CNOT]
+$$
+H-Hadamard, S-Phase, T-$\pi/8$ phase gate, CNOT: Entangling gate.
+
+The Solovay-Kitaev theorem ensures that any arbitrary single-qubit gate can be approximated using only $\mathcal G_1$, with an error $\epsilon$ as $O(log^g(1/\epsilon))$.
+
+Different quantum processors have native gates that are easier to implement based on their hardware
+Gate synthesis and gate compilation optimize the gate sequence to reduce the total operation time (circuit depth).
+
+Hadamard gate can be constructed from $\mathcal G_0$ gates as:
+$$H = Ph_{\pi/2}Y_{\pi/2}Z_\pi$$
+In superconducting quansum processors, $X_\theta,Y_\theta,Z_\theta$ are typically native gates.
+
+
+### 1.3.6 Further Developments for Superconducting Qubits
+Superconducting qubits are a proising platform for medium-scale quantum processors, and research continues:
+
+Quantum Annealing:
+Superconducting qubits are used in quantum annealing , which finds the ground state of a Hamiltionian to solve optimization problems
+D-wave has developed quantum annealing processors with over 2000 qubits, based on flux qubit-designs
+
+3D Cavity-Based Superconducting Qubits:
+These encode quantum information in photonic modes of a cavity, using cat states for enhanced coherence.
+High-quality cavities improve coherence times and reduce hardware overhead for error correction.
+This architecture has enabled error-corrected qubits with extended lifetimes.
+
+Error Correction Challenges:
+Despite improvements in qubit lifetimes and gate fidelity, error correction remains essential for scaling up quantum processors.
+The surface code has been successfully demonstrated with superconducting qubits, but achieving a logical qubit that outlives its physical qubits is still a challenge.
+Fault-tolerant universal computation requires additional techniques, such as state distillation to implement a T gate.
+Gate teleportation has been demonstrated, but full state distillation and injection into a logical state is an open problem.
+
+Future Directions:
+New Quantum error-correcting codes are being explored to improve fault tolerance.
+Remote entanglement is a key goal for distributing quantum computation.
+The major challenge ahead is a key goal for distributed quantum computation.
+The major challenge ahead is achieving quantum computational supremacy, where a quantum processor performs a task beyond classical capabilities.
+Recent advances using 9 tunable transmons are moving toward this goal with full supremacy expected at hundreds of qubits.
 
 
 
