@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  5 SEP 2025 11:04
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  5 SEP 2025 13:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -590,22 +590,119 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
+Overfull \hbox (43.57178pt too wide) in paragraph at lines 48--54
+\TU/lmr/bx/n/14.4 Challenge: \TU/lmr/m/n/14.4 Mention the top-down approach using nanowires and its experimental
+ []
 
-[1] (./report.aux)
+
+Overfull \hbox (12.0646pt too wide) in paragraph at lines 48--54
+\TU/lmr/m/n/14.4 background for superconductivity in hybrid systems and present an analytical
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
+
+ []
+
+
+Overfull \hbox (0.785pt too wide) in paragraph at lines 56--60
+\TU/lmr/m/n/14.4 Cooper pair formation, BCS theory, and the concept of the superconducting
+ []
+
+
+Overfull \hbox (37.94463pt too wide) in paragraph at lines 56--60
+\TU/lmr/bx/n/14.4 2.2 The Bogoliubov-de Gennes Formalism: \TU/lmr/m/n/14.4 Introduce the BdG Hamiltonian
+ []
+
+
+Overfull \hbox (42.66937pt too wide) in paragraph at lines 56--60
+\TU/lmr/bx/n/14.4 2.3 Hybrid Systems and the Proximity Effect: \TU/lmr/m/n/14.4 Explain how a semiconductor
+ []
+
+
+Overfull \hbox (11.15417pt too wide) in paragraph at lines 56--60
+\TU/lmr/m/n/14.4 can inherit superconducting properties from a nearby superconductor. Define
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+
+ []
+
+
+Overfull \hbox (1.6198pt too wide) in paragraph at lines 62--65
+\TU/lmr/bx/n/14.4 3.1 The Kitaev Chain Model: \TU/lmr/m/n/14.4 Introduce the Kitaev model Hamiltonian.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+
+[1]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 69.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 69.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 69.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 69.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 69.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 69.
+
+Overfull \hbox (2.86299pt too wide) in paragraph at lines 67--72
+\TU/lmr/bx/n/14.4 4.2 Analytical Work - Finding the Sweet Spot: \TU/lmr/m/n/14.4 Solve the Hamiltonian
+ []
+
+
+Overfull \hbox (10.85495pt too wide) in paragraph at lines 67--72
+\TU/lmr/bx/n/14.4 4.3 Numerical Simulations - Visualize the Emergence of Majoranas:
+ []
+
+
+Overfull \hbox (11.98294pt too wide) in paragraph at lines 67--72
+\TU/lmr/bx/n/14.4 4.4 Numerical Work - Probing Protection and Robustness: \TU/lmr/m/n/14.4 Detuning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+
+ []
+
+
+
+[2]
+Overfull \hbox (20.9974pt too wide) in paragraph at lines 74--77
+\TU/lmr/bx/n/14.4 Synthesize my Findings: \TU/lmr/m/n/14.4 Summarize what we learned from the calculations.
+ []
+
+
+Overfull \hbox (4.77016pt too wide) in paragraph at lines 74--77
+\TU/lmr/m/n/14.4 fine-tuned conditions... Numerical simulations revealed that this degeneracy
+ []
+
+
+
+[3] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5FEEB6A5F313345568D92DE035190AE0;56.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18474 strings out of 475251
- 335202 string characters out of 5761397
- 1000383 words of memory out of 5000000
- 41247 multiletter control sequences out of 15000+600000
- 562403 words of font info for 66 fonts, out of 8000000 for 9000
+ 18496 strings out of 475251
+ 336071 string characters out of 5761397
+ 1009383 words of memory out of 5000000
+ 41260 multiletter control sequences out of 15000+600000
+ 564581 words of font info for 82 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 90i,7n,107p,489b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,107p,814b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (2 pages).
+Output written on report.pdf (4 pages).
