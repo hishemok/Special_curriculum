@@ -50,6 +50,34 @@
             }
           },
           {
+            "id": "90cf5bca5294255a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Possible timeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Possible timeline"
+            }
+          },
+          {
+            "id": "d5c656ca42e24c22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapter 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 3"
+            }
+          },
+          {
             "id": "69cb8e3fc3344b9f",
             "type": "leaf",
             "state": {
@@ -64,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -121,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "74f533c2c78a4c5b",
@@ -206,10 +235,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce85e5ad2d852347",
+  "active": "d5c656ca42e24c22",
   "lastOpenFiles": [
-    "Chapter 1.md",
+    "Possible timeline.md",
+    "Chapter 3.md",
     "Chapter 2.md",
+    "Chapter 1.md",
     "Pasted image 20250304141600.png",
     "Pasted image 20250304133818.png",
     "Pasted image 20250227115102.png",
