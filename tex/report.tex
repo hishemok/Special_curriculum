@@ -44,7 +44,7 @@
 
 
 \Large Temporary report structure
-\section*{Introduction}
+\section{Introduction}
 Quick introduction of the promise of quantum computing and the major hurdle of decoherence. This is where I introduce topological quantum computation as a potential solution, highlighting its reliance on non-local, protected qubits. 
 \\
 \textbf{Goal:} Realizing MZMs\\
@@ -52,28 +52,28 @@ Quick introduction of the promise of quantum computing and the major hurdle of d
 \textbf{Alternative:} Introduce the bottom-up approach QD-SC-QD systems to create a minimal, highly tunable Kitaev chain. Define the concept of PMMs. \\
 \textbf{Research Question:} Objective: "This report will provide the theoretical background for superconductivity in hybrid systems and present an analytical and numerical investigation into the emergence and robustness of PMMs in a double QD system". \\
 
-\section*{Theoretical Background: The superconducting State}
+\section{Theoretical Background: The superconducting State}
 Notes from note section 1 and note section 2 to build necessary background.\\
-\textbf{2.1 From Electron Attraction to the Energy Gap:} Short summary of Cooper pair formation, BCS theory, and the concept of the superconducting gap.\\
-\textbf{2.2 The Bogoliubov-de Gennes Formalism:} Introduce the BdG Hamiltonian as the  mathematical tool for describing quasiparticles in systems where superconductivity varies in space (like at an interface). Important for numerical work later.\\
-\textbf{2.3 Hybrid Systems and the Proximity Effect:} Explain how a semiconductor can inherit superconducting properties from a nearby superconductor. Define Andreev reflection and the formation of ABS as an important phenomena in hybrid systems.\\
+\subsection{From Electron Attraction to the Energy Gap:} Short summary of Cooper pair formation, BCS theory, and the concept of the superconducting gap.\\
+\subsection{The Bogoliubov-de Gennes Formalism:} Introduce the BdG Hamiltonian as the  mathematical tool for describing quasiparticles in systems where superconductivity varies in space (like at an interface). Important for numerical work later.\\
+\subsection{Hybrid Systems and the Proximity Effect:} Explain how a semiconductor can inherit superconducting properties from a nearby superconductor. Define Andreev reflection and the formation of ABS as an important phenomena in hybrid systems.\\
 
-\section*{Engineering Majorana Modes in a Minimal System}
+\section{Engineering Majorana Modes in a Minimal System}
 Connect general theory to specific PMM platform, notes note section 4 and note section 5.2\\
-\textbf{3.1 The Kitaev Chain Model:} Introduce the Kitaev model Hamiltonian. Explain its key features (p-wave pairing) and how it leads to a topological phase with protected, zero energy Majorana edge states.\\
-\textbf{3.2 THe QD-SC-QD System as an Effective Kitaev Chain:} Explain the mapping: The two QDs are the sites, Elastic cotunneling is the hopping term, CAR is the p-wave pairing. See note section 5.2 for details.\\
+\subsection{The Kitaev Chain Model:} Introduce the Kitaev model Hamiltonian. Explain its key features (p-wave pairing) and how it leads to a topological phase with protected, zero energy Majorana edge states.\\
+\subsection{The QD-SC-QD System as an Effective Kitaev Chain:} Explain the mapping: The two QDs are the sites, Elastic cotunneling is the hopping term, CAR is the p-wave pairing. See note section 5.2 for details.\\
 
-\section*{Analytical and Numerical Investigation of PMMs}
+\section{Analytical and Numerical Investigation of PMMs}
 Present my work and demonstrate how to apply theory to a concrete problem.\\
-\textbf{4.1 The Model Hamiltonian:} Present the minimal Hamiltonian for the QD-SC-QD system that i have in my notes note section 5.2.2, for instance Eq 3.54 from chap3.pdf. Define all the terms clearly. This will be the Hamiltonian I use.\\
-\textbf{4.2 Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\\ 
-\textbf{4.3 Numerical Simulations - Visualize the Emergence of Majoranas:} Build and diagonalize the Hamiltonian numerically. Band Structure: Plot the two lowest positive energy eigenvalues as a function of a dot's energy $ϵ_L$ (keeping $ϵ_R = 0$) and $t = Δ$. Reproduce the plot from Fig 3.5a in chap3.pdf showing two states remaining at zero energy, showcasing the symmetry. Wavefunctions: At the sweet spot ($t = Δ$ and $ϵ_L = ϵ_R = 0$), find the eigenvectors for the two zero-mode energy states. Plot the magnitude of the components. I should be able to see that one zero mode is localized entirely on the left dot and the other is entirely on the right dot, confirming they are spatially separated Majoranas.\\
-\textbf{4.4 Numerical Work - Probing Protection and Robustness:} Detuning $t$ and $Δ$: Vary $t$ and $Δ$ away from the sweet spot. Plot the lowest energy eigenvalue as I varyt he ratio $\frac{t}{Δ}$ away from 1. This will show that the zero-energy states immediately split and acquire a finite energy gap, demonstrating their lack of full topological protection. Detuning Dot Energies: Vary $ϵ_L$ and $ϵ_R$ away from zero while keeping $t = Δ$. The degeneracy should be lifted quadratically. My results here should quantify the robustness of the PMMs to local perturbations. I can conclude that while they are not fully protected like in a true topological system, the degeneracy is protected against certain local perturbations to first order.\\
+\subsection{The Model Hamiltonian:} Present the minimal Hamiltonian for the QD-SC-QD system that i have in my notes note section 5.2.2, for instance Eq 3.54 from chap3.pdf. Define all the terms clearly. This will be the Hamiltonian I use.\\
+\subsection{Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\\ 
+\subsection{Numerical Simulations - Visualize the Emergence of Majoranas:} Build and diagonalize the Hamiltonian numerically. Band Structure: Plot the two lowest positive energy eigenvalues as a function of a dot's energy $ϵ_L$ (keeping $ϵ_R = 0$) and $t = Δ$. Reproduce the plot from Fig 3.5a in chap3.pdf showing two states remaining at zero energy, showcasing the symmetry. Wavefunctions: At the sweet spot ($t = Δ$ and $ϵ_L = ϵ_R = 0$), find the eigenvectors for the two zero-mode energy states. Plot the magnitude of the components. I should be able to see that one zero mode is localized entirely on the left dot and the other is entirely on the right dot, confirming they are spatially separated Majoranas.\\
+\subsection{Numerical Work - Probing Protection and Robustness:} Detuning $t$ and $Δ$: Vary $t$ and $Δ$ away from the sweet spot. Plot the lowest energy eigenvalue as I varyt he ratio $\frac{t}{Δ}$ away from 1. This will show that the zero-energy states immediately split and acquire a finite energy gap, demonstrating their lack of full topological protection. Detuning Dot Energies: Vary $ϵ_L$ and $ϵ_R$ away from zero while keeping $t = Δ$. The degeneracy should be lifted quadratically. My results here should quantify the robustness of the PMMs to local perturbations. I can conclude that while they are not fully protected like in a true topological system, the degeneracy is protected against certain local perturbations to first order.\\
 
-\section*{Discussion and Conclusion}
-\textbf{Synthesize my Findings:} Summarize what we learned from the calculations. " The analysis confirmed that zero-energy Majorana modes emerge under fine-tuned conditions... Numerical simulations revealed that this degeneracy is fragile and splits when deviating from the sweet spot, quantifying the limited protection of PMMs."\\
-\textbf{Connect to Broader Context:} Briefly discuss how the properties you explored (the energy splitting, wavefunction overlap) would affect potential braiding operatios (note section 5.2.3) and what this means for using PMMs in quantum computing.\\
-\textbf{Future Directions:} Suggest next steps for a full thesis. This include modeling disorder, investigating longer chains (three or more dots), or numerically simulate braiding protocol.
+\section{Discussion and Conclusion}
+\subsection{Synthesize my Findings:} Summarize what we learned from the calculations. " The analysis confirmed that zero-energy Majorana modes emerge under fine-tuned conditions... Numerical simulations revealed that this degeneracy is fragile and splits when deviating from the sweet spot, quantifying the limited protection of PMMs."\\
+\subsection{Connect to Broader Context:} Briefly discuss how the properties you explored (the energy splitting, wavefunction overlap) would affect potential braiding operatios (note section 5.2.3) and what this means for using PMMs in quantum computing.\\
+\subsection{Future Directions:} Suggest next steps for a full thesis. This include modeling disorder, investigating longer chains (three or more dots), or numerically simulate braiding protocol.
 
 
 

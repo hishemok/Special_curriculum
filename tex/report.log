@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  8 SEP 2025 12:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  8 SEP 2025 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,43 +605,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--54
  []
 
 
-Overfull \hbox (0.785pt too wide) in paragraph at lines 56--60
-\TU/lmr/m/n/14.4 Cooper pair formation, BCS theory, and the concept of the superconducting
- []
-
-
-Overfull \hbox (37.94463pt too wide) in paragraph at lines 56--60
-\TU/lmr/bx/n/14.4 2.2 The Bogoliubov-de Gennes Formalism: \TU/lmr/m/n/14.4 Introduce the BdG Hamiltonian
- []
-
-
-Overfull \hbox (42.66937pt too wide) in paragraph at lines 56--60
-\TU/lmr/bx/n/14.4 2.3 Hybrid Systems and the Proximity Effect: \TU/lmr/m/n/14.4 Explain how a semiconductor
- []
-
-
-Overfull \hbox (11.15417pt too wide) in paragraph at lines 56--60
-\TU/lmr/m/n/14.4 can inherit superconducting properties from a nearby superconductor. Define
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-Overfull \hbox (1.6198pt too wide) in paragraph at lines 62--65
-\TU/lmr/bx/n/14.4 3.1 The Kitaev Chain Model: \TU/lmr/m/n/14.4 Introduce the Kitaev model Hamiltonian.
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
 
 [1]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 14.40152pt on input line 69.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -655,54 +664,78 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 69.
 
-Overfull \hbox (2.86299pt too wide) in paragraph at lines 67--72
-\TU/lmr/bx/n/14.4 4.2 Analytical Work - Finding the Sweet Spot: \TU/lmr/m/n/14.4 Solve the Hamiltonian
- []
-
-
-Overfull \hbox (10.85495pt too wide) in paragraph at lines 67--72
-\TU/lmr/bx/n/14.4 4.3 Numerical Simulations - Visualize the Emergence of Majoranas:
- []
-
-
-Overfull \hbox (11.98294pt too wide) in paragraph at lines 67--72
-\TU/lmr/bx/n/14.4 4.4 Numerical Work - Probing Protection and Robustness: \TU/lmr/m/n/14.4 Detuning
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--72
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
 
 [2]
-Overfull \hbox (20.9974pt too wide) in paragraph at lines 74--77
-\TU/lmr/bx/n/14.4 Synthesize my Findings: \TU/lmr/m/n/14.4 Summarize what we learned from the calculations.
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
  []
 
 
-Overfull \hbox (4.77016pt too wide) in paragraph at lines 74--77
-\TU/lmr/m/n/14.4 fine-tuned conditions... Numerical simulations revealed that this degeneracy
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Overfull \hbox (1.93344pt too wide) in paragraph at lines 74--75
+\TU/lmr/m/n/14.4 Summarize what we learned from the calculations. ” The analysis confirmed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
  []
 
 
 
-[3] (./report.aux)
+[3]
+Overfull \hbox (40.34717pt too wide) in paragraph at lines 75--76
+\TU/lmr/m/n/14.4 Briefly discuss how the properties you explored (the energy splitting, wavefunction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Overfull \hbox (28.09915pt too wide) in paragraph at lines 76--77
+\TU/lmr/m/n/14.4 Suggest next steps for a full thesis. This include modeling disorder, investigating
+ []
+
+
+Overfull \hbox (7.93277pt too wide) in paragraph at lines 76--77
+\TU/lmr/m/n/14.4 longer chains (three or more dots), or numerically simulate braiding protocol. 
+ []
+
+
+
+[4] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 1B38E21AE8D1991896E29B4ED416192A;4373
+(rerunfilecheck)             After:  F0723628D99863FC1129FEBDD7568812;4166.
  ) 
 Here is how much of TeX's memory you used:
- 18496 strings out of 475251
- 336071 string characters out of 5761397
- 1009383 words of memory out of 5000000
- 41260 multiletter control sequences out of 15000+600000
- 564581 words of font info for 82 fonts, out of 8000000 for 9000
+ 18505 strings out of 475251
+ 336177 string characters out of 5761397
+ 1008383 words of memory out of 5000000
+ 41268 multiletter control sequences out of 15000+600000
+ 564589 words of font info for 83 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 90i,7n,107p,814b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,107p,833b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (4 pages).
+Output written on report.pdf (5 pages).
