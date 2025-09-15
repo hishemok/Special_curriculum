@@ -66,7 +66,82 @@ Connect general theory to specific PMM platform, notes note section 4 and note s
 \section{Analytical and Numerical Investigation of PMMs}
 Present my work and demonstrate how to apply theory to a concrete problem.\\
 \subsection{The Model Hamiltonian:} Present the minimal Hamiltonian for the QD-SC-QD system that i have in my notes note section 5.2.2, for instance Eq 3.54 from chap3.pdf. Define all the terms clearly. This will be the Hamiltonian I use.\\
+
+$$  
+  H = \begin{pmatrix}
+    ϵ_L & t & 0 & Δ \\
+    t & ϵ_R & -Δ & 0 \\
+    0 & -Δ & -ϵ_L & -t \\
+    Δ & 0 & -t & -ϵ_R
+  \end{pmatrix}
+$$  
+Where $ϵ_L$ and $ϵ_R$ are the energy levels of the left and right dots, $t$ is the elastic cotunneling amplitude, and $Δ$ is the CAR amplitude. The basis is $(d_L, d_R, d_L^{†}, d_R^{†})$, called the Nambu basis. The operators $d_L^{†}$ and $d_R^{†}$ create an electron in the left and right dot, respectively.\\
+
 \subsection{Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\\ 
+
+Solving the eigenvalue problem $HΨ = EΨ$ gives the characteristic polynomial:
+$$
+\text{det}(H - EI) = \begin{pmatrix}
+    ϵ_L-E & t & 0 & Δ \\
+    t & ϵ_R-E & -Δ & 0 \\
+    0 & -Δ & -ϵ_L-E & -t \\
+    Δ & 0 & -t & -ϵ_R-E
+\end{pmatrix} =0
+$$
+$$
+= E⁴ -E²a + b=0
+$$
+where
+$$
+a = ϵ_L² + ϵ_R² + 2(t² + Δ²)
+$$
+and 
+$$
+b = (t² - ϵ_Lϵ_R - Δ²)² 
+$$
+The quadratic formula for $E²$ gives:
+$$
+E² = \frac{a ± \sqrt{a² - 4b}}{2}
+$$
+The discriminant simplifies to:
+$$
+a² - 4b = [(ϵ_L+ϵ_R)² + 4t²][(ϵ_L - ϵ_R)² + 4Δ²]
+$$
+and the eigenvalues are $±\sqrt{E²}$. For zero energy solutions, we need $b=0$, which requires:
+$$
+t² - ϵ_Lϵ_R - Δ² = 0
+$$
+At $ϵ_L = ϵ_R = 0$, this reduces to the sweet spot condition:
+$$|t| = |Δ|$$
+With the conditions we obtained from setting $b=0$, $a$ becomes $2(t² + Δ²)=4t²$.\\
+With $b=0$, the quadratic formula simplifies to $E²(E²-a)=0$, giving us two solutions:
+$$
+E² = 0 \quad E² = a = 4t²
+$$
+Therefore the four eigenvalues are:
+$$
+E = \{0, 0, 2|t|, -2|t|\}
+$$
+These eigenvalues have corresponding eigenvectors. \\
+For $E=0$, the eigenvectors are:
+$$
+v_1 =  \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \quad v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}
+$$
+and for $E=2|t|$, the eigenvectors are:
+$$
+v_3 =  \begin{pmatrix} -1 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \quad v_4 = \begin{pmatrix} 1\\ 1 \\ -1 \\ 1\end{pmatrix}
+$$
+The zero-mode eigenvectors $v_1$ and $v_2$ correspond to the Majorana operators. The two zero-energy eigenvectors,
+$v_1$ and $v_2$, represent states that are equal superpositions of particle and hole operators on a single dot. In operator form, they correspond to self-conjugate combinations:
+$$
+γ_1 ∝ d_L + d_L^{†}, \quad γ_2 ∝ d_R - d_R^{†}
+$$
+which satisfy the Majorana condition $γ = γ^{†}$. These are the Poor Man's Majorana modes. They are spatially separated zero modes, localized entirely on the left and right dots at the sweet spot $|t| = |Δ|$ and $ϵ_L = ϵ_R = 0$.\\
+Their degeneracy at zero energy encodes the nonlocal fermionic parity of the two-dot system, which is the resource we ultimately want for quantum information.\\ 
+By contrast, the finite-energy solutions 
+$$E = ±2|t|, \quad v_3 ∝ (-1, 1, 1, 1)^T, \quad v_4 ∝ (1, 1, -1, 1)^T$$
+are delocalized Bogoliubov quasiparticles. They form the first excited states above the ground state and define the energy gap protecting the Majorana subspace. Physically, this gap is crucial: as long as it remains finite, the Majorana modes cannot hybridize with bulk excitations, and the zero-energy subspace is robust against small perturbations. 
+
 \subsection{Numerical Simulations - Visualize the Emergence of Majoranas:} Build and diagonalize the Hamiltonian numerically. Band Structure: Plot the two lowest positive energy eigenvalues as a function of a dot's energy $ϵ_L$ (keeping $ϵ_R = 0$) and $t = Δ$. Reproduce the plot from Fig 3.5a in chap3.pdf showing two states remaining at zero energy, showcasing the symmetry. Wavefunctions: At the sweet spot ($t = Δ$ and $ϵ_L = ϵ_R = 0$), find the eigenvectors for the two zero-mode energy states. Plot the magnitude of the components. I should be able to see that one zero mode is localized entirely on the left dot and the other is entirely on the right dot, confirming they are spatially separated Majoranas.\\
 \subsection{Numerical Work - Probing Protection and Robustness:} Detuning $t$ and $Δ$: Vary $t$ and $Δ$ away from the sweet spot. Plot the lowest energy eigenvalue as I varyt he ratio $\frac{t}{Δ}$ away from 1. This will show that the zero-energy states immediately split and acquire a finite energy gap, demonstrating their lack of full topological protection. Detuning Dot Energies: Vary $ϵ_L$ and $ϵ_R$ away from zero while keeping $t = Δ$. The degeneracy should be lifted quadratically. My results here should quantify the robustness of the PMMs to local perturbations. I can conclude that while they are not fully protected like in a true topological system, the degeneracy is protected against certain local perturbations to first order.\\
 
