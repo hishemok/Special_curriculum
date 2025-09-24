@@ -47,32 +47,76 @@ def Compute_U(epsL,epsR,Delta,t):
     p3 = 2*(t**2 - epsL*epsR)
     return p1*p2/p3
 
-eps = .5
-t_val = 1
+eps_vals = np.linspace(0.01, 2, 100)
+t_val = 2
+Delta_val = 1
 
-Delta_vals = np.linspace(0.01, 2, 100)
-Evals = np.zeros((len(Delta_vals), 4), dtype=float)
+gs_even = []
+ex_even = []
+gs_odd = []
+ex_odd = []
 
-for i, Delta_val in enumerate(Delta_vals):
+
+for i, eps in enumerate(eps_vals):
     U_val = Compute_U(eps,eps,Delta_val,t_val)
-    # print(Even[0].subs({epsL:eps, epsR:eps, U:U_val, Delta:Delta_val}))
+
+
     even0 = float(Even[0].subs({epsL:eps, epsR:eps, U:U_val, Delta:Delta_val}).evalf())
     even1 = float(Even[1].subs({epsL:eps, epsR:eps, U:U_val, Delta:Delta_val}).evalf())
     odd0  = float(Odd[0].subs({epsL:eps, epsR:eps, t:t_val}).evalf())
     odd1  = float(Odd[1].subs({epsL:eps, epsR:eps, t:t_val}).evalf())
-    
-    Evals[i] = [even0, even1, odd0, odd1]
 
-"""SORT THE EIGENVALUES?"""
+    gs_even.append(min(even0, even1))
+    ex_even.append(max(even0, even1))
+    gs_odd.append(min(odd0, odd1))
+    ex_odd.append(max(odd0, odd1))
 
-plt.figure()
-linestyles = ['-', '--', '-', '--']  # 4 different styles
-labels = [rf'$E_{{even0}}$', rf'$E_{{even1}}$', rf'$E_{{odd0}}$', rf'$E_{{odd1}}$']
-for k in range(Evals.shape[1]): # loop over eigenvalue branches
-    plt.plot(Delta_vals, Evals[:, k], linestyle=linestyles[k], label=labels[k]) 
-plt.xlabel(r'$Δ$ (with $ϵ_L=ϵ_R=0.5, t=1$)')
+
+plt.figure(figsize=(12, 12))
+plt.subplot(3,1,1)
+plt.plot(eps_vals, gs_even, label=r'$GS_{even}$', linestyle='-')
+plt.plot(eps_vals, ex_even, label=r'$EX_{even}$', linestyle='--')
+plt.plot(eps_vals, gs_odd, label=r'$GS_{odd}$', linestyle='-')
+plt.plot(eps_vals, ex_odd, label=r'$EX_{odd}$', linestyle='--')
+# plt.xlabel(r'$ϵ$ (with $ϵ_L=ϵ_R, t=1, Δ=1$)')   
 plt.ylabel('Eigenvalues')
-plt.title(r'Eigenvalues vs $Δ$ at the Sweet Spot $(ϵ_R=0.5, ϵ_L=0.5, t=1)$')
+plt.title(r'Eigenvalues vs $ϵ$ at the Sweet Spot $(ϵ_R=ϵ_L, t=1, Δ=1)$')
+# plt.axhline(0, color='black', linestyle='--', linewidth=0.7)
 plt.legend()
 plt.grid()
+
+plt.subplot(3,1,2)
+GS_gap = np.array(ex_even) - np.array(gs_even)
+plt.plot(eps_vals, GS_gap, label=r'$GS_{odd} - GS_{even}$', color='purple')
+# plt.axhline(0, color='black', linestyle='--', linewidth=0.7)
+# plt.xlabel(r'$ϵ$ (with $ϵ_L=ϵ_R, t=1, Δ=1$)')   
+plt.ylabel(r'$GS_{odd} - GS_{even}$')
+plt.title(r'Gap between $GS_{odd}$ and $GS_{even}$ vs $ϵ$ at the Sweet Spot $(ϵ_R=ϵ_L, t=1, Δ=1)$')
+# plt.axhline(0, color='black', linestyle='--', linewidth=0.7)
+plt.legend()
+plt.grid()
+plt.tight_layout()
+# plt.show()
+
+plt.subplot(3,1,3)
+#Lowest excited state - largest ground state
+gs_even = np.array(gs_even)
+gs_odd = np.array(gs_odd)
+ex_even = np.array(ex_even)
+ex_odd = np.array(ex_odd)
+
+ex_low = np.minimum(ex_even, ex_odd)
+gs_high = np.maximum(gs_even, gs_odd)
+
+EX_gap = ex_low - gs_high
+
+plt.plot(eps_vals, EX_gap, label=r'$min(EX) - max(GS)$', color='green')
+# plt.axhline(0, color='black', linestyle='--', linewidth=0
+# plt.xlabel(r'$ϵ$ (with $ϵ_L=ϵ_R, t=1, Δ=1$)')   
+plt.ylabel(r'$min(EX) - max(GS)$')
+plt.title(r'Gap between $min(EX)$ and $max(GS)$ vs $ϵ$ at the Sweet Spot $(ϵ_R=ϵ_L, t=1, Δ=1)$')
+# plt.axhline(0, color='black', linestyle='--', linewidth=0.7)
+plt.legend()
+plt.grid()
+plt.tight_layout()
 plt.show()
