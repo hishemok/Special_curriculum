@@ -119,4 +119,5 @@ plt.title(r'Gap between $min(EX)$ and $max(GS)$ vs $ϵ$ at the Sweet Spot $(ϵ_R
 plt.legend()
 plt.grid()
 plt.tight_layout()
+plt.savefig('Figures/manybody_sweetspot.png', dpi=300)
 plt.show()

@@ -37,6 +37,7 @@ plt.ylabel('Eigenvalues')
 plt.title(r'Eigenvalues vs $ϵ_L$ at the Sweet Spot $(ϵ_R=0, t=1, Δ=1)$')
 plt.legend()
 plt.grid()
+plt.savefig('Figures/singlebody_sweetspot_eps.png', dpi=300)
 plt.show()
 
 
@@ -61,6 +62,7 @@ plt.title(r'Eigenvalues vs $ϵ_L, ϵ_R$ at the Sweet Spot $(t=1, Δ=1)$')
 # plt.legend(['E1', 'E2', 'E3', 'E4', 'Sweet Spot (t=Δ)'])
 plt.legend()
 plt.grid()
+plt.savefig('Figures/singlebody_sweetspot_epsLR.png', dpi=300)
 plt.show()
 
 
@@ -93,6 +95,7 @@ plt.ylabel('Eigenvalues')
 plt.title(r'Eigenvalues vs $t$ at the Sweet Spot $(ϵ_R=0, ϵ_L=0, Δ=1)$')
 plt.legend()
 plt.grid()
+plt.savefig('Figures/singlebody_sweetspot_t.png', dpi=300)
 plt.show()
 
 
@@ -119,6 +122,7 @@ plt.axline((0, 0), slope=1, color='r', linestyle='--', label=r'Sweet Spot $(t=Δ
 plt.axline((0, 0), slope=-1, color='r', linestyle='--')
 plt.legend()
 plt.tight_layout()
+plt.savefig('Figures/singlebody_sweetspot_grid.png', dpi=300)
 plt.show()
 
 
@@ -141,4 +145,5 @@ plt.xlabel('Components')
 plt.ylabel('Amplitude')
 plt.legend()
 plt.suptitle("Zero-mode eigenvector components at the sweet spot")
+plt.savefig('Figures/singlebody_sweetspot_zero_modes.png', dpi=300)
 plt.show()
