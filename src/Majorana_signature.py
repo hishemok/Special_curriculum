@@ -169,7 +169,7 @@ right_expvals = np.zeros((len(epsL_vals),len(epsR_vals)))
 
 for i, eps_val in enumerate(epsL_vals):
     for j, epsR_val in enumerate(epsR_vals):
-        # U_val = Compute_U(eps_val, epsR_val, Delta_val, t_val)
+        #U_val = Compute_U(eps_val, epsR_val, Delta_val, t_val)
         H = H_matrix(eps_val, epsR_val, t_val, Delta_val, U_val)
         evals, evecs = np.linalg.eigh(H)
 
@@ -177,13 +177,13 @@ for i, eps_val in enumerate(epsL_vals):
 
 
 plt.figure(figsize=(10, 8))
-plt.contourf(epsL_vals, epsR_vals, left_expvals, levels=50, cmap='magma')
-plt.colorbar(label=r'$\langle n_L \rangle_{even} - \langle n_L \rangle_{odd}$')
-plt.contour(epsL_vals, epsR_vals, left_expvals, levels=[0], colors='cyan', linewidths=2)        
-
+plt.contourf(epsL_vals, epsR_vals, left_expvals*right_expvals, levels=50, cmap='magma')
+plt.colorbar(label=r'$⟨ n_L ⟩ ⋅ ⟨ n_R ⟩$')
+plt.contour(epsL_vals, epsR_vals, left_expvals*right_expvals, levels=[0], colors='cyan', linewidths=2)        
 plt.xlabel('ϵ_L')
 plt.ylabel('ϵ_R')
-plt.title(r'Difference in Particle Number $\langle n_L \rangle_{even} - \langle n_L \rangle_{odd}$')
+plt.title(r'Difference in Particle Number $⟨ n_L ⟩ ⋅ ⟨ n_R ⟩$')
 # plt.axis('equal')
 plt.legend(["Zero Difference Line"])
 plt.show()  
+
