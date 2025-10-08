@@ -15,6 +15,7 @@
 \usepackage{subfigure}
 \usepackage{graphicx}
 \usepackage{textgreek}
+\usepackage{xcolor}
 \geometry{
  a4paper,
  left=25mm,%left=20mm,
@@ -44,6 +45,7 @@
 
 
 \Large Temporary report structure
+\Large TODO: Fix citations and references
 \section{Introduction}
 % Quick introduction of the promise of quantum computing and the major hurdle of decoherence. This is where I introduce topological quantum computation as a potential solution, highlighting its reliance on non-local, protected qubits. 
 % \par
@@ -59,7 +61,49 @@ In this report, we investigate the Poor Man's Majoranas (PMMs) in a double quant
 
 \section{Theoretical Background: The superconducting State}
 Notes from note section 1 and note section 2 to build necessary background.\par
-\subsection{From Electron Attraction to the Energy Gap:} Short summary of Cooper pair formation, BCS theory, and the concept of the superconducting gap.\par
+\subsection{From Electron Attraction to the Energy Gap:} 
+Superconductivity is characterized by the complete loss of electrical resistance below a critical temperature $T_c$, and the expulsion of magnetic fields (the Meissner effect), which demonstrates that it represents a distinct thermodynamic phase rather than a perfect conductor.\\
+Londong (1937) first introduced a phenomenological description in terms of a macroscopic quantum wavefunction $ψ(r)$, whose rigidity gives rise to the London equations and an exponential decay of magnetic fields inside the superconductor over a characteristic length scale, the London penetration depth $λ_L = \sqrt{m / (μ_{0}e² |ψ|²)}$ \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
+Microscopically, the origin of superconductivity lies in an effective attraction between electrons mediated by lattice vibrations (phonons). This leads to the formation of Cooper pairs, which are bound states of two electrons with opposite momenta and spins. The exchange of a virtual phonon leads to an attractive interaction for energy transfers smaller than the phonon frequency $ω_D$,
+$$
+V_{eff}(q,ω) = \frac{|g_q|²}{ω² - ω_q²} 
+$$
+where $g_q$ is the electron-phonon coupling strength zand $ω = (ϵ_k - ϵ_k')$, and the $ϵ_α$ are the single-particle energies. The isotope effect, where $T_c$ varies inversely with the square root of the ionic mass, provides strong evidence for the phonon-mediated pairing mechanism.\textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3].\\
+In his seminal work, Cooper (1956) demonstrated that an arbitrarily weak attractive interaction destabilizes the Fermi sea: two eelectrons of opposite spin and momentum can form a bound state with energy below the Fermi level. The pair is called a Cooper pair, and the operator we use to describe the creation of a Cooper pair is;
+$$
+Λ^{†} = ∑_{k}^{}ϕ(k) c_{k↑}^{†} c_{-k↓}^{†} 
+$$
+and the self-consistency condition 
+$$
+1 = g_{0} N(0) ∫_{0}^{ω_D} \frac{dϵ}{\sqrt{2ϵ² + E}}
+$$
+yields the binding energy of the Cooper pair:
+$$
+E_B = -2ω_D e^{-2/(g_0 N(0))}
+$$
+where $N(0)$ is the density of states at the Fermi level and $g_0$ is the effective interaction strength \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3.2 and BCS.pdf]\\ 
+Even this simple two-particle result implies that the Fermi surface is unstable toward pair condensation.\\ \\
+Building on Cooper's insight, Bardeen, Cooper, and Schrieffer (1957) developed a comprehensive microscopic theory of superconductivity \textcolor{red}{CITATION}[BCS.pdf].\\. The VCS ground state is a coherent superpositon of occupied and unoccupied pair states:
+$$
+\ket{Ψ_{BCS}} = ∏_{k} (u_k + v_k c_{k↑}^{†} c_{-k↓}^{†}) \ket{0}
+$$
+with normalization $|u_k|² + |v_k|² = 1$. Minimization of the free energy yields the gap equation:
+$$
+1 = \frac{g_0}{V} ∑_{|ϵ_k| < ω_D}^{} \frac{1}{2E_k} \tanh\left(\frac{E_k}{2k_B T}\right)
+$$
+where the quasiparticle excitation spectrum is:
+$$
+E_k = \sqrt{ϵ_k² + Δ²}
+$$
+At zero temperature, the gap at the Fermi surface is:
+$$
+Δ(0) = 2ω_D e^{-1/(g_0 N(0))}
+$$
+and obeys the universal relation $2Δ(0) / k_B T_c ≈ 3.53$.\\
+The energy gap $Δ$ represents the minimum energy required to break a Cooper pair, explainingt he exponential suppression of heat capacity and resistivity at low temperatures. Physically, it quantifies the rigidity of the condensate. Any single-particle excitation costs a funite energy, enforcing long-range phase coherence.\\
+Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions of electron and hole states, which naturally leads to the Bogoliubov-de Gennes (BdG) formalism. This formalism genereralizes the BCS mean-field theory to spatially inhomogeneous systems and forms the basis for the study of superconducting heterostructures, including those hosting Majorana modes.\\
+
+
 \subsection{The Bogoliubov-de Gennes Formalism:} Introduce the BdG Hamiltonian as the  mathematical tool for describing quasiparticles in systems where superconductivity varies in space (like at an interface). Important for numerical work later.\par
 \subsection{Hybrid Systems and the Proximity Effect:} Explain how a semiconductor can inherit superconducting properties from a nearby superconductor. Define Andreev reflection and the formation of ABS as an important phenomena in hybrid systems.\par
 
