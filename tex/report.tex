@@ -54,7 +54,6 @@
 % \textbf{Alternative:} Introduce the bottom-up approach QD-SC-QD systems to create a minimal, highly tunable Kitaev chain. Define the concept of PMMs. \\
 % \textbf{Research Question:} Objective: "This report will provide the theoretical background for superconductivity in hybrid systems and present an analytical and numerical investigation into the emergence and robustness of PMMs in a double QD system". \\
 % \textbf{Draft:}\\
-Quantum computing holds the promise of revolutionizing information processing by leveraging quantum superposition and entanglement to perform computations far beyond the capabilities of classical computers. A central challenge, howeverm is the fragility of quantum states, which are prone to decoherence from environmental interactions. Environmental interactions tend to rapidly destroy the fragile quantum states that encode information, imposing severe limitations on both the coherence times and error rates. Topologial quantum computation addresses this problem by encoding quantum information non-locally in topologically protected states, making them inherently robust against local perturbations. Among the most promising candidates for such topologically protected states are Majorana zero modes (MZMs), which are exotic quasiparticles that can emerge in certain superconducting systems.\\ \\ 
 Superconductivity, as described by Bardeen-Cooper-Schrieffer (BCS) theory, arises from the formation of Cooper pairs. These are bound pair of electrons with opposite momentum and spin. The pairing leads to an energy gap in the excitation spectrum, which protects the superconducting state from low-energy perturbations. Whem superconductivity is induced in hybrid systems, such as semiconductor proximitized by superconductors, it can give rise to emergent quasiparticle excitations with exotic properties. Majorana zero modes, are one such excitation that can appear at the ends of one-dimensional topological superconductors. These modes are predicted to obey non-Abelian exchange statistics, which makes them suitable for fault-tolerant quantum computation, meaning: information is stored in the joint parity of spatially separated modes, rendering it insesitive to local perturbations.\\ \\
 To identify and manipulate MZMs, it is important to examine their non-local nature and the conditions under which they arise. The quantum information encoded in these modes is associated with fermionic parity rather than local charge, motivating measurements that distinguish between even and odd parity ground states without collapsing the non-local encoding. This conceptual framework directly informs the design and interpretation of experiments in minimal realizations of Majorana systems, where one seeks to reproduce the essential physics in a controlable, highly tunable setup. \\ \\
 In this report, we investigate the Poor Man's Majoranas (PMMs) in a double quantum dot-suprcondcutor-quantum dot (QD-SC-QD) system. PMMs provide a bottom-up, minimal Kitaev chain realization, capturing the key features of MZMs while remaining experimentally accessible and numerically tractable. By combining analytical and numerical approaches, we explore the emergence of zero-energy modes, their spatial localization, and the robustness of their degeneracy under variations in system parameters, providing insight into the feasiblity of realizing topologically protected qubits in such minimal systems.\\
@@ -104,7 +103,40 @@ The energy gap $Δ$ represents the minimum energy required to break a Cooper pai
 Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions of electron and hole states, which naturally leads to the Bogoliubov-de Gennes (BdG) formalism. This formalism genereralizes the BCS mean-field theory to spatially inhomogeneous systems and forms the basis for the study of superconducting heterostructures, including those hosting Majorana modes.\\
 
 
-\subsection{The Bogoliubov-de Gennes Formalism:} Introduce the BdG Hamiltonian as the  mathematical tool for describing quasiparticles in systems where superconductivity varies in space (like at an interface). Important for numerical work later.\par
+\subsection{The Bogoliubov-de Gennes Formalism:}
+The microscopic BCS theory descirbes superconductivity as a coherent condensate of Cooper pairs, but it assumes a uniform order parameter $Δ$. To describe spatially varying superconducting states, such as those at interfaces or in the presence of impurities, we must generalize the BCS mean-field Hamiltonian to include position dependence. This leads us to the Bogoliubov-de Gennes (BdG) formalism \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 14 and BCS.pdf].\\
+Starting from the BCS mean-field Hamiltonian,
+$$
+H_{MF} = ∫ d³r \left[ ∑_{σ} ψ_{σ}^{†}(r) H_0 ψ_{σ}(r) + (Δ(r) ψ_{↑}^{†}(r) ψ_{↓}^{†}(r) + h.c.) \right]
+$$
+where $H_0 = \frac{p²}{2m}-μ + V(r)$ describes the normal-state single particle dynamics, and $Δ(r)$ is the superconducting pair potential. We can diagonalize this Hamiltonian by introducing Bogoliubov  through canonical transformations:
+$$
+ψ_{↑}(r) = ∑_{n} [u_n(r) γ_{n↑} - v_n^{*}(r) γ_{n↓}^{†}], \quad ψ_{↓}(r) = ∑_{n} [u_n(r) γ_{n↓} + v_n^{*}(r) γ_{n↑}^{†}]
+$$
+Substituting and deminding that the quasiparticle operators $γ_{nσ}$ diagonalize the Hamiltonian leads to the BdG equations:
+$$
+\begin{pmatrix}
+H_0(r) & Δ(r) \\
+Δ^{*}(r) & -H_0^{*}(r)
+\end{pmatrix}
+\begin{pmatrix}
+u_n(r) \\
+v_n(r)
+\end{pmatrix}= E_n
+\begin{pmatrix}
+u_n(r) \\
+v_n(r)
+\end{pmatrix}
+$$
+Each eigenstate ($u_n(r), v_n(r)$) represents a Bogoliubov quasiparticle, a coherent superposition of electron and hole amplitudes. The corresponding excitation energies $E_n ≥ 0$ define the superconducting quasiparticle spectrum.\\
+Because both particle hole components are included, the BdG Hamiltonain possesses an intrinsic particle-hole symmetry. 
+$$
+Ξ H_{BdG} Ξ^{-1} = -H_{BdG}, \quad Ξ = τ_x K
+$$
+where $τ_x$ acts in particle-hole space and $K$ is complex conjugation. This symmetry enforces that the spectrum is symmetric about zero energy: if $E_n$ is an eigenvalue, so is $-E_n$.\\
+This doubling of the Hilbert space is not redundant, it reflects the physical reality that the superconducting condensate does not conserve particle number, but rather fermion parity. The eigenstates at $± E_n$ correspond to the same physical excitation, and a zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode\textcolor{red}{CITATION}[Topocondmat.org].\\
+The BdG framework therefor bridges microscopic BCS theory and modern topological superconductivity. It provides a compact description of inhomogeneous superconductors, quantum dots coupled to superconducting leads, and low dimensional systems where topological phases can emerge.
+
 \subsection{Hybrid Systems and the Proximity Effect:} Explain how a semiconductor can inherit superconducting properties from a nearby superconductor. Define Andreev reflection and the formation of ABS as an important phenomena in hybrid systems.\par
 
 \section{Engineering Majorana Modes in a Minimal System}
