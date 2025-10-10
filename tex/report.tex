@@ -137,7 +137,42 @@ where $τ_x$ acts in particle-hole space and $K$ is complex conjugation. This sy
 This doubling of the Hilbert space is not redundant, it reflects the physical reality that the superconducting condensate does not conserve particle number, but rather fermion parity. The eigenstates at $± E_n$ correspond to the same physical excitation, and a zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode\textcolor{red}{CITATION}[Topocondmat.org].\\
 The BdG framework therefor bridges microscopic BCS theory and modern topological superconductivity. It provides a compact description of inhomogeneous superconductors, quantum dots coupled to superconducting leads, and low dimensional systems where topological phases can emerge.
 
-\subsection{Hybrid Systems and the Proximity Effect:} Explain how a semiconductor can inherit superconducting properties from a nearby superconductor. Define Andreev reflection and the formation of ABS as an important phenomena in hybrid systems.\par
+\subsection{Hybrid Systems and the Proximity Effect:} 
+The proximity effect is a phenomenon where a semiconductor acquires superconducting correlations when placed in contact with a superconductor. This mechanism is central to modern hybrid quantum devices and enables the creation of exotic quantum states, such as topological superconductivity, from conventional materials. This strategy is often called a "top-down" approach, as it builds complex states from well-understood components.
+\subsubsection{Induced pairing and the effective gap}
+At the microscopic level, the superconductor hosts a condensate of Cooper pairs described by a pairing potential $Δ$. When a semiconductor is coupled to the SC throguh a transparent interface, Cooper pairs can leak into the semiconductor through virtual tunneling process. From the semiconductor's perspective, this induces an effective pairing amplitude $Δ_{ind}$, giving rise to the Bogoliubov quasiparticles with the spectrum:
+$$
+E_k = \sqrt{ϵ_k² + |Δ_{ind}|²}
+$$
+The semiconductor thereby becomes proximitized, it behaves as if it were superconducting, even though no intrinsic exists in the semiconductor itself. \textcolor{red}{CITATION}[Qtech].\\
+The magnitude of the induced gap $Δ_{ind}$ depends on 
+the parent gap $Δ$, interface transparency, tunneling coupling strength, and the relative densities of states in the SC and SM. To reach the topological regime, three effects must be carefully balanced:
+\begin{itemize}
+  \item S-Wave proximity coupling: Establishing a robust induced gap $Δ_{ind}$ and providing superconducting correlations in the semiconductor.
+  \item Zeeman energy, $E_Z = \frac{1}{2} g μ_B B$, from applied magnetic field that tends to polarize spins and close the gap. 
+  \item Spin-orbit coupling (SOC), which counteracts full spin alignment and preserves pairing correlations under magnetic fields.
+\end{itemize} 
+A topological phase occurs when the Zeeman energy mathes the cost associated with $Δ_{ind}$ and the chemical potential $μ$:
+$$
+E_Z = \sqrt{Δ_{ind}² + μ²}
+$$
+Above the critical field, the proximitized semiconductor behaves effectively as a spinless p-wave superconductor,  mathematically equivalent to the Kitaev chain. \textcolor{red}{CITATION}[Qtech].\\
+Experimentally, realizing this regime requires a semiconductor with a large $g$-factor, low carrier density, and strong spin–orbit coupling. These conditions ensure a sizable induced gap and a stable topological phase without quenching the parent superconductivity.
+\subsubsection{Andreev Reflection and Cooper-pair splitting}
+At the SM–SC interface, subgap transport is governed by Andreev reflection (AR). When an electron from the SM with energy $|E|<\Delta$ impinges on the interface, it cannot enter the SC as a single quasiparticle. Instead, it is retro-reflected as a hole while a Cooper pair is transferred into the superconducting condensate \textcolor{red}{CITATION}[Qtech]\\
+A nonlocal version, known as Crossed Andreev Reflection (CAR) or Cooper-pair splitting, occurs when the two electrons of a Cooper pair tunnel into spatially separated regions—e.g. into two distinct quantum dots (QDs) coupled via a central SC. This process dominates when the separation is shorter than the superconducting coherence length $\xi$.\\
+In double-dot hybrid systems (QD–SC–QD), two tunneling processes compete \cite{qtech_boka}:
+\begin{itemize}
+  \item Local Andreev Reflection (LAR): Both electrons of a Cooper pair enter the same QD. This process is suppressed by the on-site Coulomb energy $U$, which disfavors double occupancy.
+  \item Crossed Andreev Reflection (CAR): Each electron enters a different QD, bypassing the charging penalty and becoming the dominant Andreev process.
+\end{itemize}
+CAR provides a nonlocal pairing amplitude ($\Delta$) that directly maps onto the p-wave term in the minimal Kitaev chain, while Elastic Cotunneling (ECT) provides the effective hopping ($t$) between sites. The sweet-spot condition $|t|=|\Delta|$ marks the parameter regime where the two Majorana-like modes become spatially separated—the so-called poor-man’s Majorana limit \textcolor{red}{CITATION}[Qtech]\\
+The CAR strength can be inferred experimentally from nonlocal current correlations. Under resonance ($\epsilon_L=-\epsilon_R$) the current from Cooper-pair splitting follows approximately
+$$ I_{CAR} = \frac{e}{\bar{h}} \frac{Γ}{(ϵ_L + ϵ_R)^2 + Γ²} |Δ|²$$
+where $\Gamma$ quantifies coupling to the leads. Measuring $I_{\mathrm{CAR}}$ and $I_{\mathrm{ECT}}$ thus allows tuning of hybrid dots to the Majorana regime.
+\subsubsection{Andreev Bound States (ABS)}
+Repeated Andreev reflections at confined interfaces give rise to discrete Andreev bound states (ABS) inside the superconducting gap ($|E|<\Delta$). ABS are coherent superpositions of electron and hole components, characterized by Bogoliubov amplitudes $(u,v)$. Their energies depend on gate-defined confinement and magnetic field, and they can transition from being even-parity (singlet-like) to odd-parity (doublet-like) as parameters vary.\\
+In the QD–SC–QD architecture, ABS form the fundamental subgap excitations mediating CAR and ECT. Parity crossings in these ABS—visible as zero-energy crossings—signal a change in fermion parity and mark the precursor to Majorana physics in more extended structures \textcolor{red}{CITATION}[Qtech].
 
 \section{Engineering Majorana Modes in a Minimal System}
 Connect general theory to specific PMM platform, notes note section 4 and note section 5.2\par
