@@ -175,9 +175,106 @@ Repeated Andreev reflections at confined interfaces give rise to discrete Andree
 In the QD–SC–QD architecture, ABS form the fundamental subgap excitations mediating CAR and ECT. Parity crossings in these ABS—visible as zero-energy crossings—signal a change in fermion parity and mark the precursor to Majorana physics in more extended structures \textcolor{red}{CITATION}[Qtech].
 
 \section{Engineering Majorana Modes in a Minimal System}
-Connect general theory to specific PMM platform, notes note section 4 and note section 5.2\par
-\subsection{The Kitaev Chain Model:} Introduce the Kitaev model Hamiltonian. Explain its key features (p-wave pairing) and how it leads to a topological phase with protected, zero energy Majorana edge states.\par
-\subsection{The QD-SC-QD System as an Effective Kitaev Chain:} Explain the mapping: The two QDs are the sites, Elastic cotunneling is the hopping term, CAR is the p-wave pairing. See note section 5.2 for details.\par
+% Connect general theory to specific PMM platform, notes note section 4 and note section 5.2\par
+\subsection{The Kitaev Chain Model}
+
+The Kitaev chain is a minimal theoretical model that captures the essential physics of topological superconductivity and the emergence of Majorana zero modes (MZMs). It describes a one-dimensional chain of spinless fermions with nearest-neighbour hopping and $p$-wave superconducting pairing between adjacent sites. Despite its apparent simplicity, the Kitaev model embodies the key ingredients underlying more complex physical systems, such as proximitized nanowires or quantum-dot arrays \textcolor{red}{CITATION}[Topocondmat].\\.
+The Hamiltonian of the Kitaev chain is given by:
+\begin{equation}
+H = -\mu \sum_{j=1}^{N} \left(c_j^\dagger c_j - \frac{1}{2}\right)
+- t \sum_{j=1}^{N-1} \left(c_j^\dagger c_{j+1} + c_{j+1}^\dagger c_j\right)
++ \Delta \sum_{j=1}^{N-1} \left(c_j c_{j+1} + c_{j+1}^\dagger c_j^\dagger\right),
+\label{eq:kitaev_ham}
+\end{equation}
+where $\mu$ is the chemical potential, $t$ is the hopping amplitude, and $\Delta$ is the real-valued $p$-wave pairing amplitude. The fermionic operators $c_j^\dagger$ and $c_j$ create and annihilate an electron at site $j$, respectively.
+
+\subsubsection{Bulk spectrum and topological phases}
+
+By transforming to momentum space, one obtains the quasiparticle excitation spectrum:
+\begin{equation}
+E_{p,\pm} = \pm \sqrt{(\mu - 2t \cos{pa})^2 + 4\Delta^2 \sin^2{pa}},
+\end{equation}
+where $a$ is the lattice spacing. The system is gapped for all parameters except when $|\mu| = 2|t|$, where the gap closes. This marks a topological phase transition between a trivial and a non-trivial superconducting phase.
+
+The topology of the superconducting phase can be characterized by a $\mathbb{Z}_2$ invariant, often called the Majorana number $M = (-1)^\nu$, where $\nu$ is the number of Fermi point pairs. The two regimes are:
+\begin{itemize}
+    \item \textbf{Trivial phase:} $|\mu| > 2|t|$ — The Majorana number $M=+1$; no zero-energy edge modes exist.
+    \item \textbf{Topological phase:} $|\mu| < 2|t|$ — The Majorana number $M=-1$; two zero-energy edge modes appear, one at each end of the chain.
+\end{itemize}
+This bulk–boundary correspondence is the defining feature of topological superconductors: the presence of non-trivial topology in the bulk enforces the existence of boundary-localized states.
+
+\subsubsection{Majorana representation and zero modes}
+
+To understand the nature of these boundary states, one can express each fermionic operator in terms of two real Majorana operators:
+\begin{equation}
+c_j = \frac{1}{2}(\gamma_j^A + i\gamma_j^B), \qquad
+c_j^\dagger = \frac{1}{2}(\gamma_j^A - i\gamma_j^B),
+\end{equation}
+where $\gamma_j^{A,B}$ satisfy $\{\gamma_j^\alpha, \gamma_k^\beta\} = 2\delta_{jk}\delta_{\alpha\beta}$ and $(\gamma_j^\alpha)^\dagger = \gamma_j^\alpha$.
+
+In this basis, the two distinct phases correspond to different pairing patterns between the Majorana operators:
+\begin{itemize}
+    \item \textbf{Trivial phase:} For large $|\mu|$, Majoranas on the same site ($\gamma_j^A$ and $\gamma_j^B$) pair to form conventional fermions; no unpaired modes remain.
+    \item \textbf{Topological phase:} When $\mu=0$ and $t=\Delta$, Majoranas on adjacent sites couple ($\gamma_j^B$ with $\gamma_{j+1}^A$), leaving $\gamma_1^A$ and $\gamma_N^B$ unpaired at the chain ends.
+\end{itemize}
+
+These two unpaired Majoranas combine into a single non-local fermionic mode:
+\begin{equation}
+f = \frac{1}{2}(\gamma_1^A + i\gamma_N^B),
+\end{equation}
+which satisfies $\{f, f^\dagger\}=1$ but costs zero energy. The two possible occupations of this non-local fermion correspond to a twofold degenerate ground state. This degeneracy is topologically protected: local perturbations cannot lift it unless they close the bulk gap or couple the two edge Majoranas directly.
+
+The Kitaev chain thus provides the theoretical foundation for engineering and interpreting Majorana zero modes in more complex hybrid systems such as semiconductor–superconductor devices, which can be viewed as physical realizations of a minimal Kitaev chain.
+\subsection{The QD–SC–QD System as an Effective Kitaev Chain}
+
+The Kitaev chain model, while conceptually simple, can be physically realized using hybrid semiconductor–superconductor systems. A particularly compact realization is the double quantum dot (QD–SC–QD) device, sometimes referred to as the \textit{Poor Man’s Majorana} (PMM) system. This setup consists of two quantum dots (QDs) coupled via a central superconducting segment. Despite containing only two sites, it reproduces the essential features of the Kitaev chain and supports near-zero-energy modes with Majorana-like characteristics.
+
+\subsubsection{Mapping to the Kitaev Hamiltonian}
+
+Each quantum dot represents a site in the minimal Kitaev chain. The Hamiltonian of the hybrid system can be written in a general form as:
+\begin{equation}
+H = \sum_{i=L,R} \epsilon_i n_i
++ t (d_L^\dagger d_R + d_R^\dagger d_L)
++ \Delta (d_L^\dagger d_R^\dagger + d_R d_L)
++ U \sum_i n_{i\uparrow} n_{i\downarrow},
+\label{eq:qdsqdh}
+\end{equation}
+where $d_{L/R}^\dagger$ and $d_{L/R}$ are electron creation and annihilation operators on the left and right dots, $\epsilon_{L,R}$ are their on-site energies, $t$ is the elastic cotunneling (ECT) amplitude, $\Delta$ represents the crossed Andreev reflection (CAR) amplitude, and $U$ is the on-site charging energy. The last term penalizes double occupation, pushing the system towards an effectively spinless regime when $U$ is large.
+
+The physical processes in this Hamiltonian directly correspond to the terms in the Kitaev chain:
+\begin{itemize}
+    \item \textbf{Elastic cotunneling (ECT):} An electron tunnels coherently from one dot to the other via a virtual process through the superconductor. This process defines the effective hopping amplitude $t$, analogous to the kinetic term in the Kitaev model.
+    \item \textbf{Crossed Andreev reflection (CAR):} A Cooper pair in the superconductor splits such that one electron tunnels into each dot. This process produces an effective non-local pairing term $\Delta$, which is mathematically equivalent to the $p$-wave pairing amplitude in the Kitaev chain.
+    \item \textbf{On-site energy:} The local dot energies $\epsilon_L$ and $\epsilon_R$ play the role of the site-dependent chemical potential $\mu$.
+\end{itemize}
+
+At the so-called \textit{sweet spot}, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = |\Delta|$, the system enters a regime in which two Majorana-like states localize predominantly on separate dots. These two states form an effective non-local fermion and exhibit many of the qualitative features of true topological Majorana bound states, such as zero-energy modes and near-perfect particle–hole symmetry. However, since the system is finite and lacks a bulk, it does not possess true topological protection—hence the designation “poor man’s Majoranas.”
+
+\subsubsection{Effective low-energy picture}
+
+In the large–$U$ limit, where double occupation on each dot is energetically forbidden, the Hamiltonian (\ref{eq:qdsqdh}) reduces to an effective spinless form that mirrors the two-site Kitaev model:
+\begin{equation}
+H_{\mathrm{eff}} =
+- \mu_{\mathrm{eff}} (n_L + n_R)
++ t_{\mathrm{eff}} (d_L^\dagger d_R + d_R^\dagger d_L)
++ \Delta_{\mathrm{eff}} (d_L^\dagger d_R^\dagger + d_R d_L).
+\end{equation}
+Here, $\mu_{\mathrm{eff}}$, $t_{\mathrm{eff}}$, and $\Delta_{\mathrm{eff}}$ denote renormalized parameters that depend on the microscopic coupling strengths, interface transparency, and the superconducting gap of the central superconductor.
+
+This effective model captures the same low-energy physics as a two-site Kitaev chain: one even-parity and one odd-parity ground state that become degenerate when $|t_{\mathrm{eff}}| = |\Delta_{\mathrm{eff}}|$. The parity of the system is determined by the occupation of the non-local fermion formed by the two Majorana modes.
+
+\subsubsection{Experimental relevance and parameter tuning}
+
+The QD–SC–QD platform is experimentally attractive because each parameter can be controlled independently:
+\begin{itemize}
+    \item Gate voltages tune $\epsilon_{L,R}$ and thus the chemical potential.
+    \item The transparency of the QD–SC interfaces controls the CAR and ECT amplitudes ($\Delta$ and $t$).
+    \item Magnetic fields tune the Zeeman energy and suppress unwanted spinful excitations.
+\end{itemize}
+By sweeping these parameters, one can reach and identify the near-degenerate Majorana-like regime through measurable quantities such as energy-level spectroscopy, local density of states, and parity-dependent occupation.
+
+In summary, the double quantum dot coupled to a superconductor provides a minimal, controllable realization of the Kitaev chain. Despite lacking full topological protection, it serves as an ideal testbed for probing Majorana physics, verifying parity conservation, and exploring non-local correlations in engineered quantum systems.
+
 
 \section{Analytical and Numerical Investigation of PMMs}
 Present my work and demonstrate how to apply theory to a concrete problem.\par
