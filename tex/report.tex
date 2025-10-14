@@ -38,6 +38,7 @@
 
 
 \begin{document}
+\sloppy
 \maketitle
 % \tableofcontents
 \newpage
@@ -275,6 +276,44 @@ By sweeping these parameters, one can reach and identify the near-degenerate Maj
 
 In summary, the double quantum dot coupled to a superconductor provides a minimal, controllable realization of the Kitaev chain. Despite lacking full topological protection, it serves as an ideal testbed for probing Majorana physics, verifying parity conservation, and exploring non-local correlations in engineered quantum systems.
 
+\subsection{Identifying Majorana Modes in the QD–SC–QD System}
+In this section we will briefly go through the key signatures that indicate the presence of Majorana-like modes in the QD–SC–QD system. These signatures arise from the unique properties of Majorana fermions. There are a few metrics we can use to identify the presence of PMMs, and their rigidity to perturbations.\\
+\subsubsection{The parity operator}
+The parity operator itself is not a measurement of a Majorana mode, but it is a useful tool in the identification process. The mean-field Hamiltonian of a superconductor does not conserve particle number, but it does conserve fermion parity. What this means is that the number of electrons in the system can change by pairs, but not by single electrons. The parity operator is defined as:
+$$
+P = (-1)^{N} = 1 - 2c_n ^{†} c_n
+$$
+where $N$ is the total number of electrons in the system, and $c_n^{†}$ and $c_n$ are the creation and annihilation operators for the fermionic mode formed by the two Majorana modes. The eigenvalues of the parity operator are $+1$ for even parity (an even number of electrons) and $-1$ for odd parity (an odd number of electrons).\\
+When working with Majorana modes, we often consider the two degenerate ground states of the system, which differ by their fermion parity. The presence of a Majorana mode implies that these two states are nearly degenerate and can be transformed into each other by adding or removing a single electron, thus changing the parity.\\
+
+\subsubsection{Energy degeneracy}
+When we try to identify Majorana modes in the QD–SC–QD system, one of the primary signatures we look for is the presence of energy degeneracy between the even and odd parity ground states. We also want the ground state energies to be separeted by a finite energy gap from the excited states. This energy gap protects the Majorana modes from local perturbations and thermal excitations, which is crucial for their stability and potential use in quantum computing. This is because when we want to do quantum computation using Majorana modes, we need to be able to manipulate the states without causing transitions to higher energy states.\\
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{../External_Figs/gs_symmetry.png}%
+  \caption{Energy spectrum showing how the energy eigenvalues of the system must be symmetric around zero energy due to particle-hole symmetry Topocondmat.org (Bulk edge correspondence in Kitaev chains)}
+  \label{fig:gs_symmetry}
+\end{figure}
+\newpage
+\subsubsection{Local distinguishability}
+A property of the Kitaev chain in its topological phase is that measurements done locally cannot reveal if the system is in its odd or even ground state. Meaning the two ground states are locally indistinguishable. In order to quantify this property, we will define the local distinguishability parameter LD as:
+$$
+\text{LD} = \frac{1}{N} \sum_{j=1}^{N} || ρ_j^o - ρ_j^e || = \frac{1}{N} \sum_{j=1}^{N} || δ ρ_j ||
+$$
+\textcolor{red}{CITATION}[Majorana bound states in chains
+of interacting quantum dots Viktor ].\\Here, $ρ_j^{o/e}$ are the reduced density matrices of site $j$ for the odd and even parity ground states, respectively. The norm $|| \cdot ||$ is the trace norm, which measures the difference between the two local states. The LD parameter quantifies how distinguishable the two ground states are when only local measurements are considered. A value of LD close to zero indicates that the two states are nearly indistinguishable locally, which is a hallmark of Majorana modes. Conversely, a value close to one indicates that the states can be easily distinguished by local measurements, suggesting the absence of Majorana modes.\\
+\subsubsection{Majorana polarization}
+In interaction Kitaev chains with finite magnetic fields, there are no ideal Majorana sweet spots, as the presence of the other spin species introduces corrections to the simple picture of Majorana modes. However, sweet spots with very good Majorana localization and close to degenerate ground states with even and odd parity can still appear in the system. To quantify how close we are to an ideal Majorana mode, we can use the Majorana polarization (MP) metric. The MP is a measure of how well the Majorana modes are localized at the ends of the chain and how closely they resemble ideal Majorana fermions. The MP is defined as:
+$$
+M_α = (W_α^2 - Z_α^2) / (W_α^2 + Z_α^2)
+$$
+where,
+$$
+W_α = ∑_{σ} \bra{o} c_{ασ} + c_{ασ}^{†} \ket{e}, \quad Z_α = i ∑_{σ} \bra{o} c_{ασ} - c_{ασ}^{†} \ket{e}
+$$
+Here, $α$ denotes the site index (left or right dot), $σ$ is the spin index, and $\ket{o}$ and $\ket{e}$ are the odd and even parity ground states, respectively. In an ideal sweet spot where two Majoranas are perfectly localized on the left and right dots, the MP values would be $M_L = -M_R = ± 1$. \textcolor{red}{CITATION}[Chap3 qtech].\\
+\subsubsection{Charge expectation and non-locality}
+The last measurable property we will discuss is the charge expectation value of the ground states. 
 
 \section{Analytical and Numerical Investigation of PMMs}
 Present my work and demonstrate how to apply theory to a concrete problem.\par

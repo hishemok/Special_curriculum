@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  13 OCT 2025 12:58
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  14 OCT 2025 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -567,22 +567,22 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 40.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 43.
+(Font)              scaled to size 12.00128pt on input line 44.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 43.
+(Font)              scaled to size 8.00085pt on input line 44.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 43.
+(Font)              scaled to size 6.00064pt on input line 44.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 43.
+(Font)              scaled to size 11.99872pt on input line 44.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 43.
+(Font)              scaled to size 7.99915pt on input line 44.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)              scaled to size 5.99936pt on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -590,67 +590,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Overfull \hbox (6.97595pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 Superconductivity, as described by Bardeen-Cooper-Schrieffer (BCS) theory,
+Underfull \hbox (badness 1577) in paragraph at lines 58--61
+\TU/lmr/m/n/14.4 Superconductivity, as described by Bardeen-Cooper-Schrieffer (BCS)
  []
 
 
-Overfull \hbox (0.14304pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 arises from the formation of Cooper pairs. These are bound pair of electrons
- []
-
-
-Overfull \hbox (22.41977pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 give rise to emergent quasiparticle excitations with exotic properties. Majorana
- []
-
-
-Overfull \hbox (40.0736pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 zero modes, are one such excitation that can appear at the ends of one-dimensional
- []
-
-
-Overfull \hbox (11.02454pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 topological superconductors. These modes are predicted to obey non-Abelian
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 
-Overfull \hbox (6.61276pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 To identify and manipulate MZMs, it is important to examine their non-local
+Underfull \hbox (badness 1194) in paragraph at lines 58--61
+\TU/lmr/m/n/14.4 rather than local charge, motivating measurements that distinguish
  []
 
 
-Overfull \hbox (4.62622pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 nature and the conditions under which they arise. The quantum information
+Underfull \hbox (badness 1092) in paragraph at lines 58--61
+\TU/lmr/m/n/14.4 between even and odd parity ground states without collapsing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 1194) in paragraph at lines 58--61
+\TU/lmr/m/n/14.4 design and interpretation of experiments in minimal realizations of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 
-Overfull \hbox (23.36859pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 double quantum dot-suprcondcutor-quantum dot (QD-SC-QD) system. PMMs
+Underfull \hbox (badness 1242) in paragraph at lines 58--61
+\TU/lmr/m/n/14.4 and the robustness of their degeneracy under variations in system
  []
 
 
-Overfull \hbox (6.42938pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 features of MZMs while remaining experimentally accessible and numerically
- []
-
-
-Overfull \hbox (25.06395pt too wide) in paragraph at lines 57--60
-\TU/lmr/m/n/14.4 robustness of their degeneracy under variations in system parameters, providing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
@@ -658,343 +633,202 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
 [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 64.
+(Font)              scaled to size 14.40152pt on input line 65.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 64.
+(Font)              scaled to size 10.00107pt on input line 65.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 64.
+(Font)              scaled to size 7.00075pt on input line 65.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 64.
+(Font)              scaled to size 14.39845pt on input line 65.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 64.
+(Font)              scaled to size 9.99893pt on input line 65.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 64.
+(Font)              scaled to size 6.99925pt on input line 65.
 
-Overfull \hbox (12.79897pt too wide) in paragraph at lines 64--67
-\TU/lmr/m/n/14.4 Superconductivity is characterized by the complete loss of electrical resistance
+Underfull \hbox (badness 1527) in paragraph at lines 65--68
+\TU/lmr/m/n/14.4 Microscopically, the origin of superconductivity lies in an effective
  []
 
 
-Overfull \hbox (32.83995pt too wide) in paragraph at lines 64--67
-\TU/lmr/m/n/14.4 Meissner effect), which demonstrates that it represents a distinct thermodynamic
+Underfull \hbox (badness 4072) in paragraph at lines 70--73
+[][][]$\TU/lmr/m/n/14.4 , and the $[][]$ are the single-particle energies. The isotope
  []
 
 
-Overfull \hbox (3.96797pt too wide) in paragraph at lines 64--67
-\TU/lmr/m/n/14.4 Microscopically, the origin of superconductivity lies in an effective attraction
+Underfull \hbox (badness 1019) in paragraph at lines 70--73
+\TU/lmr/m/n/14.4 effect, where $[][]$ varies inversely with the square root of the ionic
  []
 
 
-Overfull \hbox (8.74297pt too wide) in paragraph at lines 69--72
-\TU/lmr/m/n/14.4 for the phonon-mediated pairing mechanism.[]CITATION[][CambridgeBCS.pdf
+Underfull \hbox (badness 4569) in paragraph at lines 70--73
+\TU/lmr/m/n/14.4 mass, provides strong evidence for the phonon-mediated pairing
  []
 
 
 
 [2]
-Overfull \hbox (17.55096pt too wide) in paragraph at lines 82--86
-\TU/lmr/m/n/14.4 interaction strength []CITATION[][CambridgeBCS.pdf chapter 3.2 and BCS.pdf] 
- []
-
-
-Overfull \hbox (7.43742pt too wide) in paragraph at lines 82--86
-\TU/lmr/m/n/14.4 Even this simple two-particle result implies that the Fermi surface is unstable
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
 
-Overfull \hbox (23.31384pt too wide) in paragraph at lines 82--86
-\TU/lmr/m/n/14.4 Building on Cooper’s insight, Bardeen, Cooper, and Schrieffer (1957) developed
+Underfull \hbox (badness 1939) in paragraph at lines 83--87
+\TU/lmr/m/n/14.4 developed a comprehensive microscopic theory of superconductivity
  []
 
 
-Overfull \hbox (26.89658pt too wide) in paragraph at lines 82--86
-\TU/lmr/m/n/14.4 a comprehensive microscopic theory of superconductivity []CITATION[][BCS.pdf]. 
+Underfull \hbox (badness 2269) in paragraph at lines 101--105
+\TU/lmr/m/n/14.4 Superconducting excitations are Bogoliubov quasiparticles, coherent
  []
 
 
-Overfull \hbox (48.67992pt too wide) in paragraph at lines 100--104
-\TU/lmr/m/n/14.4 Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions
- []
-
-
-Overfull \hbox (9.30077pt too wide) in paragraph at lines 100--104
-\TU/lmr/m/n/14.4 study of superconducting heterostructures, including those hosting Majorana
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Overfull \hbox (7.01822pt too wide) in paragraph at lines 107--109
-\TU/lmr/m/n/14.4 the Bogoliubov-de Gennes (BdG) formalism []CITATION[][CambridgeBCS.pdf
+Underfull \hbox (badness 6708) in paragraph at lines 108--110
+\TU/lmr/m/n/14.4 condensate of Cooper pairs, but it assumes a uniform order
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 108--110
+\TU/lmr/m/n/14.4 such as those at interfaces or in the presence of impurities, we
  []
 
 
 
 [3]
-Overfull \hbox (14.90393pt too wide) in paragraph at lines 111--113
-\TU/lmr/m/n/14.4 dynamics, and $[][][][]$ is the superconducting pair potential. We can diagonalize
+Underfull \hbox (badness 4454) in paragraph at lines 116--118
+\TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$
  []
 
 
-Overfull \hbox (27.03098pt too wide) in paragraph at lines 111--113
-\TU/lmr/m/n/14.4 this Hamiltonian by introducing Bogoliubov through canonical transformations: 
+Underfull \hbox (badness 1478) in paragraph at lines 136--140
+\TU/lmr/m/n/14.4 The BdG framework therefor bridges microscopic BCS theory and
  []
 
 
-Overfull \hbox (2.06021pt too wide) in paragraph at lines 115--117
-\TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$ diagonalize
- []
-
-
-Overfull \hbox (21.9698pt too wide) in paragraph at lines 130--133
-\TU/lmr/m/n/14.4 Each eigenstate ($[][][][][][] [][][][][]$) represents a Bogoliubov quasiparticle, a coherent
- []
-
-
-Overfull \hbox (4.77498pt too wide) in paragraph at lines 130--133
-\TU/lmr/m/n/14.4 superposition of electron and hole amplitudes. The corresponding excitation
- []
-
-
-Overfull \hbox (44.36057pt too wide) in paragraph at lines 135--139
-\TU/lmr/m/n/14.4 topological superconductivity. It provides a compact description of inhomogeneous
+Underfull \hbox (badness 7451) in paragraph at lines 136--140
+\TU/lmr/m/n/14.4 modern topological superconductivity. It provides a compact
  []
 
 
 
 [4]
-Overfull \hbox (2.8726pt too wide) in paragraph at lines 141--142
-\TU/lmr/m/n/14.4 superconducting correlations when placed in contact with a superconductor.
- []
-
-
-Overfull \hbox (3.36316pt too wide) in paragraph at lines 141--142
-\TU/lmr/m/n/14.4 the creation of exotic quantum states, such as topological superconductivity,
- []
-
-
-Overfull \hbox (3.87738pt too wide) in paragraph at lines 143--144
-\TU/lmr/m/n/14.4 semiconductor through virtual tunneling process. From the semiconductor’s
- []
-
-
-Overfull \hbox (10.23772pt too wide) in paragraph at lines 146--150
-\TU/lmr/m/n/14.4 interface transparency, tunneling coupling strength, and the relative densities
+Underfull \hbox (badness 6510) in paragraph at lines 142--143
+\TU/lmr/m/n/14.4 The proximity effect is a phenomenon where a semiconductor
  []
 
 
 
 [5]
-Overfull \hbox (12.72089pt too wide) in paragraph at lines 158--161
-[]$\TU/lmr/m/n/14.4 -factor, low carrier density, and strong spin–orbit coupling. These conditions
- []
 
-
-Overfull \hbox (13.13982pt too wide) in paragraph at lines 158--161
-\TU/lmr/m/n/14.4 ensure a sizable induced gap and a stable topological phase without quenching
- []
-
-
-LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 164.
-
-
-Overfull \hbox (1.60963pt too wide) in paragraph at lines 162--165
-\TU/lmr/m/n/14.4 At the SM–SC interface, subgap transport is governed by Andreev reflection
- []
-
-
-Overfull \hbox (27.13925pt too wide) in paragraph at lines 162--165
-\TU/lmr/m/n/14.4 A nonlocal version, known as Crossed Andreev Reflection (CAR) or Cooper-pair
- []
-
-
-Overfull \hbox (14.06139pt too wide) in paragraph at lines 162--165
-\TU/lmr/m/n/14.4 In double-dot hybrid systems (QD–SC–QD), two tunneling processes compete
- []
-
-
-Overfull \hbox (13.93721pt too wide) in paragraph at lines 167--168
-\TU/lmr/m/n/14.4 QD, bypassing the charging penalty and becoming the dominant Andreev
- []
-
-
-Overfull \hbox (81.63576pt too wide) in paragraph at lines 169--171
-\TU/lmr/m/n/14.4 become spatially separated—the so-called poor-man’s Majorana limit []CITATION[][Qtech] 
- []
+LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 165.
 
 
 
 [6]
-Overfull \hbox (26.15678pt too wide) in paragraph at lines 174--176
-\TU/lmr/m/n/14.4 ABS are coherent superpositions of electron and hole components, characterized
- []
-
-
-Overfull \hbox (19.88475pt too wide) in paragraph at lines 174--176
-\TU/lmr/m/n/14.4 confinement and magnetic field, and they can transition from being even-parity
- []
-
-
-Overfull \hbox (21.31685pt too wide) in paragraph at lines 174--176
-\TU/lmr/m/n/14.4 In the QD–SC–QD architecture, ABS form the fundamental subgap excitations
- []
-
-
-Overfull \hbox (24.59583pt too wide) in paragraph at lines 174--176
-\TU/lmr/m/n/14.4 mediating CAR and ECT. Parity crossings in these ABS—visible as zero-energy
- []
-
-
-Overfull \hbox (13.86938pt too wide) in paragraph at lines 181--183
-\TU/lmr/m/n/14.4 fermions with nearest-neighbour hopping and $[]$-wave superconducting pairing
- []
-
-
-Overfull \hbox (41.33017pt too wide) in paragraph at lines 181--183
-\TU/lmr/m/n/14.4 such as proximitized nanowires or quantum-dot arrays []CITATION[][Topocondmat]. 
- []
-
-
-Overfull \hbox (12.49277pt too wide) in paragraph at lines 193--194
-\TU/lmr/m/n/14.4 By transforming to momentum space, one obtains the quasiparticle excitation
+Underfull \hbox (badness 4518) in paragraph at lines 175--177
+\TU/lmr/m/n/14.4 excitations mediating CAR and ECT. Parity crossings in these
  []
 
 
 
 [7]
-Overfull \hbox (16.71286pt too wide) in paragraph at lines 224--226
-\TU/lmr/m/n/14.4 which satisfies $[][][] [][][] [] []$ but costs zero energy. The two possible occupations
- []
-
-
 
 [8]
-Overfull \hbox (2.56863pt too wide) in paragraph at lines 227--228
-[]\TU/lmr/m/n/14.4 The Kitaev chain thus provides the theoretical foundation for engineering
+Underfull \hbox (badness 2512) in paragraph at lines 225--227
+\TU/lmr/m/n/14.4 ground state. This degeneracy is topologically protected: local
  []
 
 
-Overfull \hbox (9.2422pt too wide) in paragraph at lines 230--231
-\TU/lmr/m/n/14.4 realized using hybrid semiconductor–superconductor systems. A particularly
+Underfull \hbox (badness 2903) in paragraph at lines 228--229
+[]\TU/lmr/m/n/14.4 The Kitaev chain thus provides the theoretical foundation for
  []
 
 
-Overfull \hbox (26.3152pt too wide) in paragraph at lines 230--231
-\TU/lmr/m/n/14.4 compact realization is the double quantum dot (QD–SC–QD) device, sometimes
- []
-
-
-Overfull \hbox (41.51161pt too wide) in paragraph at lines 247--248
-[]\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the superconductor
- []
-
-
-Overfull \hbox (4.08371pt too wide) in paragraph at lines 247--248
-\TU/lmr/m/n/14.4 produces an effective non-local pairing term $[]$, which is mathematically
+Underfull \hbox (badness 4569) in paragraph at lines 231--232
+\TU/lmr/m/n/14.4 realized using hybrid semiconductor–superconductor systems. A
  []
 
 
 
 [9]
-Overfull \hbox (6.42616pt too wide) in paragraph at lines 251--252
-\TU/lmr/m/n/14.4 predominantly on separate dots. These two states form an effective non-local
+Underfull \hbox (badness 1005) in paragraph at lines 248--249
+[]\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the
  []
 
 
-Overfull \hbox (33.87675pt too wide) in paragraph at lines 251--252
-\TU/lmr/m/n/14.4 Majorana bound states, such as zero-energy modes and near-perfect particle–hole
- []
-
-
-Overfull \hbox (28.7225pt too wide) in paragraph at lines 261--263
-\TU/lmr/m/n/14.4 microscopic coupling strengths, interface transparency, and the superconducting
- []
-
-
-Overfull \hbox (19.6614pt too wide) in paragraph at lines 268--269
-\TU/lmr/m/n/14.4 The QD–SC–QD platform is experimentally attractive because each parameter
+Underfull \hbox (badness 1019) in paragraph at lines 252--253
+\TU/lmr/m/n/14.4 topological Majorana bound states, such as zero-energy modes and
  []
 
 
 
 [10]
-Overfull \hbox (12.75676pt too wide) in paragraph at lines 274--275
-\TU/lmr/m/n/14.4 By sweeping these parameters, one can reach and identify the near-degenerate
+Underfull \hbox (badness 3907) in paragraph at lines 275--276
+\TU/lmr/m/n/14.4 By sweeping these parameters, one can reach and identify the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
  []
 
 
 
 [11]
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
+
+ []
+
+File: ../External_Figs/gs_symmetry.png Graphic file (type bmp)
+<../External_Figs/gs_symmetry.png>
+
 
 [12]
-Overfull \hbox (5.12701pt too wide) in paragraph at lines 346--349
-\TU/lmr/m/n/14.4 The zero-mode eigenvectors $[][]$ and $[][]$ correspond to the Majorana operators.
+Underfull \hbox (badness 2158) in paragraph at lines 299--300
+\TU/lmr/m/n/14.4 A property of the Kitaev chain in its topological phase is that
  []
 
 
-Overfull \hbox (6.25914pt too wide) in paragraph at lines 351--355
-\TU/lmr/m/n/14.4 Majorana modes. They are spatially separated zero modes, localized entirely
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
+
  []
 
 
 
 [13]
-Overfull \hbox (8.6902pt too wide) in paragraph at lines 363--365
-\TU/lmr/m/n/14.4 that cannot capture electron-electron interactions like the Coulomb repulsion
- []
-
-
-Overfull \hbox (19.78622pt too wide) in paragraph at lines 369--370
-[]\TU/lmr/m/n/14.4 We can now proceed to construct the Hamiltonian matrix in this many-body
- []
-
-
 
 [14]
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 442--448
-
- []
-
-
-Overfull \hbox (4.21442pt too wide) in paragraph at lines 442--448
-\TU/lmr/m/n/14.4 2-3) With the number operators $[][]$ and $[][]$, we can calculate the expectation
- []
-
-
-Overfull \hbox (1.93344pt too wide) in paragraph at lines 450--450
-\TU/lmr/m/n/14.4 Summarize what we learned from the calculations. ” The analysis confirmed
- []
-
-
 
 [16]
-Overfull \hbox (40.34717pt too wide) in paragraph at lines 451--451
-\TU/lmr/m/n/14.4 Briefly discuss how the properties you explored (the energy splitting, wavefunction
- []
-
-
-Overfull \hbox (28.09915pt too wide) in paragraph at lines 452--453
-\TU/lmr/m/n/14.4 Suggest next steps for a full thesis. This include modeling disorder, investigating
- []
-
-
-Overfull \hbox (7.93277pt too wide) in paragraph at lines 452--453
-\TU/lmr/m/n/14.4 longer chains (three or more dots), or numerically simulate braiding protocol. 
+Underfull \hbox (badness 1275) in paragraph at lines 390--392
+\TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
 
 
-[17] (./report.aux)
+[17]
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 469--475
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 469--475
+\TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
+ []
+
+
+
+[19]
+
+[20] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1003,16 +837,22 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 7F273CA6D5EACB0847C168AC1CBF4298;7727.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 5227D0A997E6F0D72E6C4842E5D12C84;8379
+(rerunfilecheck)             After:  140974D87885FF0A5D19DAA24D5C6191;8570.
  ) 
 Here is how much of TeX's memory you used:
- 18527 strings out of 475251
- 336693 string characters out of 5761397
- 1017383 words of memory out of 5000000
- 41285 multiletter control sequences out of 15000+600000
+ 18543 strings out of 475251
+ 337133 string characters out of 5761397
+ 1019383 words of memory out of 5000000
+ 41298 multiletter control sequences out of 15000+600000
  564613 words of font info for 86 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 90i,7n,107p,954b,397s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,107p,954b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (18 pages).
+Output written on report.pdf (21 pages).
