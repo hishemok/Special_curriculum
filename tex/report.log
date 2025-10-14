@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  14 OCT 2025 14:19
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  14 OCT 2025 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,13 +800,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
+
+ []
+
+
 
 [14]
 
 [15]
 
 [16]
-Underfull \hbox (badness 1275) in paragraph at lines 390--392
+Underfull \hbox (badness 1275) in paragraph at lines 402--404
 \TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
@@ -815,12 +820,12 @@ Underfull \hbox (badness 1275) in paragraph at lines 390--392
 [17]
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 469--475
+Underfull \hbox (badness 10000) in paragraph at lines 481--487
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 469--475
+Underfull \hbox (badness 1515) in paragraph at lines 481--487
 \TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
  []
 
@@ -837,19 +842,13 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 5227D0A997E6F0D72E6C4842E5D12C84;8379
-(rerunfilecheck)             After:  140974D87885FF0A5D19DAA24D5C6191;8570.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 06E55AB42C690C34F7C8E1E44F8BA87D;8998.
  ) 
 Here is how much of TeX's memory you used:
  18543 strings out of 475251
  337133 string characters out of 5761397
- 1019383 words of memory out of 5000000
+ 1017383 words of memory out of 5000000
  41298 multiletter control sequences out of 15000+600000
  564613 words of font info for 86 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
