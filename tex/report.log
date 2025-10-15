@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  14 OCT 2025 15:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  15 OCT 2025 10:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -811,29 +811,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--315
 [15]
 
 [16]
-Underfull \hbox (badness 1275) in paragraph at lines 402--404
+
+[17]
+Underfull \hbox (badness 1275) in paragraph at lines 406--408
 \TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
 
 
-[17]
-
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 481--487
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 485--491
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 481--487
+Underfull \hbox (badness 1515) in paragraph at lines 485--491
 \TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
  []
 
 
 
-[19]
+[20]
 
-[20] (./report.aux)
+[21] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -854,4 +856,4 @@ Here is how much of TeX's memory you used:
  350 hyphenation exceptions out of 8191
  90i,7n,107p,954b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (21 pages).
+Output written on report.pdf (22 pages).
