@@ -282,9 +282,8 @@ which satisfies $\{f, f^\dagger\} = 1$ and costs zero energy. The two possible o
 The Kitaev chain thus provides the minimal theoretical framework for understanding Majorana zero modes. Its simplicity allows for exact solutions and clear physical intuition, making it an ideal starting point for exploring more complex systems that can host topological superconductivity and Majorana fermions.
 
 \subsection{The QD–SC–QD System as an Effective Kitaev Chain}
-While the Kitaev chain provides the minimal theoretical framework for understanding Majorana zero modes, it is an abstract model based on spinless fermions and idealizing $p$-wave pairing. Real materials however, are spinful and interact through conventional $s$-wave superconductivity. THe challenge is therefor to design hybrid systems whose effective low-energy behaviour mimics that of the Kitaev chain. One such minimal realization is the double quantum dot coupled via a superconductor, the so-called poor man's Majorana (PMM) system.\\
-The Kitaev chain model, while conceptually simple, can be physically realized using hybrid semiconductor–superconductor systems. A particularly compact realization is the double quantum dot (QD–SC–QD) device, sometimes referred to as the \textit{Poor Man’s Majorana} (PMM) system. This setup consists of two quantum dots (QDs) coupled via a central superconducting segment. Despite containing only two sites, it reproduces the essential features of the Kitaev chain and supports near-zero-energy modes with Majorana-like characteristics.
-
+While the Kitaev chain provides the minimal theoretical framework for understanding Majorana zero modes, it remains an abstract model, assuming spinless fermions and idealized $p$-wave pairing. Real materials, however, are spinful and typically host conventional $s$-wave superconductivity. The challenge, therefore, is to engineer hybrid systems whose effective low-energy behaviour mimics that of the Kitaev chain.\\
+A particularly compact realization of such a system is the double quantum dot coupled via a superconducting segment, the so-called \textit{Poor Man’s Majorana} (PMM) setup. This device consists of two quantum dots (QDs) connected through a central superconductor, forming the minimal two-site analogue of the Kitaev chain. Despite its simplicity, it reproduces the essential ingredients of topological superconductivity: coherent hopping, non-local pairing, and the emergence of near-zero-energy states with Majorana-like characteristics.
 \subsubsection{Mapping to the Kitaev Hamiltonian}
 
 Each quantum dot represents a site in the minimal Kitaev chain. The Hamiltonian of the hybrid system can be written in a general form as:
@@ -295,16 +294,14 @@ H = \sum_{i=L,R} \epsilon_i n_i
 + U \sum_i n_{i\uparrow} n_{i\downarrow},
 \label{eq:qdsqdh}
 \end{equation}
-where $d_{L/R}^\dagger$ and $d_{L/R}$ are electron creation and annihilation operators on the left and right dots, $\epsilon_{L,R}$ are their on-site energies, $t$ is the elastic cotunneling (ECT) amplitude, $\Delta$ represents the crossed Andreev reflection (CAR) amplitude, and $U$ is the on-site charging energy. The last term penalizes double occupation, pushing the system towards an effectively spinless regime when $U$ is large.
-
+where $d_{L/R}^\dagger$ and $d_{L/R}$ are electron creation and annihilation operators on the left and right dots, $\epsilon_{L,R}$ are their on-site energies, $t$ is the elastic cotunneling (ECT) amplitude, $\Delta$ represents the crossed Andreev reflection (CAR) amplitude, and $U$ is the on-site charging energy. The last term penalizes double occupation, pushing the system towards an effectively spinless regime when $U$ is large.\\
 The physical processes in this Hamiltonian directly correspond to the terms in the Kitaev chain:
 \begin{itemize}
     \item \textbf{Elastic cotunneling (ECT):} An electron tunnels coherently from one dot to the other via a virtual process through the superconductor. This process defines the effective hopping amplitude $t$, analogous to the kinetic term in the Kitaev model.
     \item \textbf{Crossed Andreev reflection (CAR):} A Cooper pair in the superconductor splits such that one electron tunnels into each dot. This process produces an effective non-local pairing term $\Delta$, which is mathematically equivalent to the $p$-wave pairing amplitude in the Kitaev chain.
     \item \textbf{On-site energy:} The local dot energies $\epsilon_L$ and $\epsilon_R$ play the role of the site-dependent chemical potential $\mu$.
 \end{itemize}
-
-At the so-called \textit{sweet spot}, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = |\Delta|$, the system enters a regime in which two Majorana-like states localize predominantly on separate dots. These two states form an effective non-local fermion and exhibit many of the qualitative features of true topological Majorana bound states, such as zero-energy modes and near-perfect particle–hole symmetry. However, since the system is finite and lacks a bulk, it does not possess true topological protection—hence the designation “poor man’s Majoranas.”
+At the so-called \textit{sweet spot}, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = |\Delta|$, the system enters a regime in which two Majorana-like states localize predominantly on separate dots. These two states form an effective non-local fermion and exhibit many of the qualitative features of true topological Majorana bound states, such as zero-energy modes and near-perfect particle–hole symmetry. However, since the system is finite and lacks a bulk, it does not possess true topological protection, hence the name “poor man’s Majoranas.”
 
 \subsubsection{Effective low-energy picture}
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  17 OCT 2025 14:31
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  17 OCT 2025 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,43 +796,33 @@ Underfull \hbox (badness 1584) in paragraph at lines 280--283
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 285--287
-\TU/lmr/m/n/14.4 THe challenge is therefor to design hybrid systems whose effective
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 285--287
-\TU/lmr/m/n/14.4 realized using hybrid semiconductor–superconductor systems. A
+Underfull \hbox (badness 3547) in paragraph at lines 285--287
+\TU/lmr/m/n/14.4 for understanding Majorana zero modes, it remains an abstract
  []
 
 
 
 [11]
-Underfull \hbox (badness 1005) in paragraph at lines 303--304
+Underfull \hbox (badness 1005) in paragraph at lines 301--302
 []\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 307--308
-\TU/lmr/m/n/14.4 topological Majorana bound states, such as zero-energy modes and
  []
 
 
 
 [12]
-Underfull \hbox (badness 3907) in paragraph at lines 330--331
+Underfull \hbox (badness 3907) in paragraph at lines 327--328
 \TU/lmr/m/n/14.4 By sweeping these parameters, one can reach and identify the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 340--343
+Underfull \hbox (badness 10000) in paragraph at lines 337--340
 
  []
 
@@ -841,19 +831,19 @@ File: ../External_Figs/gs_symmetry.png Graphic file (type bmp)
 
 
 [14]
-
-[15]
-Underfull \hbox (badness 2158) in paragraph at lines 354--355
+Underfull \hbox (badness 2158) in paragraph at lines 351--352
 \TU/lmr/m/n/14.4 A property of the Kitaev chain in its topological phase is that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--360
+Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--370
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
@@ -866,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--370
 [18]
 
 [19]
-Underfull \hbox (badness 1275) in paragraph at lines 480--482
+Underfull \hbox (badness 1275) in paragraph at lines 477--479
 \TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
@@ -875,12 +865,12 @@ Underfull \hbox (badness 1275) in paragraph at lines 480--482
 [20]
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 559--565
+Underfull \hbox (badness 10000) in paragraph at lines 556--562
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 559--565
+Underfull \hbox (badness 1515) in paragraph at lines 556--562
 \TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
  []
 
