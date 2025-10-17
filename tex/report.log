@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  15 OCT 2025 10:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  17 OCT 2025 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,90 +633,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
 [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 65.
+(Font)              scaled to size 14.40152pt on input line 82.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 65.
+(Font)              scaled to size 10.00107pt on input line 82.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 65.
+(Font)              scaled to size 7.00075pt on input line 82.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 65.
+(Font)              scaled to size 14.39845pt on input line 82.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 65.
+(Font)              scaled to size 9.99893pt on input line 82.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 65.
+(Font)              scaled to size 6.99925pt on input line 82.
 
-Underfull \hbox (badness 1527) in paragraph at lines 65--68
+Underfull \hbox (badness 1527) in paragraph at lines 82--85
 \TU/lmr/m/n/14.4 Microscopically, the origin of superconductivity lies in an effective
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 70--73
+Underfull \hbox (badness 4072) in paragraph at lines 87--90
 [][][]$\TU/lmr/m/n/14.4 , and the $[][]$ are the single-particle energies. The isotope
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 70--73
+Underfull \hbox (badness 1019) in paragraph at lines 87--90
 \TU/lmr/m/n/14.4 effect, where $[][]$ varies inversely with the square root of the ionic
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 70--73
+Underfull \hbox (badness 4569) in paragraph at lines 87--90
 \TU/lmr/m/n/14.4 mass, provides strong evidence for the phonon-mediated pairing
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 83--87
+Underfull \hbox (badness 1939) in paragraph at lines 100--104
 \TU/lmr/m/n/14.4 developed a comprehensive microscopic theory of superconductivity
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 101--105
+Underfull \hbox (badness 2269) in paragraph at lines 118--122
 \TU/lmr/m/n/14.4 Superconducting excitations are Bogoliubov quasiparticles, coherent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 108--110
+Underfull \hbox (badness 6708) in paragraph at lines 125--127
 \TU/lmr/m/n/14.4 condensate of Cooper pairs, but it assumes a uniform order
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 108--110
+Underfull \hbox (badness 2035) in paragraph at lines 125--127
 \TU/lmr/m/n/14.4 such as those at interfaces or in the presence of impurities, we
  []
 
 
 
 [3]
-Underfull \hbox (badness 4454) in paragraph at lines 116--118
+Underfull \hbox (badness 4454) in paragraph at lines 133--135
 \TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 136--140
+Underfull \hbox (badness 1478) in paragraph at lines 153--157
 \TU/lmr/m/n/14.4 The BdG framework therefor bridges microscopic BCS theory and
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 136--140
+Underfull \hbox (badness 7451) in paragraph at lines 153--157
 \TU/lmr/m/n/14.4 modern topological superconductivity. It provides a compact
  []
 
 
 
 [4]
-Underfull \hbox (badness 6510) in paragraph at lines 142--143
+Underfull \hbox (badness 6510) in paragraph at lines 159--160
 \TU/lmr/m/n/14.4 The proximity effect is a phenomenon where a semiconductor
  []
 
@@ -724,13 +724,42 @@ Underfull \hbox (badness 6510) in paragraph at lines 142--143
 
 [5]
 
-LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 165.
+LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 182.
 
 
 
 [6]
-Underfull \hbox (badness 4518) in paragraph at lines 175--177
+Underfull \hbox (badness 4518) in paragraph at lines 192--194
 \TU/lmr/m/n/14.4 excitations mediating CAR and ECT. Parity crossings in these
+ []
+
+File: ../External_Figs/no_unpaired.png Graphic file (type bmp)
+<../External_Figs/no_unpaired.png>
+File: ../External_Figs/unpaired.png Graphic file (type bmp)
+<../External_Figs/unpaired.png>
+
+Underfull \hbox (badness 7740) in paragraph at lines 222--233
+\TU/lmr/m/n/14.4 We now want to build on the microscopic understanding of
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 222--233
+\TU/lmr/m/n/14.4 superconductivity we investigated in the previous sections. In
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 222--233
+\TU/lmr/m/n/14.4 particular, we want to see how such pairing phenomena can be
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 222--233
+\TU/lmr/m/n/14.4 engineered to host topological excitations, in particular, Majorana
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 222--233
+\TU/lmr/m/n/14.4 bound states. The theoretical foundation for this lies in the
  []
 
 
@@ -738,48 +767,72 @@ Underfull \hbox (badness 4518) in paragraph at lines 175--177
 [7]
 
 [8]
-Underfull \hbox (badness 2512) in paragraph at lines 225--227
+File: ../Figures/band_structure.pdf Graphic file (type pdf)
+<use ../Figures/band_structure.pdf>
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 264.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.6658pt on input line 264.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.47559pt on input line 264.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 264.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 264.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 264.
+
+
+[9]
+
+[10]
+Underfull \hbox (badness 2512) in paragraph at lines 280--283
 \TU/lmr/m/n/14.4 ground state. This degeneracy is topologically protected: local
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 228--229
-[]\TU/lmr/m/n/14.4 The Kitaev chain thus provides the theoretical foundation for
+Underfull \hbox (badness 1584) in paragraph at lines 280--283
+\TU/lmr/m/n/14.4 solutions and clear physical intuition, making it an ideal starting
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 231--232
+Underfull \hbox (badness 1107) in paragraph at lines 285--287
+\TU/lmr/m/n/14.4 THe challenge is therefor to design hybrid systems whose effective
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 285--287
 \TU/lmr/m/n/14.4 realized using hybrid semiconductor–superconductor systems. A
  []
 
 
 
-[9]
-Underfull \hbox (badness 1005) in paragraph at lines 248--249
+[11]
+Underfull \hbox (badness 1005) in paragraph at lines 303--304
 []\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 252--253
+Underfull \hbox (badness 1019) in paragraph at lines 307--308
 \TU/lmr/m/n/14.4 topological Majorana bound states, such as zero-energy modes and
  []
 
 
 
-[10]
-Underfull \hbox (badness 3907) in paragraph at lines 275--276
+[12]
+Underfull \hbox (badness 3907) in paragraph at lines 330--331
 \TU/lmr/m/n/14.4 By sweeping these parameters, one can reach and identify the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
 
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 340--343
 
  []
 
@@ -787,55 +840,55 @@ File: ../External_Figs/gs_symmetry.png Graphic file (type bmp)
 <../External_Figs/gs_symmetry.png>
 
 
-[12]
-Underfull \hbox (badness 2158) in paragraph at lines 299--300
+[14]
+
+[15]
+Underfull \hbox (badness 2158) in paragraph at lines 354--355
 \TU/lmr/m/n/14.4 A property of the Kitaev chain in its topological phase is that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--305
+Underfull \hbox (badness 10000) in paragraph at lines 357--360
 
  []
 
 
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
 
-
-[14]
-
-[15]
 
 [16]
 
 [17]
-Underfull \hbox (badness 1275) in paragraph at lines 406--408
-\TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
- []
-
-
 
 [18]
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 485--491
-
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 485--491
-\TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
+Underfull \hbox (badness 1275) in paragraph at lines 480--482
+\TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
 
 
 [20]
 
-[21] (./report.aux)
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 559--565
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 559--565
+\TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
+ []
+
+
+
+[22]
+
+[23] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -848,12 +901,12 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 06E55AB42C690C34F7C8E1E44F8BA87D;8998.
  ) 
 Here is how much of TeX's memory you used:
- 18543 strings out of 475251
- 337133 string characters out of 5761397
- 1017383 words of memory out of 5000000
- 41298 multiletter control sequences out of 15000+600000
- 564613 words of font info for 86 fonts, out of 8000000 for 9000
+ 18605 strings out of 475251
+ 339163 string characters out of 5761397
+ 1018383 words of memory out of 5000000
+ 41342 multiletter control sequences out of 15000+600000
+ 567466 words of font info for 105 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 90i,7n,107p,954b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,107p,954b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (22 pages).
+Output written on report.pdf (24 pages).
