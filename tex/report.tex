@@ -391,71 +391,6 @@ The minimal Hamiltonian describing the QD–SC–QD system is given in the Nambu
 
 where $\epsilon_L$ and $\epsilon_R$ denote the energy levels of the left and right quantum dots, $t$ is the elastic cotunneling amplitude between dots, and $\Delta$ is the crossed Andreev reflection (CAR) amplitude induced by the central superconductor. The operators $d_L^\dagger$ and $d_R^\dagger$ create an electron on the left and right dot, respectively. This 4×4 Hamiltonian captures the essential low-energy physics of the two-dot system in the spinless approximation.
 
-% \subsubsection{Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\par
-
-% Solving the eigenvalue problem $HΨ = EΨ$ gives the characteristic polynomial:
-% $$
-% \text{det}(H - EI) = \begin{pmatrix}
-%     ϵ_L-E & t & 0 & Δ \\
-%     t & ϵ_R-E & -Δ & 0 \\
-%     0 & -Δ & -ϵ_L-E & -t \\
-%     Δ & 0 & -t & -ϵ_R-E
-% \end{pmatrix} =0
-% $$
-% $$
-% = E⁴ -E²a + b=0
-% $$
-% where
-% $$
-% a = ϵ_L² + ϵ_R² + 2(t² + Δ²)
-% $$
-% and 
-% $$
-% b = (t² - ϵ_Lϵ_R - Δ²)² 
-% $$
-% The quadratic formula for $E²$ gives:
-% $$
-% E² = \frac{a ± \sqrt{a² - 4b}}{2}
-% $$
-% The discriminant simplifies to:
-% $$
-% a² - 4b = [(ϵ_L+ϵ_R)² + 4t²][(ϵ_L - ϵ_R)² + 4Δ²]
-% $$
-% and the eigenvalues are $±\sqrt{E²}$. For zero energy solutions, we need $b=0$, which requires:
-% $$
-% t² - ϵ_Lϵ_R - Δ² = 0
-% $$
-% At $ϵ_L = ϵ_R = 0$, this reduces to the sweet spot condition:
-% $$|t| = |Δ|$$
-% With the conditions we obtained from setting $b=0$, $a$ becomes $2(t² + Δ²)=4t²$.\\
-% With $b=0$, the quadratic formula simplifies to $E²(E²-a)=0$, giving us two solutions:
-% $$
-% E² = 0 \quad E² = a = 4t²
-% $$
-% Therefore the four eigenvalues are:
-% $$
-% E = \{0, 0, 2|t|, -2|t|\}
-% $$
-% These eigenvalues have corresponding eigenvectors. \\
-% For $E=0$, the eigenvectors are:
-% $$
-% v_1 =  \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \quad v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}
-% $$
-% and for $E=2|t|$, the eigenvectors are:
-% $$
-% v_3 =  \begin{pmatrix} -1 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \quad v_4 = \begin{pmatrix} 1\\ 1 \\ -1 \\ 1\end{pmatrix}
-% $$
-% The zero-mode eigenvectors $v_1$ and $v_2$ correspond to the Majorana operators. The two zero-energy eigenvectors,
-% $v_1$ and $v_2$, represent states that are equal superpositions of particle and hole operators on a single dot. In operator form, they correspond to self-conjugate combinations:
-% $$
-% γ_1 ∝ d_L + d_L^{†}, \quad γ_2 ∝ d_R - d_R^{†}
-% $$
-% which satisfy the Majorana condition $γ = γ^{†}$. These are the Poor Man's Majorana modes. They are spatially separated zero modes, localized entirely on the left and right dots at the sweet spot $|t| = |Δ|$ and $ϵ_L = ϵ_R = 0$.\\
-% Their degeneracy at zero energy encodes the nonlocal fermionic parity of the two-dot system, which is the resource we ultimately want for quantum information.\\ 
-% By contrast, the finite-energy solutions 
-% $$E = ±2|t|, \quad v_3 ∝ (-1, 1, 1, 1)^T, \quad v_4 ∝ (1, 1, -1, 1)^T$$
-% are delocalized Bogoliubov quasiparticles. They form the first excited states above the ground state and define the energy gap protecting the Majorana subspace. Physically, this gap is crucial: as long as it remains finite, the Majorana modes cannot hybridize with bulk excitations, and the zero-energy subspace is robust against small perturbations. 
-
 \subsubsection{Analytical determination of the sweet spot}
 To identify the condition for zero-energy Majorana modes, we first consider the simplest case of two identical quantum dots with energy levels at zero, \(\epsilon_L = \epsilon_R = 0\). Solving the eigenvalue problem \(H \Psi = E \Psi\) leads to the characteristic polynomial:
 \[
@@ -559,25 +494,28 @@ To probe the stability of the zero modes, we vary system parameters away from th
 
 Additionally, detuning the dot energies $\epsilon_L$ and $\epsilon_R$ while keeping $t = \Delta$ splits the zero-energy states quadratically. This demonstrates that while Poor Man’s Majoranas lack full topological protection, their degeneracy is partially robust against small local perturbations, in agreement with the analytical predictions.
 \newpage
-\subsection{Many-body model:} (Including the Coulomb interaction $U$)
-\subsubsection{The Model Hamiltonian:} Present the many-body Hamiltonian for the QD-SC-QD system, including the Coulomb interaction term $U$. Define all the terms clearly. This will be the Hamiltonian I use.\par
-We have to leave the BdG formalism and work in the many-body basis. This is because the BdG formalism is a mean-field, single-particle approach that cannot capture electron-electron interactions like the Coulomb repulsion $U$. The interaction term we use in order to describe the non-local Coulomb interaction betweem the PMMs is: $H_U=U_{LR}n_Ln_R$, where $n_{α}=d_{α}^{†}d_{α}$ is the number operator for dot $α$.\\
+\subsection{Many-body model:}
+\subsubsection{The Model Hamiltonian:} 
+The next step for our model is to proceed from a single-body description to a many-body formalism. This is an essential step, as we need to understand how electron-electron interactions, specifically the Coulomb repulsion $U$, affect the Majorana-like states in the multiple QD–SC–QD system. \par
+In order to do so, we need to leave the BdG formalism and work in the many-body basis. This is because the BdG formalism is a mean-field, single-particle approach that cannot capture electron-electron interactions like the Coulomb repulsion $U$. The interaction term we use in order to describe the non-local Coulomb interaction betweem the PMMs is: $H_U=U_{LR}n_Ln_R$, where $n_{α}=d_{α}^{†}d_{α}$ is the number operator for dot $α$.\\
 The full Hamiltonian for the QD-SC-QD system with Coulomb interaction is:
 $$
 H = ∑_{α=L,R} ϵ_{α} d_{α}^{†}d_{α} + t (d_L^{†} d_R + d_R^{†} d_L) + Δ (d_R d_L + d_L^{†} d_R^{†})  + U_{LR} n_L n_R
 $$
 where $ϵ_{α}$ are the energy levels of the left and right dots, $t$ is the elastic cotunneling amplitude, $Δ$ is the CAR amplitude, and $U_{LR}$ is the non-local Coulomb interaction between electrons on the two dots. The basis states for the two-dot system are: $|0,0⟩$, $|1,0⟩$, $|0,1⟩$, $|1,1⟩$, where $|n_L,n_R⟩$ indicates the occupation of the left and right dots.\par
 We can now proceed to construct the Hamiltonian matrix in this many-body basis, where it becomes:
-$$
+\begin{equation}
 H = \begin{pmatrix}
 0 & 0 & 0 & Δ \\
 0 & ϵ_R & t & 0 \\
 0 & t & ϵ_L & 0 \\
 Δ & 0 & 0 & ϵ_L + ϵ_R + U_{LR}
 \end{pmatrix}
-$$
+\label{eq:mbHamiltonian}
+\end{equation}
+
 \subsubsection{Analytical Work - Exploring the many body Hamiltonian:} 
-The many-body Hamiltonian above is written in the basis order:
+As mentioned, the many-body Hamiltonian \ref{eq:mbHamiltonian} above is written in the basis order:
 $$ |0,0⟩, |0,1⟩, |1,0⟩, |1,1⟩ $$
 Due to order and practicality, we can try to rewrite the Hamiltonian in a block-diagonal manner. To do so, we can first investigat the matrix elements we have. The even sector is spanned by the states $|0,0⟩$ and $|1,1⟩$, which correspond to the matrix elements $H_{11}, H_{14}, H_{41}, H_{44}$. The odd sector is spanned by the states $|0,1⟩$ and $|1,0⟩$, which correspond to the matrix elements $H_{22}, H_{23}, H_{32}, H_{33}$.\\
 If we reorder the basis as [even, odd] = $[|0,0⟩, |1,1⟩, |0,1⟩, |1,0⟩]$, we obtain:
@@ -635,10 +573,18 @@ Using the quadratic formula, we find the eigenvalues for the odd sector:
 $$E_{odd} = \frac{(ϵ_L + ϵ_R) ± \sqrt{(ϵ_L - ϵ_R)² + 4t²}}{2}$$
 
 \subsubsection{Analytical Work - Finding the Conditions for a Many-body Sweet Spot:}
-To find the conditions for having two degenerate ground states (one from each sector), we set the lowest eigenvalue from each sector equal to each other:
-$$E_{\text{even,min}} = E_{\text{odd,min}}$$
-
-
+Now that we have expressions for the eigenvalues of both sectors, we can proceed to find the conditions for a many-body sweet spot. This occurs when the lowest energy eigenvalues of the even and odd sectors are equal:
+$$E_{even,min} = E_{odd,min}$$
+The first thing to do in order to simplify this problem is to set the dot energies equal to one another, $ϵ_L = ϵ_R = ϵ$, as well as choosing the negative signed square roots. This gives us:
+$$E_{even,min} = \frac{2ϵ + U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²}}{2}$$
+$$E_{odd,min} = \frac{2ϵ - \sqrt{4t²}}{2}$$
+Setting these equal to one another, we have:
+$$\frac{2ϵ + U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²}}{2} = \frac{2ϵ - 2t}{2}$$
+$$U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²} = -2t$$
+Settings $\epsilon= -U/2$ gives:
+$$U_{LR} - 2Δ = -2t$$
+$$t = Δ - \frac{U_{LR}}{2}$$
+So with the parameters $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$ and $t = Δ - \frac{U_{LR}}{2}$, we have found an analytical expression for the many-body sweet spot. This expression shows how the presence of Coulomb interaction $U_{LR}$ shifts the conditions for achieving Majorana-like degeneracy in the QD–SC–QD system.
 \subsubsection{How Majorana like?}
 This section is per now just notes: Fill in the blanks along the way.\\
 $\ket{e}, \ket{o}$ are the ground states of the even and odd sectors, respectively. Find them:\\\\
