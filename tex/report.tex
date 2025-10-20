@@ -14,6 +14,7 @@
 \usepackage{unicode-math}
 \usepackage{subfigure}
 \usepackage{graphicx}
+\usepackage{subcaption}  % in the preamble
 \usepackage{textgreek}
 \usepackage{xcolor}
 \geometry{
@@ -44,17 +45,10 @@
 \newpage
 
 
-
-\Large Temporary report structure
-\Large TODO: Fix citations and references
+\tableofcontents
 \section{Introduction}
-% Quick introduction of the promise of quantum computing and the major hurdle of decoherence. This is where I introduce topological quantum computation as a potential solution, highlighting its reliance on non-local, protected qubits. 
-% \par
-% \textbf{Goal:} Realizing MZMs\\
-% \textbf{Challenge:} Mention the top-down approach using nanowires and its experimental difficulties (notes from note section 5.1)\\
-% \textbf{Alternative:} Introduce the bottom-up approach QD-SC-QD systems to create a minimal, highly tunable Kitaev chain. Define the concept of PMMs. \\
-% \textbf{Research Question:} Objective: "This report will provide the theoretical background for superconductivity in hybrid systems and present an analytical and numerical investigation into the emergence and robustness of PMMs in a double QD system". \\
-% \textbf{Draft:}\\
+\Large TODO: Fix citations and references
+
 Superconductivity, as described by Bardeen-Cooper-Schrieffer (BCS) theory, arises from the formation of Cooper pairs. These are bound pair of electrons with opposite momentum and spin. The pairing leads to an energy gap in the excitation spectrum, which protects the superconducting state from low-energy perturbations. Whem superconductivity is induced in hybrid systems, such as semiconductor proximitized by superconductors, it can give rise to emergent quasiparticle excitations with exotic properties. Majorana zero modes, are one such excitation that can appear at the ends of one-dimensional topological superconductors. These modes are predicted to obey non-Abelian exchange statistics, which makes them suitable for fault-tolerant quantum computation, meaning: information is stored in the joint parity of spatially separated modes, rendering it insesitive to local perturbations.\\ \\
 To identify and manipulate MZMs, it is important to examine their non-local nature and the conditions under which they arise. The quantum information encoded in these modes is associated with fermionic parity rather than local charge, motivating measurements that distinguish between even and odd parity ground states without collapsing the non-local encoding. This conceptual framework directly informs the design and interpretation of experiments in minimal realizations of Majorana systems, where one seeks to reproduce the essential physics in a controlable, highly tunable setup. \\ \\
 In this report, we investigate the Poor Man's Majoranas (PMMs) in a double quantum dot-suprcondcutor-quantum dot (QD-SC-QD) system. PMMs provide a bottom-up, minimal Kitaev chain realization, capturing the key features of MZMs while remaining experimentally accessible and numerically tractable. By combining analytical and numerical approaches, we explore the emergence of zero-energy modes, their spatial localization, and the robustness of their degeneracy under variations in system parameters, providing insight into the feasiblity of realizing topologically protected qubits in such minimal systems.\\
@@ -291,43 +285,22 @@ Each quantum dot represents a site in the minimal Kitaev chain. The Hamiltonian 
 H = \sum_{i=L,R} \epsilon_i n_i
 + t (d_L^\dagger d_R + d_R^\dagger d_L)
 + \Delta (d_L^\dagger d_R^\dagger + d_R d_L)
-+ U \sum_i n_{i\uparrow} n_{i\downarrow},
++ U \sum_{i=L,R} n_i
 \label{eq:qdsqdh}
 \end{equation}
-where $d_{L/R}^\dagger$ and $d_{L/R}$ are electron creation and annihilation operators on the left and right dots, $\epsilon_{L,R}$ are their on-site energies, $t$ is the elastic cotunneling (ECT) amplitude, $\Delta$ represents the crossed Andreev reflection (CAR) amplitude, and $U$ is the on-site charging energy. The last term penalizes double occupation, pushing the system towards an effectively spinless regime when $U$ is large.\\
-The physical processes in this Hamiltonian directly correspond to the terms in the Kitaev chain:
+where $d_{L/R}^\dagger$ and $d_{L/R}$ are electron creation and annihilation operators on the left and right dots. $n_i$ is the number operator for dot $i$. The parameters $ϵ_{L,R}$ correspond to the dot energy levels, $t$ is the elastic cotunneling amplitude, $Δ$ is the crossed Andreev reflection amplitude, and $U$ is the on-site Coulomb repulsion energy.\\
+The meaning of each parameter is as follows:
 \begin{itemize}
     \item \textbf{Elastic cotunneling (ECT):} An electron tunnels coherently from one dot to the other via a virtual process through the superconductor. This process defines the effective hopping amplitude $t$, analogous to the kinetic term in the Kitaev model.
     \item \textbf{Crossed Andreev reflection (CAR):} A Cooper pair in the superconductor splits such that one electron tunnels into each dot. This process produces an effective non-local pairing term $\Delta$, which is mathematically equivalent to the $p$-wave pairing amplitude in the Kitaev chain.
     \item \textbf{On-site energy:} The local dot energies $\epsilon_L$ and $\epsilon_R$ play the role of the site-dependent chemical potential $\mu$.
 \end{itemize}
-At the so-called \textit{sweet spot}, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = |\Delta|$, the system enters a regime in which two Majorana-like states localize predominantly on separate dots. These two states form an effective non-local fermion and exhibit many of the qualitative features of true topological Majorana bound states, such as zero-energy modes and near-perfect particle–hole symmetry. However, since the system is finite and lacks a bulk, it does not possess true topological protection, hence the name “poor man’s Majoranas.”
+At the so-called sweet spot, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = |\Delta|$, the system enters a regime in which two Majorana-like states localize predominantly on separate dots. These two states form an effective non-local fermion and exhibit many of the qualitative features of true topological Majorana bound states, such as zero-energy modes and near-perfect particle–hole symmetry. However, since the system is finite and lacks a bulk, it does not possess true topological protection, hence the name “poor man’s Majoranas.”
 
-\subsubsection{Effective low-energy picture}
-
-In the large–$U$ limit, where double occupation on each dot is energetically forbidden, the Hamiltonian (\ref{eq:qdsqdh}) reduces to an effective spinless form that mirrors the two-site Kitaev model:
-\begin{equation}
-H_{\mathrm{eff}} =
-- \mu_{\mathrm{eff}} (n_L + n_R)
-+ t_{\mathrm{eff}} (d_L^\dagger d_R + d_R^\dagger d_L)
-+ \Delta_{\mathrm{eff}} (d_L^\dagger d_R^\dagger + d_R d_L).
-\end{equation}
-Here, $\mu_{\mathrm{eff}}$, $t_{\mathrm{eff}}$, and $\Delta_{\mathrm{eff}}$ denote renormalized parameters that depend on the microscopic coupling strengths, interface transparency, and the superconducting gap of the central superconductor.
-
-This effective model captures the same low-energy physics as a two-site Kitaev chain: one even-parity and one odd-parity ground state that become degenerate when $|t_{\mathrm{eff}}| = |\Delta_{\mathrm{eff}}|$. The parity of the system is determined by the occupation of the non-local fermion formed by the two Majorana modes.
-
-\subsubsection{Experimental relevance and parameter tuning}
-
-The QD–SC–QD platform is experimentally attractive because each parameter can be controlled independently:
-\begin{itemize}
-    \item Gate voltages tune $\epsilon_{L,R}$ and thus the chemical potential.
-    \item The transparency of the QD–SC interfaces controls the CAR and ECT amplitudes ($\Delta$ and $t$).
-    \item Magnetic fields tune the Zeeman energy and suppress unwanted spinful excitations.
-\end{itemize}
-By sweeping these parameters, one can reach and identify the near-degenerate Majorana-like regime through measurable quantities such as energy-level spectroscopy, local density of states, and parity-dependent occupation.
-
-In summary, the double quantum dot coupled to a superconductor provides a minimal, controllable realization of the Kitaev chain. Despite lacking full topological protection, it serves as an ideal testbed for probing Majorana physics, verifying parity conservation, and exploring non-local correlations in engineered quantum systems.
-
+\subsubsection{Low-energy features and experimental tunability}
+The poor man's Majorana setup, double quantum dot coupled via a superconductor, provides a minimal realization of the Kitaev chain. In reality, the complete microscopic Hamiltonian includes interactions and spin degrees of freedom. However, in the regime relevant for Poor Man's Majoranas, the low-energy physics is effectively captured by the spinless two-site model introduced above. In this setup, near-zero energy Majorana-like states emerge across the two dots, exhibiting an even- and odd-parity ground state and strong non-local correlations.\\
+This platform is an experimentally attractive method to realize Kitaev chain physics because its parameters can be tuned independently. Gate voltages control the dot energy levels, the transparency of the QD–SC interfaces governs the effective hopping and non-local pairing, and magnetic fields can suppress unwanted spinful excitations. By sweeping these parameters, one can access and identify the  Majorana-like properties. \\
+This minimal setup captures the essential low-energy properties of a Kitaev chain while remaining experimentally controllable, providing a direct route from theoretical modeling to realizable quantum devices.
 \subsection{Identifying Majorana Modes in the QD–SC–QD System}
 In this section we will briefly go through the key signatures that indicate the presence of Majorana-like modes in the QD–SC–QD system. These signatures arise from the unique properties of Majorana fermions. There are a few metrics we can use to identify the presence of PMMs, and their rigidity to perturbations.\\
 \subsubsection{The parity operator}
@@ -393,85 +366,199 @@ where $n_{L(R)}$ is the number operator for the left (right) dot. In the ideal c
 \section{Analytical and Numerical Investigation of PMMs}
 Present my work and demonstrate how to apply theory to a concrete problem.\par
 \subsection{Single particle model:}
-\subsubsection{The Model Hamiltonian:} Present the minimal Hamiltonian for the QD-SC-QD system that i have in my notes note section 5.2.2, for instance Eq 3.54 from chap3.pdf. Define all the terms clearly. This will be the Hamiltonian I use.\par
-$$  
+% \subsubsection{The Model Hamiltonian:} Present the minimal Hamiltonian for the QD-SC-QD system that i have in my notes note section 5.2.2, for instance Eq 3.54 from chap3.pdf. Define all the terms clearly. This will be the Hamiltonian I use.\par
+% $$  
+%   H = \begin{pmatrix}
+%     ϵ_L & t & 0 & Δ \\
+%     t & ϵ_R & -Δ & 0 \\
+%     0 & -Δ & -ϵ_L & -t \\
+%     Δ & 0 & -t & -ϵ_R
+%   \end{pmatrix}
+% $$
+% Where $ϵ_L$ and $ϵ_R$ are the energy levels of the left and right dots, $t$ is the elastic cotunneling amplitude, and $Δ$ is the CAR amplitude. The basis is $(d_L, d_R, d_L^{†}, d_R^{†})$, called the Nambu basis. The operators $d_L^{†}$ and $d_R^{†}$ create an electron in the left and right dot, respectively.\par
+\subsubsection{The Model Hamiltonian}
+
+The minimal Hamiltonian describing the QD–SC–QD system is given in the Nambu basis $\Psi^\dagger = (d_L, d_R, d_L^\dagger, d_R^\dagger)$ as
+
+\begin{equation}
   H = \begin{pmatrix}
-    ϵ_L & t & 0 & Δ \\
-    t & ϵ_R & -Δ & 0 \\
-    0 & -Δ & -ϵ_L & -t \\
-    Δ & 0 & -t & -ϵ_R
-  \end{pmatrix}
-$$
-Where $ϵ_L$ and $ϵ_R$ are the energy levels of the left and right dots, $t$ is the elastic cotunneling amplitude, and $Δ$ is the CAR amplitude. The basis is $(d_L, d_R, d_L^{†}, d_R^{†})$, called the Nambu basis. The operators $d_L^{†}$ and $d_R^{†}$ create an electron in the left and right dot, respectively.\par
+    \epsilon_L & t & 0 & \Delta \\
+    t & \epsilon_R & -\Delta & 0 \\
+    0 & -\Delta & -\epsilon_L & -t \\
+    \Delta & 0 & -t & -\epsilon_R
+  \end{pmatrix},
+\end{equation}
 
-\subsubsection{Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\par
+where $\epsilon_L$ and $\epsilon_R$ denote the energy levels of the left and right quantum dots, $t$ is the elastic cotunneling amplitude between dots, and $\Delta$ is the crossed Andreev reflection (CAR) amplitude induced by the central superconductor. The operators $d_L^\dagger$ and $d_R^\dagger$ create an electron on the left and right dot, respectively. This 4×4 Hamiltonian captures the essential low-energy physics of the two-dot system in the spinless approximation.
 
-Solving the eigenvalue problem $HΨ = EΨ$ gives the characteristic polynomial:
-$$
-\text{det}(H - EI) = \begin{pmatrix}
-    ϵ_L-E & t & 0 & Δ \\
-    t & ϵ_R-E & -Δ & 0 \\
-    0 & -Δ & -ϵ_L-E & -t \\
-    Δ & 0 & -t & -ϵ_R-E
-\end{pmatrix} =0
-$$
-$$
-= E⁴ -E²a + b=0
-$$
+% \subsubsection{Analytical Work - Finding the Sweet Spot:} Solve the Hamiltonian for the simplest case: two indentical dots with their energy levels at zero ($ϵ_L = ϵ_R = 0$). I can write the $4x4$ matrix in the Nambu basis $Ψ^{†}= (d_L, d_R, d_L^{†}, d_R^{†})$. Show analytically that the condition for having two zero energy solutions (the Majoranas) is at $|t| = |Δ|$.This proves i understand the sweet spot.\par
+
+% Solving the eigenvalue problem $HΨ = EΨ$ gives the characteristic polynomial:
+% $$
+% \text{det}(H - EI) = \begin{pmatrix}
+%     ϵ_L-E & t & 0 & Δ \\
+%     t & ϵ_R-E & -Δ & 0 \\
+%     0 & -Δ & -ϵ_L-E & -t \\
+%     Δ & 0 & -t & -ϵ_R-E
+% \end{pmatrix} =0
+% $$
+% $$
+% = E⁴ -E²a + b=0
+% $$
+% where
+% $$
+% a = ϵ_L² + ϵ_R² + 2(t² + Δ²)
+% $$
+% and 
+% $$
+% b = (t² - ϵ_Lϵ_R - Δ²)² 
+% $$
+% The quadratic formula for $E²$ gives:
+% $$
+% E² = \frac{a ± \sqrt{a² - 4b}}{2}
+% $$
+% The discriminant simplifies to:
+% $$
+% a² - 4b = [(ϵ_L+ϵ_R)² + 4t²][(ϵ_L - ϵ_R)² + 4Δ²]
+% $$
+% and the eigenvalues are $±\sqrt{E²}$. For zero energy solutions, we need $b=0$, which requires:
+% $$
+% t² - ϵ_Lϵ_R - Δ² = 0
+% $$
+% At $ϵ_L = ϵ_R = 0$, this reduces to the sweet spot condition:
+% $$|t| = |Δ|$$
+% With the conditions we obtained from setting $b=0$, $a$ becomes $2(t² + Δ²)=4t²$.\\
+% With $b=0$, the quadratic formula simplifies to $E²(E²-a)=0$, giving us two solutions:
+% $$
+% E² = 0 \quad E² = a = 4t²
+% $$
+% Therefore the four eigenvalues are:
+% $$
+% E = \{0, 0, 2|t|, -2|t|\}
+% $$
+% These eigenvalues have corresponding eigenvectors. \\
+% For $E=0$, the eigenvectors are:
+% $$
+% v_1 =  \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \quad v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}
+% $$
+% and for $E=2|t|$, the eigenvectors are:
+% $$
+% v_3 =  \begin{pmatrix} -1 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \quad v_4 = \begin{pmatrix} 1\\ 1 \\ -1 \\ 1\end{pmatrix}
+% $$
+% The zero-mode eigenvectors $v_1$ and $v_2$ correspond to the Majorana operators. The two zero-energy eigenvectors,
+% $v_1$ and $v_2$, represent states that are equal superpositions of particle and hole operators on a single dot. In operator form, they correspond to self-conjugate combinations:
+% $$
+% γ_1 ∝ d_L + d_L^{†}, \quad γ_2 ∝ d_R - d_R^{†}
+% $$
+% which satisfy the Majorana condition $γ = γ^{†}$. These are the Poor Man's Majorana modes. They are spatially separated zero modes, localized entirely on the left and right dots at the sweet spot $|t| = |Δ|$ and $ϵ_L = ϵ_R = 0$.\\
+% Their degeneracy at zero energy encodes the nonlocal fermionic parity of the two-dot system, which is the resource we ultimately want for quantum information.\\ 
+% By contrast, the finite-energy solutions 
+% $$E = ±2|t|, \quad v_3 ∝ (-1, 1, 1, 1)^T, \quad v_4 ∝ (1, 1, -1, 1)^T$$
+% are delocalized Bogoliubov quasiparticles. They form the first excited states above the ground state and define the energy gap protecting the Majorana subspace. Physically, this gap is crucial: as long as it remains finite, the Majorana modes cannot hybridize with bulk excitations, and the zero-energy subspace is robust against small perturbations. 
+
+\subsubsection{Analytical determination of the sweet spot}
+To identify the condition for zero-energy Majorana modes, we first consider the simplest case of two identical quantum dots with energy levels at zero, \(\epsilon_L = \epsilon_R = 0\). Solving the eigenvalue problem \(H \Psi = E \Psi\) leads to the characteristic polynomial:
+\[
+\det(H - E I) = E^4 - E^2 a + b = 0,
+\]
 where
-$$
-a = ϵ_L² + ϵ_R² + 2(t² + Δ²)
-$$
-and 
-$$
-b = (t² - ϵ_Lϵ_R - Δ²)² 
-$$
-The quadratic formula for $E²$ gives:
-$$
-E² = \frac{a ± \sqrt{a² - 4b}}{2}
-$$
-The discriminant simplifies to:
-$$
-a² - 4b = [(ϵ_L+ϵ_R)² + 4t²][(ϵ_L - ϵ_R)² + 4Δ²]
-$$
-and the eigenvalues are $±\sqrt{E²}$. For zero energy solutions, we need $b=0$, which requires:
-$$
-t² - ϵ_Lϵ_R - Δ² = 0
-$$
-At $ϵ_L = ϵ_R = 0$, this reduces to the sweet spot condition:
-$$|t| = |Δ|$$
-With the conditions we obtained from setting $b=0$, $a$ becomes $2(t² + Δ²)=4t²$.\\
-With $b=0$, the quadratic formula simplifies to $E²(E²-a)=0$, giving us two solutions:
-$$
-E² = 0 \quad E² = a = 4t²
-$$
-Therefore the four eigenvalues are:
-$$
-E = \{0, 0, 2|t|, -2|t|\}
-$$
-These eigenvalues have corresponding eigenvectors. \\
-For $E=0$, the eigenvectors are:
-$$
-v_1 =  \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \quad v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}
-$$
-and for $E=2|t|$, the eigenvectors are:
-$$
-v_3 =  \begin{pmatrix} -1 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \quad v_4 = \begin{pmatrix} 1\\ 1 \\ -1 \\ 1\end{pmatrix}
-$$
-The zero-mode eigenvectors $v_1$ and $v_2$ correspond to the Majorana operators. The two zero-energy eigenvectors,
-$v_1$ and $v_2$, represent states that are equal superpositions of particle and hole operators on a single dot. In operator form, they correspond to self-conjugate combinations:
-$$
-γ_1 ∝ d_L + d_L^{†}, \quad γ_2 ∝ d_R - d_R^{†}
-$$
-which satisfy the Majorana condition $γ = γ^{†}$. These are the Poor Man's Majorana modes. They are spatially separated zero modes, localized entirely on the left and right dots at the sweet spot $|t| = |Δ|$ and $ϵ_L = ϵ_R = 0$.\\
-Their degeneracy at zero energy encodes the nonlocal fermionic parity of the two-dot system, which is the resource we ultimately want for quantum information.\\ 
-By contrast, the finite-energy solutions 
-$$E = ±2|t|, \quad v_3 ∝ (-1, 1, 1, 1)^T, \quad v_4 ∝ (1, 1, -1, 1)^T$$
-are delocalized Bogoliubov quasiparticles. They form the first excited states above the ground state and define the energy gap protecting the Majorana subspace. Physically, this gap is crucial: as long as it remains finite, the Majorana modes cannot hybridize with bulk excitations, and the zero-energy subspace is robust against small perturbations. 
+\[
+a = \epsilon_L^2 + \epsilon_R^2 + 2(t^2 + \Delta^2), \quad
+b = (t^2 - \epsilon_L \epsilon_R - \Delta^2)^2.
+\]
+The solutions for \(E^2\) are
+\[
+E^2 = \frac{a \pm \sqrt{a^2 - 4b}}{2}.
+\]
+The discriminant simplifies to 
+\[
+a^2 - 4b = \big[(\epsilon_L + \epsilon_R)^2 + 4t^2\big] \big[(\epsilon_L - \epsilon_R)^2 + 4\Delta^2\big].
+\]
+For zero-energy solutions (\(E = 0\)), we require \(b = 0\), which gives
+\[
+t^2 - \epsilon_L \epsilon_R - \Delta^2 = 0.
+\]
+At \(\epsilon_L = \epsilon_R = 0\), this reduces to the sweet spot condition:
+\[
+|t| = |\Delta|.
+\]
+Under this condition, the four eigenvalues of the Hamiltonian are
+\[
+E = \{0, 0, +2|t|, -2|t|\}.
+\]
+Thus, two zero-energy modes appear, while the remaining two states are finite-energy excitations separated by a gap \(2|t|\).
 
-\subsubsection{Numerical Simulations - Visualize the Emergence of Majoranas:} Build and diagonalize the Hamiltonian numerically. Band Structure: Plot the two lowest positive energy eigenvalues as a function of a dot's energy $ϵ_L$ (keeping $ϵ_R = 0$) and $t = Δ$. Reproduce the plot from Fig 3.5a in chap3.pdf showing two states remaining at zero energy, showcasing the symmetry. Wavefunctions: At the sweet spot ($t = Δ$ and $ϵ_L = ϵ_R = 0$), find the eigenvectors for the two zero-mode energy states. Plot the magnitude of the components. I should be able to see that one zero mode is localized entirely on the left dot and the other is entirely on the right dot, confirming they are spatially separated Majoranas.\par
-\subsubsection{Numerical Work - Probing Protection and Robustness:} Detuning $t$ and $Δ$: Vary $t$ and $Δ$ away from the sweet spot. Plot the lowest energy eigenvalue as I varyt he ratio $\frac{t}{Δ}$ away from 1. This will show that the zero-energy states immediately split and acquire a finite energy gap, demonstrating their lack of full topological protection. Detuning Dot Energies: Vary $ϵ_L$ and $ϵ_R$ away from zero while keeping $t = Δ$. The degeneracy should be lifted quadratically. My results here should quantify the robustness of the PMMs to local perturbations. I can conclude that while they are not fully protected like in a true topological system, the degeneracy is protected against certain local perturbations to first order.\par
+\subsubsection{Zero-mode eigenvectors and physical interpretation}
+The eigenvectors corresponding to the zero-energy modes are
+\[
+v_1 = \begin{pmatrix} 1 \\ 0 \\ 1 \\ 0 \end{pmatrix}, \quad
+v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \\ -1 \end{pmatrix},
+\]
+which in operator form correspond to self-conjugate Majorana operators:
+\[
+\gamma_1 \propto d_L + d_L^\dagger, \quad
+\gamma_2 \propto d_R - d_R^\dagger.
+\]
+These states are spatially separated, with \(\gamma_1\) localized on the left dot and \(\gamma_2\) on the right dot. They satisfy the Majorana condition \(\gamma = \gamma^\dagger\) and form the Poor Man's Majorana modes of the system. Their degeneracy encodes the nonlocal fermionic parity, which is the key resource for quantum information applications.
+The finite-energy eigenvectors,
+\[
+v_3 \propto \begin{pmatrix}-1 \\ 1 \\ 1 \\ 1\end{pmatrix}, \quad
+v_4 \propto \begin{pmatrix}1 \\ 1 \\ -1 \\ 1\end{pmatrix}, \quad
+E = \pm 2|t|,
+\]
+are delocalized Bogoliubov quasiparticles. These define the energy gap protecting the zero-mode subspace. As long as this gap remains finite, the Majorana modes remain robust against small perturbations and do not hybridize with the higher-energy states.
+The analytical solution confirms that the sweet spot for zero-energy Majoranas occurs at \(|t| = |\Delta|\) with dot energies set to zero, and the corresponding eigenvectors clearly illustrate the spatial separation and particle–hole symmetry characteristic of Majorana modes.
 
+% \subsubsection{Numerical Simulations - Visualize the Emergence of Majoranas:} Build and diagonalize the Hamiltonian numerically. Band Structure: Plot the two lowest positive energy eigenvalues as a function of a dot's energy $ϵ_L$ (keeping $ϵ_R = 0$) and $t = Δ$. Reproduce the plot from Fig 3.5a in chap3.pdf showing two states remaining at zero energy, showcasing the symmetry. Wavefunctions: At the sweet spot ($t = Δ$ and $ϵ_L = ϵ_R = 0$), find the eigenvectors for the two zero-mode energy states. Plot the magnitude of the components. I should be able to see that one zero mode is localized entirely on the left dot and the other is entirely on the right dot, confirming they are spatially separated Majoranas.\par
+% \subsubsection{Numerical Work - Probing Protection and Robustness:} Detuning $t$ and $Δ$: Vary $t$ and $Δ$ away from the sweet spot. Plot the lowest energy eigenvalue as I varyt he ratio $\frac{t}{Δ}$ away from 1. This will show that the zero-energy states immediately split and acquire a finite energy gap, demonstrating their lack of full topological protection. Detuning Dot Energies: Vary $ϵ_L$ and $ϵ_R$ away from zero while keeping $t = Δ$. The degeneracy should be lifted quadratically. My results here should quantify the robustness of the PMMs to local perturbations. I can conclude that while they are not fully protected like in a true topological system, the degeneracy is protected against certain local perturbations to first order.\par
+\subsubsection{Numerical Simulations – Visualizing the Emergence of Majoranas}
+
+To confirm the analytical predictions and illustrate the emergence of Majorana-like states, we diagonalized the spinless two-site Hamiltonian numerically.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_eps.png}
+  \caption{(a) Lowest energy eigenvalues as a function of $\epsilon_L$ with $\epsilon_R = 0$ and $t = \Delta$. Two states remain pinned at zero energy, forming Majorana-like zero modes.}
+  \label{fig:sb_epsL}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_epsLR.png}
+  \caption{(b) Eigenvalues as both $\epsilon_L$ and $\epsilon_R$ are varied around zero, showing the preservation of zero-energy modes at the sweet spot, and their splitting away from it.}
+  \label{fig:sb_epsLR}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_t.png}
+  \caption{(c) Zero-mode energies versus hopping $t$ at $\Delta = 1$, $\epsilon_L = \epsilon_R = 0$, demonstrating that degeneracy is maintained only at $t = \Delta$.}
+  \label{fig:sb_tscan}
+\end{figure}
+\newpage
+Figure ~\ref{fig:sb_epsL}, ~\ref{fig:sb_epsLR}, and ~\ref{fig:sb_tscan} show how we diverge from the sweet spot by varying $\epsilon_L$, $\epsilon_R$, and $t$, away from our analyrical sweet spots.\\
+At the sweet spot ($\epsilon_L = \epsilon_R = 0$, $t = \Delta$), the eigenvectors corresponding to the zero-energy states are extracted. Figure~\ref{fig:sb_zero_modes} shows the magnitude of their components in the Nambu basis $(d_L, d_R, d_L^\dagger, d_R^\dagger)$. One zero mode is localized entirely on the left dot, and the other on the right dot, confirming the spatial separation characteristic of Majorana modes.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_zero_modes.png}
+  \caption{Component amplitudes of the zero-energy eigenvectors at the sweet spot. Spatial separation of the modes confirms the Majorana character.}
+  \label{fig:sb_zero_modes}
+\end{figure}
+
+\subsubsection{Numerical Work – Probing Protection and Robustness}
+
+To probe the stability of the zero modes, we vary system parameters away from the sweet spot. Figure~\ref{fig:sb_grid} presents a contour map of the lowest energy splitting versus $t$ and $\Delta$ at $\epsilon_L = \epsilon_R = 0$. Deviations from $t = \Delta$ immediately lift the degeneracy, showing that the zero modes are not fully topologically protected.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_grid.png}
+  \caption{Contour map of the lowest energy splitting as a function of $t$ and $\Delta$. The degeneracy is preserved only along the $t = \Delta$ line (red dashed).}
+  \label{fig:sb_grid}
+\end{figure}
+
+Additionally, detuning the dot energies $\epsilon_L$ and $\epsilon_R$ while keeping $t = \Delta$ splits the zero-energy states quadratically. This demonstrates that while Poor Man’s Majoranas lack full topological protection, their degeneracy is partially robust against small local perturbations, in agreement with the analytical predictions.
+\newpage
 \subsection{Many-body model:} (Including the Coulomb interaction $U$)
 \subsubsection{The Model Hamiltonian:} Present the many-body Hamiltonian for the QD-SC-QD system, including the Coulomb interaction term $U$. Define all the terms clearly. This will be the Hamiltonian I use.\par
 We have to leave the BdG formalism and work in the many-body basis. This is because the BdG formalism is a mean-field, single-particle approach that cannot capture electron-electron interactions like the Coulomb repulsion $U$. The interaction term we use in order to describe the non-local Coulomb interaction betweem the PMMs is: $H_U=U_{LR}n_Ln_R$, where $n_{α}=d_{α}^{†}d_{α}$ is the number operator for dot $α$.\\
@@ -564,6 +651,20 @@ Three (four) things to look for to see if we found topologically protected Major
 \subsection{Synthesize my Findings:} Summarize what we learned from the calculations. " The analysis confirmed that zero-energy Majorana modes emerge under fine-tuned conditions... Numerical simulations revealed that this degeneracy is fragile and splits when deviating from the sweet spot, quantifying the limited protection of PMMs."\par
 \subsection{Connect to Broader Context:} Briefly discuss how the properties you explored (the energy splitting, wavefunction overlap) would affect potential braiding operations (note section 5.2.3) and what this means for using PMMs in quantum computing.\par
 \subsection{Future Directions:} Suggest next steps for a full thesis. This include modeling disorder, investigating longer chains (three or more dots), or numerically simulate braiding protocol.
+
+\newpage
+\section{Appendix}
+\subsection{Explanations}
+
+\textbf{Cooper pairs}: Pairs of electrons bound together at low temperatures in a superconductor, leading to superconductivity.
+
+\textbf{p-wave superconductivity}: A type of superconductivity where the Cooper pairs have angular momentum \(l=1\), leading to odd-parity pairing.  
+
+\textbf{s-wave superconductivity}: Conventional superconductivity where Cooper pairs have zero angular momentum (\(l=0\)) and even-parity pairing.  
+
+\textbf{Zeeman effect}: The splitting of energy levels in a magnetic field due to the interaction of the field with electron spins.  
+
+\textbf{Coulomb interaction}: The repulsive interaction between electrons due to their electric charge, often represented as an on-site energy \(U\) in quantum dot systems.
 
 
 

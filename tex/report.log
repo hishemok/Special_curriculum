@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  17 OCT 2025 15:31
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  20 OCT 2025 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -349,36 +349,62 @@ Package graphics Info: Driver file: xetex.def on input line 106.
 )
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen170
+\captionmargin=\dimen171
+\caption@leftmargin=\dimen172
+\caption@rightmargin=\dimen173
+\caption@width=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count319
+\c@continuedfloat=\count320
+Package caption Info: hyperref package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+LaTeX Info: Redefining \subref on input line 189.
+Package subcaption Info: The counter `subfigure' was already defined by
+(subcaption)             an unknown document class or package on input line 238.
+Package subcaption Info: The counter `subtable' was already defined by
+(subcaption)             an unknown document class or package on input line 238.
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 40.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 41.
  (/usr/share/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 40.
-Package hyperref Info: Link coloring OFF on input line 40.
+LaTeX Font Info:    ... okay on input line 41.
+Package hyperref Info: Link coloring OFF on input line 41.
  (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
@@ -419,19 +445,19 @@ Package hyperref Info: Link coloring OFF on input line 40.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 40.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 40.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 40.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 40.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 40.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 41.
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(0)' created for font
@@ -461,13 +487,13 @@ Package fontspec Info:
 (fontspec)             <->"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 40.
+(Font)              `operators' in the math version `normal' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 40.
+(Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 41.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 40.
+(Font)              `operators' in the math version `bold' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 40.
+(Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 41.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.0001.
@@ -513,13 +539,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 40.
+(Font)              `symbols' in the math version `normal' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 40.
+(Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 41.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 40.
+(Font)              `symbols' in the math version `bold' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 40.
+(Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 41.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999.
@@ -559,73 +585,87 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 40.
+(Font)              `largesymbols' in the math version `normal' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 40.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 41.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 40.
+(Font)              `largesymbols' in the math version `bold' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 40.
+(Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 41.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 44.
+(Font)              scaled to size 12.00128pt on input line 45.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 44.
+(Font)              scaled to size 8.00085pt on input line 45.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 44.
+(Font)              scaled to size 6.00064pt on input line 45.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 44.
+(Font)              scaled to size 11.99872pt on input line 45.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 44.
+(Font)              scaled to size 7.99915pt on input line 45.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 44.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+(Font)              scaled to size 5.99936pt on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 [1
 
-]
-Underfull \hbox (badness 1577) in paragraph at lines 58--61
-\TU/lmr/m/n/14.4 Superconductivity, as described by Bardeen-Cooper-Schrieffer (BCS)
+] (./report.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95116pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.6658pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.47559pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.94882pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.66417pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.47441pt on input line 3.
+)
+\tf@toc=\write4
+\openout4 = `report.toc'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
-
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 58--61
+Underfull \hbox (badness 1194) in paragraph at lines 52--55
 \TU/lmr/m/n/14.4 rather than local charge, motivating measurements that distinguish
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 58--61
+Underfull \hbox (badness 1092) in paragraph at lines 52--55
 \TU/lmr/m/n/14.4 between even and odd parity ground states without collapsing the
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 58--61
+Underfull \hbox (badness 1194) in paragraph at lines 52--55
 \TU/lmr/m/n/14.4 design and interpretation of experiments in minimal realizations of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 58--61
+Underfull \hbox (badness 1242) in paragraph at lines 52--55
 \TU/lmr/m/n/14.4 and the robustness of their degeneracy under variations in system
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
  []
 
@@ -633,103 +673,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
 [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 82.
+(Font)              scaled to size 14.40152pt on input line 76.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 82.
+(Font)              scaled to size 10.00107pt on input line 76.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 82.
+(Font)              scaled to size 7.00075pt on input line 76.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 82.
+(Font)              scaled to size 14.39845pt on input line 76.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 82.
+(Font)              scaled to size 9.99893pt on input line 76.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 82.
+(Font)              scaled to size 6.99925pt on input line 76.
 
-Underfull \hbox (badness 1527) in paragraph at lines 82--85
+Underfull \hbox (badness 1527) in paragraph at lines 76--79
 \TU/lmr/m/n/14.4 Microscopically, the origin of superconductivity lies in an effective
- []
-
-
-Underfull \hbox (badness 4072) in paragraph at lines 87--90
-[][][]$\TU/lmr/m/n/14.4 , and the $[][]$ are the single-particle energies. The isotope
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 87--90
-\TU/lmr/m/n/14.4 effect, where $[][]$ varies inversely with the square root of the ionic
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 87--90
-\TU/lmr/m/n/14.4 mass, provides strong evidence for the phonon-mediated pairing
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
+Underfull \hbox (badness 4072) in paragraph at lines 81--84
+[][][]$\TU/lmr/m/n/14.4 , and the $[][]$ are the single-particle energies. The isotope
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 81--84
+\TU/lmr/m/n/14.4 effect, where $[][]$ varies inversely with the square root of the ionic
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 81--84
+\TU/lmr/m/n/14.4 mass, provides strong evidence for the phonon-mediated pairing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 100--104
+Underfull \hbox (badness 1939) in paragraph at lines 94--98
 \TU/lmr/m/n/14.4 developed a comprehensive microscopic theory of superconductivity
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 118--122
-\TU/lmr/m/n/14.4 Superconducting excitations are Bogoliubov quasiparticles, coherent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--122
-
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 125--127
-\TU/lmr/m/n/14.4 condensate of Cooper pairs, but it assumes a uniform order
- []
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 125--127
-\TU/lmr/m/n/14.4 such as those at interfaces or in the presence of impurities, we
  []
 
 
 
 [3]
-Underfull \hbox (badness 4454) in paragraph at lines 133--135
-\TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$
+Underfull \hbox (badness 2269) in paragraph at lines 112--116
+\TU/lmr/m/n/14.4 Superconducting excitations are Bogoliubov quasiparticles, coherent
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 153--157
-\TU/lmr/m/n/14.4 The BdG framework therefor bridges microscopic BCS theory and
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
+
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 153--157
-\TU/lmr/m/n/14.4 modern topological superconductivity. It provides a compact
+Underfull \hbox (badness 6708) in paragraph at lines 119--121
+\TU/lmr/m/n/14.4 condensate of Cooper pairs, but it assumes a uniform order
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 119--121
+\TU/lmr/m/n/14.4 such as those at interfaces or in the presence of impurities, we
  []
 
 
 
 [4]
-Underfull \hbox (badness 6510) in paragraph at lines 159--160
-\TU/lmr/m/n/14.4 The proximity effect is a phenomenon where a semiconductor
+Underfull \hbox (badness 4454) in paragraph at lines 127--129
+\TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 147--151
+\TU/lmr/m/n/14.4 The BdG framework therefor bridges microscopic BCS theory and
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 147--151
+\TU/lmr/m/n/14.4 modern topological superconductivity. It provides a compact
  []
 
 
 
 [5]
-
-LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 182.
+Underfull \hbox (badness 6510) in paragraph at lines 153--154
+\TU/lmr/m/n/14.4 The proximity effect is a phenomenon where a semiconductor
+ []
 
 
 
 [6]
-Underfull \hbox (badness 4518) in paragraph at lines 192--194
+
+LaTeX Warning: Citation `qtech_boka' on page 7 undefined on input line 176.
+
+
+
+[7]
+Underfull \hbox (badness 4518) in paragraph at lines 186--188
 \TU/lmr/m/n/14.4 excitations mediating CAR and ECT. Parity crossings in these
  []
 
@@ -738,112 +780,99 @@ File: ../External_Figs/no_unpaired.png Graphic file (type bmp)
 File: ../External_Figs/unpaired.png Graphic file (type bmp)
 <../External_Figs/unpaired.png>
 
-Underfull \hbox (badness 7740) in paragraph at lines 222--233
+Underfull \hbox (badness 7740) in paragraph at lines 216--227
 \TU/lmr/m/n/14.4 We now want to build on the microscopic understanding of
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 222--233
+Underfull \hbox (badness 4316) in paragraph at lines 216--227
 \TU/lmr/m/n/14.4 superconductivity we investigated in the previous sections. In
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 222--233
+Underfull \hbox (badness 2189) in paragraph at lines 216--227
 \TU/lmr/m/n/14.4 particular, we want to see how such pairing phenomena can be
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 222--233
+Underfull \hbox (badness 1845) in paragraph at lines 216--227
 \TU/lmr/m/n/14.4 engineered to host topological excitations, in particular, Majorana
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 222--233
+Underfull \hbox (badness 3838) in paragraph at lines 216--227
 \TU/lmr/m/n/14.4 bound states. The theoretical foundation for this lies in the
  []
 
 
 
-[7]
-
 [8]
-File: ../Figures/band_structure.pdf Graphic file (type pdf)
-<use ../Figures/band_structure.pdf>
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6658pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.47559pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 264.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 264.
-
 
 [9]
+File: ../Figures/band_structure.pdf Graphic file (type pdf)
+<use ../Figures/band_structure.pdf>
+
 
 [10]
-Underfull \hbox (badness 2512) in paragraph at lines 280--283
+
+[11]
+Underfull \hbox (badness 2512) in paragraph at lines 274--277
 \TU/lmr/m/n/14.4 ground state. This degeneracy is topologically protected: local
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 280--283
+Underfull \hbox (badness 1584) in paragraph at lines 274--277
 \TU/lmr/m/n/14.4 solutions and clear physical intuition, making it an ideal starting
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 285--287
+Underfull \hbox (badness 3547) in paragraph at lines 279--281
 \TU/lmr/m/n/14.4 for understanding Majorana zero modes, it remains an abstract
  []
 
 
 
-[11]
-Underfull \hbox (badness 1005) in paragraph at lines 301--302
+[12]
+Underfull \hbox (badness 1005) in paragraph at lines 295--296
 []\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the
  []
 
 
-
-[12]
-Underfull \hbox (badness 3907) in paragraph at lines 327--328
-\TU/lmr/m/n/14.4 By sweeping these parameters, one can reach and identify the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-
+Underfull \hbox (badness 1389) in paragraph at lines 301--304
+\TU/lmr/m/n/14.4 interfaces governs the effective hopping and non-local pairing, and
  []
 
 
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 337--340
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--313
+
+ []
+
+
+
+[14]
 File: ../External_Figs/gs_symmetry.png Graphic file (type bmp)
 <../External_Figs/gs_symmetry.png>
 
 
-[14]
-Underfull \hbox (badness 2158) in paragraph at lines 351--352
+[15]
+Underfull \hbox (badness 2158) in paragraph at lines 324--325
 \TU/lmr/m/n/14.4 A property of the Kitaev chain in its topological phase is that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--357
+Underfull \hbox (badness 10000) in paragraph at lines 327--330
 
  []
 
 
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
 
  []
 
@@ -854,31 +883,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--367
 [17]
 
 [18]
+File: ../Figures/singlebody_sweetspot_eps.png Graphic file (type bmp)
+<../Figures/singlebody_sweetspot_eps.png>
+File: ../Figures/singlebody_sweetspot_epsLR.png Graphic file (type bmp)
+<../Figures/singlebody_sweetspot_epsLR.png>
+File: ../Figures/singlebody_sweetspot_t.png Graphic file (type bmp)
+<../Figures/singlebody_sweetspot_t.png>
+
 
 [19]
-Underfull \hbox (badness 1275) in paragraph at lines 477--479
-\TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
- []
-
-
 
 [20]
+File: ../Figures/singlebody_sweetspot_zero_modes.png Graphic file (type bmp)
+<../Figures/singlebody_sweetspot_zero_modes.png>
+File: ../Figures/singlebody_sweetspot_grid.png Graphic file (type bmp)
+<../Figures/singlebody_sweetspot_grid.png>
+
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 556--562
-
- []
-
-
-Underfull \hbox (badness 1515) in paragraph at lines 556--562
-\TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
+Underfull \hbox (badness 1275) in paragraph at lines 564--566
+\TU/lmr/m/n/14.4 approach that cannot capture electron-electron interactions like the
  []
 
 
 
 [22]
 
-[23] (./report.aux)
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 643--649
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 643--649
+\TU/lmr/m/n/14.4 expectation values $[] [][] []$ and $[] [][] []$. The difference in
+ []
+
+
+
+[24]
+
+[25]
+
+[26] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -887,16 +934,19 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 06E55AB42C690C34F7C8E1E44F8BA87D;8998.
+(rerunfilecheck)             Checksum: A4456BDE2A46B252BCCBA9E493A84B6B;9339.
  ) 
 Here is how much of TeX's memory you used:
- 18605 strings out of 475251
- 339163 string characters out of 5761397
+ 20053 strings out of 475251
+ 368411 string characters out of 5761397
  1018383 words of memory out of 5000000
- 41342 multiletter control sequences out of 15000+600000
+ 42773 multiletter control sequences out of 15000+600000
  567466 words of font info for 105 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  90i,7n,107p,954b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (24 pages).
+Output written on report.pdf (27 pages).
