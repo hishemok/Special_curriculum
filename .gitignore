@@ -2,3 +2,7 @@
 ignore/
 SpesCur/
 testprograms/
+tex/report.aux
+tex/report.log
+tex/report.out
+tex/report.toc

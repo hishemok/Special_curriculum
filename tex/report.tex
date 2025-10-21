@@ -71,48 +71,59 @@ In this report, we investigate the Poor Man's Majoranas (PMMs) in a double quant
 
 
 \section{Theoretical Background: The superconducting State}
-Notes from note section 1 and note section 2 to build necessary background.\par
-\subsection{From Electron Attraction to the Energy Gap:} 
-Superconductivity is characterized by the complete loss of electrical resistance below a critical temperature $T_c$, and the expulsion of magnetic fields (the Meissner effect), which demonstrates that it represents a distinct thermodynamic phase rather than a perfect conductor.\\
-Londong (1937) first introduced a phenomenological description in terms of a macroscopic quantum wavefunction $ψ(r)$, whose rigidity gives rise to the London equations and an exponential decay of magnetic fields inside the superconductor over a characteristic length scale, the London penetration depth $λ_L = \sqrt{m / (μ_{0}e² |ψ|²)}$ \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
-Microscopically, the origin of superconductivity lies in an effective attraction between electrons mediated by lattice vibrations (phonons). This leads to the formation of Cooper pairs, which are bound states of two electrons with opposite momenta and spins. The exchange of a virtual phonon leads to an attractive interaction for energy transfers smaller than the phonon frequency $ω_D$,
-$$
-V_{eff}(q,ω) = \frac{|g_q|²}{ω² - ω_q²} 
-$$
-where $g_q$ is the electron-phonon coupling strength zand $ω = (ϵ_k - ϵ_k')$, and the $ϵ_α$ are the single-particle energies. The isotope effect, where $T_c$ varies inversely with the square root of the ionic mass, provides strong evidence for the phonon-mediated pairing mechanism.\textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3].\\
-In his seminal work, Cooper (1956) demonstrated that an arbitrarily weak attractive interaction destabilizes the Fermi sea: two eelectrons of opposite spin and momentum can form a bound state with energy below the Fermi level. The pair is called a Cooper pair, and the operator we use to describe the creation of a Cooper pair is;
-$$
-Λ^{†} = ∑_{k}^{}ϕ(k) c_{k↑}^{†} c_{-k↓}^{†} 
-$$
-and the self-consistency condition 
-$$
-1 = g_{0} N(0) ∫_{0}^{ω_D} \frac{dϵ}{\sqrt{2ϵ² + E}}
-$$
-yields the binding energy of the Cooper pair:
-$$
-E_B = -2ω_D e^{-2/(g_0 N(0))}
-$$
-where $N(0)$ is the density of states at the Fermi level and $g_0$ is the effective interaction strength \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3.2 and BCS.pdf]\\ 
-Even this simple two-particle result implies that the Fermi surface is unstable toward pair condensation.\\ \\
-Building on Cooper's insight, Bardeen, Cooper, and Schrieffer (1957) developed a comprehensive microscopic theory of superconductivity \textcolor{red}{CITATION}[BCS.pdf].\\. The VCS ground state is a coherent superpositon of occupied and unoccupied pair states:
-$$
-\ket{Ψ_{BCS}} = ∏_{k} (u_k + v_k c_{k↑}^{†} c_{-k↓}^{†}) \ket{0}
-$$
-with normalization $|u_k|² + |v_k|² = 1$. Minimization of the free energy yields the gap equation:
-$$
-1 = \frac{g_0}{V} ∑_{|ϵ_k| < ω_D}^{} \frac{1}{2E_k} \tanh\left(\frac{E_k}{2k_B T}\right)
-$$
-where the quasiparticle excitation spectrum is:
-$$
-E_k = \sqrt{ϵ_k² + Δ²}
-$$
-At zero temperature, the gap at the Fermi surface is:
-$$
-Δ(0) = 2ω_D e^{-1/(g_0 N(0))}
-$$
-and obeys the universal relation $2Δ(0) / k_B T_c ≈ 3.53$.\\
-The energy gap $Δ$ represents the minimum energy required to break a Cooper pair, explainingt he exponential suppression of heat capacity and resistivity at low temperatures. Physically, it quantifies the rigidity of the condensate. Any single-particle excitation costs a funite energy, enforcing long-range phase coherence.\\
-Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions of electron and hole states, which naturally leads to the Bogoliubov-de Gennes (BdG) formalism. This formalism genereralizes the BCS mean-field theory to spatially inhomogeneous systems and forms the basis for the study of superconducting heterostructures, including those hosting Majorana modes.\\
+% New structure:
+% \subsection{From Cooper Pairing to the Energy Gap}
+% \subsection{The Bogoliubov–de Gennes Formalism}
+% \subsection{Hybrid Semiconductor–Superconductor Systems}
+% \subsubsection{The Proximity Effect and Induced Superconductivity}
+% \subsubsection{Andreev Reflection and Cooper-Pair Splitting}
+% \subsubsection{Andreev Bound States}
+\subsection{From Cooper Pairing to the Energy Gap:} 
+Superconductivity arises when electrons in a metal form bound pairs, known as Cooper pairs, below a critical temperature $T_c$. These pairs condense into a coherent quantum state that can carry current without resistance, and also expel magnetic fields via the Meissner effect. This immediately distinguishes a superconductor from a perfect conductor, because it is a distinct thermodynamic phase with long-range quantum coherence \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
+The microscopic origin of superconductivity lies in an effective attractive interaction between electrons, mediated by phonons (lattice vibrations). Even a weak attraction can destabilize the normal metallic Fermi sea, allowing electrons of opposite momenta and spins to form bound pairs. These pairs behave as bosons (integer spin particles) and condense into a macroscopic quantum state described by a collective wavefunction $ψ(r)$, whose phase coherence gives rise to the supercurrent.\\ 
+At the mean-field level, this collective behaviour opens an energy gap $Δ$ around the Fermi surface. This gap represents the minimum energy needed to break a Cooper pair and create excitations, called Bogoliubov quasiparticles, that are mixtures of electron and hole states. The presence of this gap explains the vanishing resistivity and the exponential suppression of heat capacity and other thermodynamic quantities at low temperatures \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3 and BCS.pdf].\\
+The pairing gap is what makes superconductors so special for topological applications. Because single-particle excitations cost a finite energy, the superconducting condensate is robust against small perturbations and other local noise. When combined with spin-orbit coupling and appropriate confinement or hybridization, this same pairing mechanism can give rise to topological superconductivity, where the quasiparticles at zero energy behave as Majorana modes.\\
+In essence, superconductivity provides both the microscopic pairing mechanism and the macroscopic phase coherence needed to host non-local, topologically protected excitations, making it the natural foundation for exploring Majorana physics in condensed matter systems.
+% Superconductivity is characterized by the complete loss of electrical resistance below a critical temperature $T_c$, and the expulsion of magnetic fields (the Meissner effect), which demonstrates that it represents a distinct thermodynamic phase rather than a perfect conductor.\\
+% Londong (1937) first introduced a phenomenological description in terms of a macroscopic quantum wavefunction $ψ(r)$, whose rigidity gives rise to the London equations and an exponential decay of magnetic fields inside the superconductor over a characteristic length scale, the London penetration depth $λ_L = \sqrt{m / (μ_{0}e² |ψ|²)}$ \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
+% Microscopically, the origin of superconductivity lies in an effective attraction between electrons mediated by lattice vibrations (phonons). This leads to the formation of Cooper pairs, which are bound states of two electrons with opposite momenta and spins. The exchange of a virtual phonon leads to an attractive interaction for energy transfers smaller than the phonon frequency $ω_D$,
+% $$
+% V_{eff}(q,ω) = \frac{|g_q|²}{ω² - ω_q²} 
+% $$
+% where $g_q$ is the electron-phonon coupling strength zand $ω = (ϵ_k - ϵ_k')$, and the $ϵ_α$ are the single-particle energies. The isotope effect, where $T_c$ varies inversely with the square root of the ionic mass, provides strong evidence for the phonon-mediated pairing mechanism.\textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3].\\
+% In his seminal work, Cooper (1956) demonstrated that an arbitrarily weak attractive interaction destabilizes the Fermi sea: two eelectrons of opposite spin and momentum can form a bound state with energy below the Fermi level. The pair is called a Cooper pair, and the operator we use to describe the creation of a Cooper pair is;
+% $$
+% Λ^{†} = ∑_{k}^{}ϕ(k) c_{k↑}^{†} c_{-k↓}^{†} 
+% $$
+% and the self-consistency condition 
+% $$
+% 1 = g_{0} N(0) ∫_{0}^{ω_D} \frac{dϵ}{\sqrt{2ϵ² + E}}
+% $$
+% yields the binding energy of the Cooper pair:
+% $$
+% E_B = -2ω_D e^{-2/(g_0 N(0))}
+% $$
+% where $N(0)$ is the density of states at the Fermi level and $g_0$ is the effective interaction strength \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3.2 and BCS.pdf]\\ 
+% Even this simple two-particle result implies that the Fermi surface is unstable toward pair condensation.\\ \\
+% Building on Cooper's insight, Bardeen, Cooper, and Schrieffer (1957) developed a comprehensive microscopic theory of superconductivity \textcolor{red}{CITATION}[BCS.pdf].\\. The VCS ground state is a coherent superpositon of occupied and unoccupied pair states:
+% $$
+% \ket{Ψ_{BCS}} = ∏_{k} (u_k + v_k c_{k↑}^{†} c_{-k↓}^{†}) \ket{0}
+% $$
+% with normalization $|u_k|² + |v_k|² = 1$. Minimization of the free energy yields the gap equation:
+% $$
+% 1 = \frac{g_0}{V} ∑_{|ϵ_k| < ω_D}^{} \frac{1}{2E_k} \tanh\left(\frac{E_k}{2k_B T}\right)
+% $$
+% where the quasiparticle excitation spectrum is:
+% $$
+% E_k = \sqrt{ϵ_k² + Δ²}
+% $$
+% At zero temperature, the gap at the Fermi surface is:
+% $$
+% Δ(0) = 2ω_D e^{-1/(g_0 N(0))}
+% $$
+% and obeys the universal relation $2Δ(0) / k_B T_c ≈ 3.53$.\\
+% The energy gap $Δ$ represents the minimum energy required to break a Cooper pair, explainingt he exponential suppression of heat capacity and resistivity at low temperatures. Physically, it quantifies the rigidity of the condensate. Any single-particle excitation costs a funite energy, enforcing long-range phase coherence.\\
+% Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions of electron and hole states, which naturally leads to the Bogoliubov-de Gennes (BdG) formalism. This formalism genereralizes the BCS mean-field theory to spatially inhomogeneous systems and forms the basis for the study of superconducting heterostructures, including those hosting Majorana modes.\\
 
 
 \subsection{The Bogoliubov-de Gennes Formalism:}
@@ -301,7 +312,7 @@ At the so-called sweet spot, where $|\epsilon_L| = |\epsilon_R| = 0$ and $|t| = 
 The poor man's Majorana setup, double quantum dot coupled via a superconductor, provides a minimal realization of the Kitaev chain. In reality, the complete microscopic Hamiltonian includes interactions and spin degrees of freedom. However, in the regime relevant for Poor Man's Majoranas, the low-energy physics is effectively captured by the spinless two-site model introduced above. In this setup, near-zero energy Majorana-like states emerge across the two dots, exhibiting an even- and odd-parity ground state and strong non-local correlations.\\
 This platform is an experimentally attractive method to realize Kitaev chain physics because its parameters can be tuned independently. Gate voltages control the dot energy levels, the transparency of the QD–SC interfaces governs the effective hopping and non-local pairing, and magnetic fields can suppress unwanted spinful excitations. By sweeping these parameters, one can access and identify the  Majorana-like properties. \\
 This minimal setup captures the essential low-energy properties of a Kitaev chain while remaining experimentally controllable, providing a direct route from theoretical modeling to realizable quantum devices.
-\subsection{Identifying Majorana Modes in the QD–SC–QD System}
+\subsection{Identifying Majorana Modes in the QD–SC–QD System}\label{sec:IdentifyingMajoranaModes}
 In this section we will briefly go through the key signatures that indicate the presence of Majorana-like modes in the QD–SC–QD system. These signatures arise from the unique properties of Majorana fermions. There are a few metrics we can use to identify the presence of PMMs, and their rigidity to perturbations.\\
 \subsubsection{The parity operator}
 The parity operator itself is not a measurement of a Majorana mode, but it is a useful tool in the identification process. The mean-field Hamiltonian of a superconductor does not conserve particle number, but it does conserve fermion parity. What this means is that the number of electrons in the system can change by pairs, but not by single electrons. The parity operator is defined as:
@@ -488,7 +499,7 @@ To probe the stability of the zero modes, we vary system parameters away from th
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_grid.png}
-  \caption{Contour map of the lowest energy splitting as a function of $t$ and $\Delta$. The degeneracy is preserved only along the $t = \Delta$ line (red dashed).}
+  \caption{Contour map of the lowest energy splitting (excited energy eigenvalue minus ground state energy eigenvalue) as a function of $t$ and $\Delta$. The degeneracy is preserved only along the $|t| = |\Delta|$ line (red dashed).}
   \label{fig:sb_grid}
 \end{figure}
 
@@ -583,15 +594,70 @@ $$\frac{2ϵ + U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²}}{2} = \frac{2ϵ - 2t}{2}$
 $$U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²} = -2t$$
 Settings $\epsilon= -U/2$ gives:
 $$U_{LR} - 2Δ = -2t$$
-$$t = Δ - \frac{U_{LR}}{2}$$
+$$Δ = t + \frac{U_{LR}}{2}$$
 So with the parameters $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$ and $t = Δ - \frac{U_{LR}}{2}$, we have found an analytical expression for the many-body sweet spot. This expression shows how the presence of Coulomb interaction $U_{LR}$ shifts the conditions for achieving Majorana-like degeneracy in the QD–SC–QD system.
-\subsubsection{How Majorana like?}
-This section is per now just notes: Fill in the blanks along the way.\\
-$\ket{e}, \ket{o}$ are the ground states of the even and odd sectors, respectively. Find them:\\\\
-Three (four) things to look for to see if we found topologically protected Majoranas:\\
-1) Degeneracy of ground states: We need $E_{even,min} = E_{odd,min}\quad  δE=0$\\
-2-3) With the number operators $n_L$ and $n_R$, we can calculate the expectation values $\bra{e}n_{L(R)}\ket{e}$ and $\bra{o}n_{L(R)}\ket{o}$. The difference in occupation between the two ground states on each dot should be minimal, ideally zero. This indicates that the Majorana modes are non-local and do not localize charge on either dot.\\
-4) Find the Majorana polarization $MP = 1$
+\subsubsection{Numerical Simulations - Parameter search for the many-body sweet spot:}
+Here, we will start by investigating the parameters needed for the emergence of Majorana-like modes in the many-body Hamiltonian. We will do this by numerically diagonalizing the Hamiltonian matrix in Eq. \ref{eq:mbHamiltonian} for a range of parameters $ϵ_L, ϵ_R, t, Δ, U_{LR}$.\\
+In order to determine if we have found a many-body sweet spot, we will calculate the different measurements that we meantioned in section \ref{sec:IdentifyingMajoranaModes}, where we introduced energy degeneracy, local distinguishability, Majorana polarization, and charge expectation values.\\
+We will start by exploring how the Coulomb interaction $U_{LR}$ and the tunneling amplitude $t$ effect the emergence of Majorana modes. We will use the analytical expression we found for the first part of the parameter search. We will set the dot energies to $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$, and set $Δ = t + \frac{U_{LR}}{2}$. We will then vary $U_{LR}$ and $t$ over a reasonable range, and calculate the Majorana metrics for each parameter set.\\
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/LD_mb.png}
+  \caption{Local Distinguishability (LD) as a function of $U_{LR}$ and $t$. The sweet spot region with low (0) LD indicates the presence of Majorana-like modes. We can see that for all positive values of $U_{LR}$, there exists a corresponding $t$ that minimizes LD.}
+  \label{fig:mb_LD}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{../Figures/MP_mb.png}
+  \caption{Majorana Polarization (MP) as a function of $U_{LR}$ and $t$. Here we can see that when LD is minimized, MP approaches the ideal values of ±1, confirming the presence of well-localized Majorana-like modes. Also note that where LD is zero, $MP_R=-MP_L$, which is what we expect for Majorana modes.}
+  \label{fig:mb_MP}
+\end{figure}
+Figures ~\ref{fig:mb_LD} and ~\ref{fig:mb_MP} show the results of this parameter search. We can see that there exists a large region for both $t$ and $U_{LR}$ in the parameter space where the local distinguishability (LD) is minimized, indicating that the two ground states are locally indistinguishable. Correspondingly, the Majorana polarization (MP) approaches the ideal values of ±1 in this region, confirming the presence of well-localized Majorana-like modes.
+\newpage 
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{../Figures/Exp_mb.png}
+  \caption{Charge expectation values $\bra{e}n_{L(R)}\ket{e}$ and $\bra{o}n_{L(R)}\ket{o}$ as a function of $U_{LR}$ and $t$. The charge expectation values for both ground states converge in the sweet spot region, indicating local indistinguishability.}
+  \label{fig:mb_charge}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/degen_mb.png}
+  \caption{Normalized energy splitting $\delta E$ as a function of $U_{LR}$ and $t$. The energy splitting approaches zero in the sweet spot region, confirming the degeneracy of the ground states.}
+  \label{fig:mb_deltaE}
+\end{figure}
+Figures ~\ref{fig:mb_charge} and ~\ref{fig:mb_deltaE} further support the identification of the many-body sweet spot. The charge expectation values for both ground states converge in the sweet spot region, indicating local indistinguishability. Additionally, the normalized energy splitting $\delta E$ approaches zero in this region, confirming the degeneracy of the ground states. Together, these results demonstrate that by tuning $U_{LR}$ and $t$ according to our analytical expression, we can achieve conditions favorable for the emergence of Majorana-like modes in the interacting QD–SC–QD system.
+\newpage
+In order to further investigate how presise the analytical solutions are, we can take another approach to find the many-body sweet spot. We can do this by fixing $U_{LR}$ and $Δ$, and then varying $ϵ_L, ϵ_R,$ and $t$, and from there we can see if the sweet spots fall in the regions where it was analytically predicted to be.\\
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/LD_anal.png}
+  \caption{Local Distinguishability (LD) as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The region of low LD aligns well with the analytical prediction, confirming the presence of Majorana modes.}
+  \label{fig:mb_LD_anal}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{../Figures/MP_anal.png}
+  \caption{Majorana Polarization (MP) as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The MP approaches ±1 at the dot, confirming the presence of Majorana-like modes as predicted analytically.}
+  \label{fig:mb_MP_anal}
+\end{figure}
+Figures ~\ref{fig:mb_LD_anal} and ~\ref{fig:mb_MP_anal} show the results of this alternative parameter search. The white dot indicate the analytically predicted sweet spot condition. We can see that the regions of low local distinguishability (LD) and high Majorana polarization (MP) align well with the analytical predictions, confirming the accuracy of our earlier derived conditions for the emergence of Majorana-like modes in the many-body QD–SC–QD system.
+\newpage  
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{../Figures/Exp_anal.png}
+  \caption{Charge expectation values $\bra{e}n_{L(R)}\ket{e}$ and $\bra{o}n_{L(R)}\ket{o}$ as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The charge expectation values converge at the dot, indicating local indistinguishability as predicted.}
+  \label{fig:mb_charge_anal}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{../Figures/degen_anal.png}
+  \caption{Normalized energy splitting $\delta E$ as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The energy splitting approaches zero at the dot, confirming the degeneracy of the ground states as predicted.}
+  \label{fig:mb_deltaE_anal}
+\end{figure}
+Figures ~\ref{fig:mb_charge_anal} and ~\ref{fig:mb_deltaE_anal} further validate the analytical predictions. The charge expectation values for both ground states converge at the analytically predicted sweet spot, indicating local indistinguishability. Additionally, the normalized energy splitting $\delta E$ approaches zero at this point, confirming the degeneracy of the ground states.\\
+By collectively looking at where the different metrics indicate the presence of Majorana-like modes, we can see how the position of the sweet spot aligns with each individual metric. This summarizes how the analytically predicted sweet spot conditions hold up against the numerical simulations.
+\newpage
 
 \section{Discussion and Conclusion}
 \subsection{Synthesize my Findings:} Summarize what we learned from the calculations. " The analysis confirmed that zero-energy Majorana modes emerge under fine-tuned conditions... Numerical simulations revealed that this degeneracy is fragile and splits when deviating from the sweet spot, quantifying the limited protection of PMMs."\par
