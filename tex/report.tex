@@ -80,122 +80,84 @@ In this report, we investigate the Poor Man's Majoranas (PMMs) in a double quant
 % \subsubsection{Andreev Bound States}
 \subsection{From Cooper Pairing to the Energy Gap:} 
 Superconductivity arises when electrons in a metal form bound pairs, known as Cooper pairs, below a critical temperature $T_c$. These pairs condense into a coherent quantum state that can carry current without resistance, and also expel magnetic fields via the Meissner effect. This immediately distinguishes a superconductor from a perfect conductor, because it is a distinct thermodynamic phase with long-range quantum coherence \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
-The microscopic origin of superconductivity lies in an effective attractive interaction between electrons, mediated by phonons (lattice vibrations). Even a weak attraction can destabilize the normal metallic Fermi sea, allowing electrons of opposite momenta and spins to form bound pairs. These pairs behave as bosons (integer spin particles) and condense into a macroscopic quantum state described by a collective wavefunction $ψ(r)$, whose phase coherence gives rise to the supercurrent.\\ 
+The microscopic origin of superconductivity lies in an effective attractive interaction between electrons, mediated by phonons (lattice vibrations). It is somewhat counterintuitive that electrons, which naturally repel each other due to their negative charge, can experience an effective attraction. However, when an electron moves through a lattice structure of positive ions, it distorts the lattice, pulling a group of the ions towards itself. This distortion creates a region of increased positive charge density that can attract another electron with opposite momentum and spin, leading to the formation of a Cooper pair \textcolor{red}{CITATION}[LibreTexts Physics: 9.9: Superconductivity].\\
+Even a weak attraction can destabilize the normal metallic Fermi sea, allowing electrons of opposite momenta and spins to form bound pairs. These pairs behave as bosons (integer spin particles) and condense into a macroscopic quantum state described by a collective wavefunction $ψ(r)$, whose phase coherence gives rise to the supercurrent.\\ 
 At the mean-field level, this collective behaviour opens an energy gap $Δ$ around the Fermi surface. This gap represents the minimum energy needed to break a Cooper pair and create excitations, called Bogoliubov quasiparticles, that are mixtures of electron and hole states. The presence of this gap explains the vanishing resistivity and the exponential suppression of heat capacity and other thermodynamic quantities at low temperatures \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3 and BCS.pdf].\\
 The pairing gap is what makes superconductors so special for topological applications. Because single-particle excitations cost a finite energy, the superconducting condensate is robust against small perturbations and other local noise. When combined with spin-orbit coupling and appropriate confinement or hybridization, this same pairing mechanism can give rise to topological superconductivity, where the quasiparticles at zero energy behave as Majorana modes.\\
 In essence, superconductivity provides both the microscopic pairing mechanism and the macroscopic phase coherence needed to host non-local, topologically protected excitations, making it the natural foundation for exploring Majorana physics in condensed matter systems.
-% Superconductivity is characterized by the complete loss of electrical resistance below a critical temperature $T_c$, and the expulsion of magnetic fields (the Meissner effect), which demonstrates that it represents a distinct thermodynamic phase rather than a perfect conductor.\\
-% Londong (1937) first introduced a phenomenological description in terms of a macroscopic quantum wavefunction $ψ(r)$, whose rigidity gives rise to the London equations and an exponential decay of magnetic fields inside the superconductor over a characteristic length scale, the London penetration depth $λ_L = \sqrt{m / (μ_{0}e² |ψ|²)}$ \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 2].\\
-% Microscopically, the origin of superconductivity lies in an effective attraction between electrons mediated by lattice vibrations (phonons). This leads to the formation of Cooper pairs, which are bound states of two electrons with opposite momenta and spins. The exchange of a virtual phonon leads to an attractive interaction for energy transfers smaller than the phonon frequency $ω_D$,
-% $$
-% V_{eff}(q,ω) = \frac{|g_q|²}{ω² - ω_q²} 
-% $$
-% where $g_q$ is the electron-phonon coupling strength zand $ω = (ϵ_k - ϵ_k')$, and the $ϵ_α$ are the single-particle energies. The isotope effect, where $T_c$ varies inversely with the square root of the ionic mass, provides strong evidence for the phonon-mediated pairing mechanism.\textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3].\\
-% In his seminal work, Cooper (1956) demonstrated that an arbitrarily weak attractive interaction destabilizes the Fermi sea: two eelectrons of opposite spin and momentum can form a bound state with energy below the Fermi level. The pair is called a Cooper pair, and the operator we use to describe the creation of a Cooper pair is;
-% $$
-% Λ^{†} = ∑_{k}^{}ϕ(k) c_{k↑}^{†} c_{-k↓}^{†} 
-% $$
-% and the self-consistency condition 
-% $$
-% 1 = g_{0} N(0) ∫_{0}^{ω_D} \frac{dϵ}{\sqrt{2ϵ² + E}}
-% $$
-% yields the binding energy of the Cooper pair:
-% $$
-% E_B = -2ω_D e^{-2/(g_0 N(0))}
-% $$
-% where $N(0)$ is the density of states at the Fermi level and $g_0$ is the effective interaction strength \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 3.2 and BCS.pdf]\\ 
-% Even this simple two-particle result implies that the Fermi surface is unstable toward pair condensation.\\ \\
-% Building on Cooper's insight, Bardeen, Cooper, and Schrieffer (1957) developed a comprehensive microscopic theory of superconductivity \textcolor{red}{CITATION}[BCS.pdf].\\. The VCS ground state is a coherent superpositon of occupied and unoccupied pair states:
-% $$
-% \ket{Ψ_{BCS}} = ∏_{k} (u_k + v_k c_{k↑}^{†} c_{-k↓}^{†}) \ket{0}
-% $$
-% with normalization $|u_k|² + |v_k|² = 1$. Minimization of the free energy yields the gap equation:
-% $$
-% 1 = \frac{g_0}{V} ∑_{|ϵ_k| < ω_D}^{} \frac{1}{2E_k} \tanh\left(\frac{E_k}{2k_B T}\right)
-% $$
-% where the quasiparticle excitation spectrum is:
-% $$
-% E_k = \sqrt{ϵ_k² + Δ²}
-% $$
-% At zero temperature, the gap at the Fermi surface is:
-% $$
-% Δ(0) = 2ω_D e^{-1/(g_0 N(0))}
-% $$
-% and obeys the universal relation $2Δ(0) / k_B T_c ≈ 3.53$.\\
-% The energy gap $Δ$ represents the minimum energy required to break a Cooper pair, explainingt he exponential suppression of heat capacity and resistivity at low temperatures. Physically, it quantifies the rigidity of the condensate. Any single-particle excitation costs a funite energy, enforcing long-range phase coherence.\\
-% Superconducting excitations are Bogoliubov quasiparticles, coherent superpositions of electron and hole states, which naturally leads to the Bogoliubov-de Gennes (BdG) formalism. This formalism genereralizes the BCS mean-field theory to spatially inhomogeneous systems and forms the basis for the study of superconducting heterostructures, including those hosting Majorana modes.\\
 
 
 \subsection{The Bogoliubov-de Gennes Formalism:}
-The microscopic BCS theory descirbes superconductivity as a coherent condensate of Cooper pairs, but it assumes a uniform order parameter $Δ$. To describe spatially varying superconducting states, such as those at interfaces or in the presence of impurities, we must generalize the BCS mean-field Hamiltonian to include position dependence. This leads us to the Bogoliubov-de Gennes (BdG) formalism \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 14 and BCS.pdf].\\
-Starting from the BCS mean-field Hamiltonian,
-$$
-H_{MF} = ∫ d³r \left[ ∑_{σ} ψ_{σ}^{†}(r) H_0 ψ_{σ}(r) + (Δ(r) ψ_{↑}^{†}(r) ψ_{↓}^{†}(r) + h.c.) \right]
-$$
-where $H_0 = \frac{p²}{2m}-μ + V(r)$ describes the normal-state single particle dynamics, and $Δ(r)$ is the superconducting pair potential. We can diagonalize this Hamiltonian by introducing Bogoliubov  through canonical transformations:
-$$
-ψ_{↑}(r) = ∑_{n} [u_n(r) γ_{n↑} - v_n^{*}(r) γ_{n↓}^{†}], \quad ψ_{↓}(r) = ∑_{n} [u_n(r) γ_{n↓} + v_n^{*}(r) γ_{n↑}^{†}]
-$$
-Substituting and deminding that the quasiparticle operators $γ_{nσ}$ diagonalize the Hamiltonian leads to the BdG equations:
-$$
-\begin{pmatrix}
-H_0(r) & Δ(r) \\
-Δ^{*}(r) & -H_0^{*}(r)
-\end{pmatrix}
-\begin{pmatrix}
-u_n(r) \\
-v_n(r)
-\end{pmatrix}= E_n
-\begin{pmatrix}
-u_n(r) \\
-v_n(r)
-\end{pmatrix}
-$$
-Each eigenstate ($u_n(r), v_n(r)$) represents a Bogoliubov quasiparticle, a coherent superposition of electron and hole amplitudes. The corresponding excitation energies $E_n ≥ 0$ define the superconducting quasiparticle spectrum.\\
-Because both particle hole components are included, the BdG Hamiltonain possesses an intrinsic particle-hole symmetry. 
-$$
-Ξ H_{BdG} Ξ^{-1} = -H_{BdG}, \quad Ξ = τ_x K
-$$
-where $τ_x$ acts in particle-hole space and $K$ is complex conjugation. This symmetry enforces that the spectrum is symmetric about zero energy: if $E_n$ is an eigenvalue, so is $-E_n$.\\
-This doubling of the Hilbert space is not redundant, it reflects the physical reality that the superconducting condensate does not conserve particle number, but rather fermion parity. The eigenstates at $± E_n$ correspond to the same physical excitation, and a zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode\textcolor{red}{CITATION}[Topocondmat.org].\\
-The BdG framework therefor bridges microscopic BCS theory and modern topological superconductivity. It provides a compact description of inhomogeneous superconductors, quantum dots coupled to superconducting leads, and low dimensional systems where topological phases can emerge.
+While the BCS theory captures the essence of superconductivity as a condensate of Cooper pairs, it assumes a spatially uniform order parameter $Δ$. In real systems, superconductivity can vary across space due to interfaces, impurities, or confinement. To describe such spatially inhomogeneous superconductors, the BCS framework must be generalized. THis leads to the Bogoliubov-de Gennes (BdG) formalism \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 14 and BCS.pdf].\\
+\begin{equation}
+  \begin{pmatrix}
+  H_0(r) & Δ(r) \\
+  Δ^{*}(r) & -H_0^{*}(r)
+  \end{pmatrix}
+  \begin{pmatrix}
+  u_n(r) \\
+  v_n(r)
+  \end{pmatrix}= E_n
+  \begin{pmatrix}
+  u_n(r) \\
+  v_n(r)
+  \end{pmatrix}
+  \label{eq:BdGintro}
+\end{equation}
+where $H_0 = \frac{p²}{2m}-μ + V(r)$ describes the normal-state single particle Hamiltonain, and $Δ(r)$ is the superconducting pair potential.\\ 
+Each solution of the BdG equations (\ref{eq:BdGintro}) corresponds to a Bogoliubov quasiparticle, a coherent superposition of electron and hole amplitudes $(u_n(r), v_n(r))$. The resulting excitation spectrum is symmetric about zero energy due to the intrinsic particle-hole symmetry of the BdG Hamiltonian:
+\begin{equation}
+  Ξ H_{BdG} Ξ^{-1} = -H_{BdG}, \quad Ξ = τ_x K
+\end{equation}
+where $τ_x$ acts in particle-hole space and $K$ is complex conjugation. This ensures that if $E_n$ is an eigenvalue, so is $-E_n$.\\
+This symmetry has an important consequence: superconductors no longer conserve particle number, only fermion parity, and the eigenstate at $± E_n$ correspond to the same physical excitation. A zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode\textcolor{red}{CITATION}[Topocondmat.org].\\
+The BdG formalism connects the microscopic BCS theory and the modern descrition of topological superconductivity. It provides a natural framework for modeling hybdrid nanostructures, such as quantum dots coupled to superconducting leads, and low-dimensional systems where topological phases can emerge.  \\
+\subsection{Hybrid Semiconductor–Superconductor Systems}
+Superconductivity on its own already provides a platform for charge transport without resistance, and for pairing electrons into coherent states. However, when a conventional superconductor is coupled to another material, such as a semiconductor, it can transfer its essential properties through what is known as the \textit{proximity effect}. This hybridization allows us to engineer superconductivity in systems that do not exhibit it intrinsically, and forms an experimental foundation for realizing Majorana modes in condensed matter systems \textcolor{red}{CITATION}[Qtech].
+\subsubsection{The Proximity Effect and Induced Superconductivity}
+At the interface between a semiconductor and a superconductor, electrons in the semiconductor can inherit pairing correlations from the superconducting condensate. This results in an induced superconducting gap, $Δ_{\mathrm{ind}}$, even though no intrinsic pairing interaction exists in the semiconductor itself. \\
+The induced gap depends on the coupling between the two materials and on their electronic structure. With additional ingredients—such as spin–orbit coupling and a magnetic field, this proximitized region can enter a regime that behaves effectively as a one-dimensional, spinless $p$-wave superconductor. This is the essential condition for realizing Majorana bound states, and it is exactly what the Kitaev chain models in its simplest form.
+\subsubsection{Andreev Reflection and Cooper-Pair Splitting}
+Microscopically, the proximity effect is a consequence of Andreev reflection, a process where an electron incident on the SM–SC interface is reflected as a hole, while a Cooper pair is absorbed into the superconductor. In confined, or low-dimensional hybrid systems, these reflections can lead to discrete subgap states, \textit{Andreev bound states}, that interpolate between conventional superconducting excitations and emergent Majorana modes.\\
+In double-dot systems, this process can become nonlocal: a Cooper pair can effectively split, sending one electron into each region. These nonlocal pairing correlations mimic the nonlocal character of Majorana modes and provide an intuitive picture of how such quasiparticles can emerge from conventional superconducting ingredients.\\
+In summary, hybrid semiconductor–superconductor systems act as the experimental and conceptual link between ordinary $s$-wave superconductivity and topological superconductivity. The same pairing mechanism that gives rise to Cooper pairs, when combined with spin–orbit coupling and magnetic fields, allows us to engineer effective $p$-wave pairing—the key ingredient of the Kitaev chain and the Poor Man’s Majorana system.
 
-\subsection{Hybrid Systems and the Proximity Effect:} 
-The proximity effect is a phenomenon where a semiconductor acquires superconducting correlations when placed in contact with a superconductor. This mechanism is central to modern hybrid quantum devices and enables the creation of exotic quantum states, such as topological superconductivity, from conventional materials. This strategy is often called a "top-down" approach, as it builds complex states from well-understood components.
-\subsubsection{Induced pairing and the effective gap}
-At the microscopic level, the superconductor hosts a condensate of Cooper pairs described by a pairing potential $Δ$. When a semiconductor is coupled to the SC throguh a transparent interface, Cooper pairs can leak into the semiconductor through virtual tunneling process. From the semiconductor's perspective, this induces an effective pairing amplitude $Δ_{ind}$, giving rise to the Bogoliubov quasiparticles with the spectrum:
-$$
-E_k = \sqrt{ϵ_k² + |Δ_{ind}|²}
-$$
-The semiconductor thereby becomes proximitized, it behaves as if it were superconducting, even though no intrinsic exists in the semiconductor itself. \textcolor{red}{CITATION}[Qtech].\\
-The magnitude of the induced gap $Δ_{ind}$ depends on 
-the parent gap $Δ$, interface transparency, tunneling coupling strength, and the relative densities of states in the SC and SM. To reach the topological regime, three effects must be carefully balanced:
-\begin{itemize}
-  \item S-Wave proximity coupling: Establishing a robust induced gap $Δ_{ind}$ and providing superconducting correlations in the semiconductor.
-  \item Zeeman energy, $E_Z = \frac{1}{2} g μ_B B$, from applied magnetic field that tends to polarize spins and close the gap. 
-  \item Spin-orbit coupling (SOC), which counteracts full spin alignment and preserves pairing correlations under magnetic fields.
-\end{itemize} 
-A topological phase occurs when the Zeeman energy mathes the cost associated with $Δ_{ind}$ and the chemical potential $μ$:
-$$
-E_Z = \sqrt{Δ_{ind}² + μ²}
-$$
-Above the critical field, the proximitized semiconductor behaves effectively as a spinless p-wave superconductor,  mathematically equivalent to the Kitaev chain. \textcolor{red}{CITATION}[Qtech].\\
-Experimentally, realizing this regime requires a semiconductor with a large $g$-factor, low carrier density, and strong spin–orbit coupling. These conditions ensure a sizable induced gap and a stable topological phase without quenching the parent superconductivity.
-\subsubsection{Andreev Reflection and Cooper-pair splitting}
-At the SM–SC interface, subgap transport is governed by Andreev reflection (AR). When an electron from the SM with energy $|E|<\Delta$ impinges on the interface, it cannot enter the SC as a single quasiparticle. Instead, it is retro-reflected as a hole while a Cooper pair is transferred into the superconducting condensate \textcolor{red}{CITATION}[Qtech]\\
-A nonlocal version, known as Crossed Andreev Reflection (CAR) or Cooper-pair splitting, occurs when the two electrons of a Cooper pair tunnel into spatially separated regions—e.g. into two distinct quantum dots (QDs) coupled via a central SC. This process dominates when the separation is shorter than the superconducting coherence length $\xi$.\\
-In double-dot hybrid systems (QD–SC–QD), two tunneling processes compete \cite{qtech_boka}:
-\begin{itemize}
-  \item Local Andreev Reflection (LAR): Both electrons of a Cooper pair enter the same QD. This process is suppressed by the on-site Coulomb energy $U$, which disfavors double occupancy.
-  \item Crossed Andreev Reflection (CAR): Each electron enters a different QD, bypassing the charging penalty and becoming the dominant Andreev process.
-\end{itemize}
-CAR provides a nonlocal pairing amplitude ($\Delta$) that directly maps onto the p-wave term in the minimal Kitaev chain, while Elastic Cotunneling (ECT) provides the effective hopping ($t$) between sites. The sweet-spot condition $|t|=|\Delta|$ marks the parameter regime where the two Majorana-like modes become spatially separated—the so-called poor-man’s Majorana limit \textcolor{red}{CITATION}[Qtech]\\
-The CAR strength can be inferred experimentally from nonlocal current correlations. Under resonance ($\epsilon_L=-\epsilon_R$) the current from Cooper-pair splitting follows approximately
-$$ I_{CAR} = \frac{e}{\bar{h}} \frac{Γ}{(ϵ_L + ϵ_R)^2 + Γ²} |Δ|²$$
-where $\Gamma$ quantifies coupling to the leads. Measuring $I_{\mathrm{CAR}}$ and $I_{\mathrm{ECT}}$ thus allows tuning of hybrid dots to the Majorana regime.
-\subsubsection{Andreev Bound States (ABS)}
-Repeated Andreev reflections at confined interfaces give rise to discrete Andreev bound states (ABS) inside the superconducting gap ($|E|<\Delta$). ABS are coherent superpositions of electron and hole components, characterized by Bogoliubov amplitudes $(u,v)$. Their energies depend on gate-defined confinement and magnetic field, and they can transition from being even-parity (singlet-like) to odd-parity (doublet-like) as parameters vary.\\
-In the QD–SC–QD architecture, ABS form the fundamental subgap excitations mediating CAR and ECT. Parity crossings in these ABS—visible as zero-energy crossings—signal a change in fermion parity and mark the precursor to Majorana physics in more extended structures \textcolor{red}{CITATION}[Qtech].
+% \subsection{Hybrid Systems and the Proximity Effect:} 
+% The proximity effect is a phenomenon where a semiconductor acquires superconducting correlations when placed in contact with a superconductor. This mechanism is central to modern hybrid quantum devices and enables the creation of exotic quantum states, such as topological superconductivity, from conventional materials. This strategy is often called a "top-down" approach, as it builds complex states from well-understood components.  \textcolor{red}{CITATION}[Qtech].
+% \subsubsection{Induced pairing and the effective gap}
+% At the microscopic level, the superconductor hosts a condensate of Cooper pairs described by a pairing potential $Δ$. When a semiconductor is coupled to the SC throguh a transparent interface, Cooper pairs can leak into the semiconductor through virtual tunneling process. From the semiconductor's perspective, this induces an effective pairing amplitude $Δ_{ind}$, giving rise to the Bogoliubov quasiparticles with the spectrum:
+% $$
+% E_k = \sqrt{ϵ_k² + |Δ_{ind}|²}
+% $$
+% The semiconductor thereby becomes proximitized, it behaves as if it were superconducting, even though no intrinsic exists in the semiconductor itself. \textcolor{red}{CITATION}[Qtech].\\
+% The magnitude of the induced gap $Δ_{ind}$ depends on 
+% the parent gap $Δ$, interface transparency, tunneling coupling strength, and the relative densities of states in the SC and SM. To reach the topological regime, three effects must be carefully balanced:
+% \begin{itemize}
+%   \item S-Wave proximity coupling: Establishing a robust induced gap $Δ_{ind}$ and providing superconducting correlations in the semiconductor.
+%   \item Zeeman energy, $E_Z = \frac{1}{2} g μ_B B$, from applied magnetic field that tends to polarize spins and close the gap. 
+%   \item Spin-orbit coupling (SOC), which counteracts full spin alignment and preserves pairing correlations under magnetic fields.
+% \end{itemize} 
+% A topological phase occurs when the Zeeman energy mathes the cost associated with $Δ_{ind}$ and the chemical potential $μ$:
+% $$
+% E_Z = \sqrt{Δ_{ind}² + μ²}
+% $$
+% Above the critical field, the proximitized semiconductor behaves effectively as a spinless p-wave superconductor,  mathematically equivalent to the Kitaev chain. \textcolor{red}{CITATION}[Qtech].\\
+% Experimentally, realizing this regime requires a semiconductor with a large $g$-factor, low carrier density, and strong spin–orbit coupling. These conditions ensure a sizable induced gap and a stable topological phase without quenching the parent superconductivity.
+% \subsubsection{Andreev Reflection and Cooper-pair splitting}
+% At the SM–SC interface, subgap transport is governed by Andreev reflection (AR). When an electron from the SM with energy $|E|<\Delta$ impinges on the interface, it cannot enter the SC as a single quasiparticle. Instead, it is retro-reflected as a hole while a Cooper pair is transferred into the superconducting condensate \textcolor{red}{CITATION}[Qtech]\\
+% A nonlocal version, known as Crossed Andreev Reflection (CAR) or Cooper-pair splitting, occurs when the two electrons of a Cooper pair tunnel into spatially separated regions—e.g. into two distinct quantum dots (QDs) coupled via a central SC. This process dominates when the separation is shorter than the superconducting coherence length $\xi$.\\
+% In double-dot hybrid systems (QD–SC–QD), two tunneling processes compete \cite{qtech_boka}:
+% \begin{itemize}
+%   \item Local Andreev Reflection (LAR): Both electrons of a Cooper pair enter the same QD. This process is suppressed by the on-site Coulomb energy $U$, which disfavors double occupancy.
+%   \item Crossed Andreev Reflection (CAR): Each electron enters a different QD, bypassing the charging penalty and becoming the dominant Andreev process.
+% \end{itemize}
+% CAR provides a nonlocal pairing amplitude ($\Delta$) that directly maps onto the p-wave term in the minimal Kitaev chain, while Elastic Cotunneling (ECT) provides the effective hopping ($t$) between sites. The sweet-spot condition $|t|=|\Delta|$ marks the parameter regime where the two Majorana-like modes become spatially separated—the so-called poor-man’s Majorana limit \textcolor{red}{CITATION}[Qtech]\\
+% The CAR strength can be inferred experimentally from nonlocal current correlations. Under resonance ($\epsilon_L=-\epsilon_R$) the current from Cooper-pair splitting follows approximately
+% $$ I_{CAR} = \frac{e}{\bar{h}} \frac{Γ}{(ϵ_L + ϵ_R)^2 + Γ²} |Δ|²$$
+% where $\Gamma$ quantifies coupling to the leads. Measuring $I_{\mathrm{CAR}}$ and $I_{\mathrm{ECT}}$ thus allows tuning of hybrid dots to the Majorana regime.
+% \subsubsection{Andreev Bound States (ABS)}
+% Repeated Andreev reflections at confined interfaces give rise to discrete Andreev bound states (ABS) inside the superconducting gap ($|E|<\Delta$). ABS are coherent superpositions of electron and hole components, characterized by Bogoliubov amplitudes $(u,v)$. Their energies depend on gate-defined confinement and magnetic field, and they can transition from being even-parity (singlet-like) to odd-parity (doublet-like) as parameters vary.\\
+% In the QD–SC–QD architecture, ABS form the fundamental subgap excitations mediating CAR and ECT. Parity crossings in these ABS—visible as zero-energy crossings—signal a change in fermion parity and mark the precursor to Majorana physics in more extended structures \textcolor{red}{CITATION}[Qtech].
 
 
 

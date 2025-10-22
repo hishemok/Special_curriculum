@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.8.28)  21 OCT 2025 15:34
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.10.22)  22 OCT 2025 16:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/hishem/repos/SpesCurr/tex/report
-(/home/hishem/repos/SpesCurr/tex/report.tex
+**/home/Hishem/repos/Special_curriculum/tex/report
+(/home/Hishem/repos/Special_curriculum/tex/report.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -685,57 +685,49 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 82.
 
-Underfull \hbox (badness 1122) in paragraph at lines 82--127
+Underfull \hbox (badness 1122) in paragraph at lines 82--88
 \TU/lmr/m/n/14.4 In essence, superconductivity provides both the microscopic pairing
  []
 
 
 
 [2]
-Underfull \hbox (badness 6708) in paragraph at lines 130--132
-\TU/lmr/m/n/14.4 condensate of Cooper pairs, but it assumes a uniform order
+Underfull \hbox (badness 1242) in paragraph at lines 91--92
+\TU/lmr/m/n/14.4 parameter $[]$. In real systems, superconductivity can vary across
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 130--132
-\TU/lmr/m/n/14.4 such as those at interfaces or in the presence of impurities, we
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
  []
 
 
 
 [3]
-Underfull \hbox (badness 4454) in paragraph at lines 138--140
-\TU/lmr/m/n/14.4 Substituting and deminding that the quasiparticle operators $[][]$
+Underfull \hbox (badness 1009) in paragraph at lines 111--115
+\TU/lmr/m/n/14.4 The BdG formalism connects the microscopic BCS theory and the
  []
 
 
-Underfull \hbox (badness 1478) in paragraph at lines 158--162
-\TU/lmr/m/n/14.4 The BdG framework therefor bridges microscopic BCS theory and
- []
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 
-
-Underfull \hbox (badness 7451) in paragraph at lines 158--162
-\TU/lmr/m/n/14.4 modern topological superconductivity. It provides a compact
  []
 
 
 
 [4]
-Underfull \hbox (badness 6510) in paragraph at lines 164--165
-\TU/lmr/m/n/14.4 The proximity effect is a phenomenon where a semiconductor
+Underfull \hbox (badness 2698) in paragraph at lines 118--120
+\TU/lmr/m/n/14.4 At the interface between a semiconductor and a superconductor,
  []
 
 
-
-[5]
-
-LaTeX Warning: Citation `qtech_boka' on page 6 undefined on input line 187.
-
+Underfull \hbox (badness 2961) in paragraph at lines 121--124
+\TU/lmr/m/n/14.4 In summary, hybrid semiconductor–superconductor systems act as
+ []
 
 
-[6]
-Underfull \hbox (badness 4518) in paragraph at lines 197--199
-\TU/lmr/m/n/14.4 excitations mediating CAR and ECT. Parity crossings in these
+Underfull \hbox (badness 7256) in paragraph at lines 121--124
+\TU/lmr/m/n/14.4 the experimental and conceptual link between ordinary $[]$-wave
  []
 
 File: ../External_Figs/no_unpaired.png Graphic file (type bmp)
@@ -743,109 +735,111 @@ File: ../External_Figs/no_unpaired.png Graphic file (type bmp)
 File: ../External_Figs/unpaired.png Graphic file (type bmp)
 <../External_Figs/unpaired.png>
 
-Underfull \hbox (badness 7740) in paragraph at lines 227--238
+Underfull \hbox (badness 7740) in paragraph at lines 189--200
 \TU/lmr/m/n/14.4 We now want to build on the microscopic understanding of
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 227--238
+Underfull \hbox (badness 4316) in paragraph at lines 189--200
 \TU/lmr/m/n/14.4 superconductivity we investigated in the previous sections. In
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 227--238
+Underfull \hbox (badness 2189) in paragraph at lines 189--200
 \TU/lmr/m/n/14.4 particular, we want to see how such pairing phenomena can be
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 227--238
+Underfull \hbox (badness 1845) in paragraph at lines 189--200
 \TU/lmr/m/n/14.4 engineered to host topological excitations, in particular, Majorana
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 227--238
+Underfull \hbox (badness 3838) in paragraph at lines 189--200
 \TU/lmr/m/n/14.4 bound states. The theoretical foundation for this lies in the
  []
 
 
 
-[7]
+[5]
 
-[8]
+[6]
 File: ../Figures/band_structure.pdf Graphic file (type pdf)
 <use ../Figures/band_structure.pdf>
 
 
-[9]
+[7]
 
-[10]
-Underfull \hbox (badness 2512) in paragraph at lines 285--288
+[8]
+
+[9]
+Underfull \hbox (badness 2512) in paragraph at lines 247--250
 \TU/lmr/m/n/14.4 ground state. This degeneracy is topologically protected: local
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 285--288
+Underfull \hbox (badness 1584) in paragraph at lines 247--250
 \TU/lmr/m/n/14.4 solutions and clear physical intuition, making it an ideal starting
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 290--292
+Underfull \hbox (badness 3547) in paragraph at lines 252--254
 \TU/lmr/m/n/14.4 for understanding Majorana zero modes, it remains an abstract
  []
 
 
 
-[11]
-Underfull \hbox (badness 1005) in paragraph at lines 306--307
+[10]
+Underfull \hbox (badness 1005) in paragraph at lines 268--269
 []\TU/lmr/bx/n/14.4 Crossed Andreev reflection (CAR): \TU/lmr/m/n/14.4 A Cooper pair in the
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 312--315
+Underfull \hbox (badness 1389) in paragraph at lines 274--277
 \TU/lmr/m/n/14.4 interfaces governs the effective hopping and non-local pairing, and
  []
 
 
 
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+
+
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--324
-
- []
-
-
-
-[13]
 File: ../External_Figs/gs_symmetry.png Graphic file (type bmp)
 <../External_Figs/gs_symmetry.png>
 
 
-[14]
-Underfull \hbox (badness 2158) in paragraph at lines 335--336
+[13]
+Underfull \hbox (badness 2158) in paragraph at lines 297--298
 \TU/lmr/m/n/14.4 A property of the Kitaev chain in its topological phase is that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--341
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
+
+[14]
 
 [15]
 
 [16]
-
-[17]
 File: ../Figures/singlebody_sweetspot_eps.png Graphic file (type bmp)
 <../Figures/singlebody_sweetspot_eps.png>
 File: ../Figures/singlebody_sweetspot_epsLR.png Graphic file (type bmp)
@@ -854,90 +848,81 @@ File: ../Figures/singlebody_sweetspot_t.png Graphic file (type bmp)
 <../Figures/singlebody_sweetspot_t.png>
 
 
-[18]
+[17]
 
-[19]
+[18]
 File: ../Figures/singlebody_sweetspot_zero_modes.png Graphic file (type bmp)
 <../Figures/singlebody_sweetspot_zero_modes.png>
 File: ../Figures/singlebody_sweetspot_grid.png Graphic file (type bmp)
 <../Figures/singlebody_sweetspot_grid.png>
 
 
+[19]
+
 [20]
 
 [21]
 
 [22]
-
-[23]
 File: ../Figures/LD_mb.png Graphic file (type bmp)
 <../Figures/LD_mb.png>
 File: ../Figures/MP_mb.png Graphic file (type bmp)
 <../Figures/MP_mb.png>
 
 
-[24]
+[23]
 
-[25]
+[24]
 File: ../Figures/Exp_mb.png Graphic file (type bmp)
 <../Figures/Exp_mb.png>
 File: ../Figures/degen_mb.png Graphic file (type bmp)
 <../Figures/degen_mb.png>
 
 
-[26]
+[25]
 File: ../Figures/LD_anal.png Graphic file (type bmp)
 <../Figures/LD_anal.png>
 File: ../Figures/MP_anal.png Graphic file (type bmp)
 <../Figures/MP_anal.png>
 
 
-[27]
+[26]
 
-[28]
+[27]
 File: ../Figures/Exp_anal.png Graphic file (type bmp)
 <../Figures/Exp_anal.png>
 File: ../Figures/degen_anal.png Graphic file (type bmp)
 <../Figures/degen_anal.png>
 
-Underfull \hbox (badness 1163) in paragraph at lines 658--660
+Underfull \hbox (badness 1163) in paragraph at lines 620--622
 []\TU/lmr/m/n/14.4 Figures  []15[] and  []16[] further validate the analytical predictions.
  []
 
 
 
+[28]
+
 [29]
 
-[30]
-
-[31] (./report.aux)
+[30] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: BC786052DAC1F1C4D7875F8C500F1C66;9620
-(rerunfilecheck)             After:  E388474F4B5CF2997C78ABA8E7B3A45E;9595.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 3155B49C22CCD9181BFD9ED3715AD10A;9456.
  ) 
 Here is how much of TeX's memory you used:
  20135 strings out of 475251
- 370463 string characters out of 5761397
+ 370494 string characters out of 5761396
  1018383 words of memory out of 5000000
  42847 multiletter control sequences out of 15000+600000
  567466 words of font info for 105 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 90i,7n,107p,954b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,107p,964b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (32 pages).
+Output written on report.pdf (31 pages).
