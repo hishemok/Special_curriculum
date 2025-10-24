@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.10.22)  24 OCT 2025 15:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.10.22)  24 OCT 2025 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,36 +906,31 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 60--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--68
 
  []
 
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 112--116
-\TU/lmr/m/n/10.95 The BdG formalism connects the microscopic BCS theory and the modern descrition
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--116
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
 
  []
 
 
 
 [3]
-Underfull \hbox (badness 1354) in paragraph at lines 119--123
+Underfull \hbox (badness 1354) in paragraph at lines 118--122
 \TU/lmr/m/n/10.95 At the interface between a semiconductor and a superconductor, the superconducting
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
@@ -952,7 +947,7 @@ File: /home/Hishem/repos/Special_curriculum/External_Figs/unpaired.png Graphic f
 File: /home/Hishem/repos/Special_curriculum/Figures/band_structure.pdf Graphic file (type pdf)
 <use /home/Hishem/repos/Special_curriculum/Figures/band_structure.pdf>
 
-Underfull \hbox (badness 1231) in paragraph at lines 219--221
+Underfull \hbox (badness 1231) in paragraph at lines 218--220
 \TU/lmr/m/n/10.95 While the Kitaev chain provides the minimal theoretical framework for understanding
  []
 
@@ -963,12 +958,12 @@ Underfull \hbox (badness 1231) in paragraph at lines 219--221
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
 
  []
 
@@ -977,12 +972,12 @@ File: /home/Hishem/repos/Special_curriculum/External_Figs/gs_symmetry.png Graphi
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 267--270
+Underfull \hbox (badness 10000) in paragraph at lines 266--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
@@ -1047,7 +1042,7 @@ File: /home/Hishem/repos/Special_curriculum/Figures/degen_anal.png Graphic file 
 [22]
 
 [23]
-Underfull \hbox (badness 2035) in paragraph at lines 604--604
+Underfull \hbox (badness 2035) in paragraph at lines 603--603
 [][][] [] [][][][][][][][][][][] [] [][][][][][][][][][] [] [][][][][][][] [] [][][][][][][][][][] [] [][][][][][][] [] [][][][][][][][][] []
  []
 
