@@ -14,11 +14,15 @@
 \usepackage{unicode-math}
 \usepackage{subfigure}
 \usepackage{graphicx}
+\graphicspath{{/home/Hishem/repos/Special_curriculum/Figures/}{/home/Hishem/repos/Special_curriculum/External_Figs/}}
 \usepackage{subcaption}  % in the preamble
 \usepackage{textgreek}
 \usepackage{xcolor}
-\usepackage[backend=bibtex,style=numeric,citestyle=numeric-comp]{biblatex}
-\addbibresource{references.bib} % name of your .bib file
+\usepackage[style=numeric]{biblatex}
+\addbibresource{/home/Hishem/repos/Special_curriculum/tex/refrences.bib}
+\usepackage[english]{babel}
+% Figures
+% \addbibresource{refrences.bib} % name of your .bib file
 \geometry{
  a4paper,
  left=25mm,%left=20mm,
@@ -31,15 +35,13 @@
 \title{
  \textbf{\LARGE UNIVERSITY OF OSLO} \\
 \vspace{37mm}
-\textbf{\Large Project report title}\\
+\textbf{\Large Exploring Majorana Zero Modes}\\
 \vspace{7mm}
 \Large Special Curriculum \\
 \vspace{25mm}
 } 
 \author{\Large Hishem Kløvnes \\ \textcolor{blue}{\href{https://github.com/hishemok/Special_curriculum}{GitHub Link} }} 
 \date{\Large \today} % Deadline
-
-
 \begin{document}
 \sloppy
 \maketitle
@@ -75,21 +77,19 @@ Through this progression, we aim to develop a comprehensive understanding of how
 
 
 
-
-
 \section{Theoretical Background: The superconducting State}
 
 \subsection{From Cooper Pairing to the Energy Gap:} 
-Superconductivity arises when electrons in a metal form bound pairs, known as Cooper pairs, below a critical temperature $T_c$. These pairs condense into a coherent quantum state that can carry current without resistance, and also expel magnetic fields via the Meissner effect. This immediately distinguishes a superconductor from a perfect conductor, because it is a distinct thermodynamic phase with long-range quantum coherence  \cite{Cambridge_MBPhysics}.\\
-The microscopic origin of superconductivity lies in an effective attractive interaction between electrons, mediated by phonons (lattice vibrations). It is somewhat counterintuitive that electrons, which naturally repel each other due to their negative charge, can experience an effective attraction. However, when an electron moves through a lattice structure of positive ions, it distorts the lattice, pulling a group of the ions towards itself. This distortion creates a region of increased positive charge density that can attract another electron with opposite momentum and spin, leading to the formation of a Cooper pair\cite{Physics_libretexts_2025}.\\
-Even a weak attraction can destabilize the normal metallic Fermi sea, allowing electrons of opposite momenta and spins to form bound pairs. These pairs behave as bosons (integer spin particles) and condense into a macroscopic quantum state described by a collective wavefunction $ψ(r)$, whose phase coherence gives rise to the supercurrent.\\ 
+Superconductivity arises when electrons in a metal form bound pairs, known as Cooper pairs, below a critical temperature $T_c$. These pairs condense into a coherent quantum state that can carry current without resistance, and also expel magnetic fields via the Meissner effect. This immediately distinguishes a superconductor from a perfect conductor, because it is a distinct thermodynamic phase with long-range quantum coherence \cite{Cambridge_MBPhysics}.\\
+The microscopic origin of superconductivity lies in an effective attractive interaction between electrons, mediated by phonons (lattice vibrations). It is somewhat counterintuitive that electrons, which naturally repel each other due to their negative charge, can experience an effective attraction. However, when an electron moves through a lattice structure of positive ions, it distorts the lattice, pulling a group of the ions towards itself. This distortion creates a region of increased positive charge density that can attract another electron with opposite momentum and spin, leading to the formation of a Cooper pair \cite{Physics_libretexts_2025}.\\
+Even a weak attraction can destabilize the normal metallic Fermi sea, allowing electrons of opposite momenta and spins to form bound pairs. These pairs behave as bosons (integer spin particles) and condense into a macroscopic quantum state described by a collective wavefunction $ψ(r)$, whose phase coherence gives rise to the supercurrent.\\
 At the mean-field level, this collective behaviour opens an energy gap $Δ$ around the Fermi surface. This gap represents the minimum energy needed to break a Cooper pair and create excitations, called Bogoliubov quasiparticles, that are mixtures of electron and hole states. The presence of this gap explains the vanishing resistivity and the exponential suppression of heat capacity and other thermodynamic quantities at low temperatures \cite{Cambridge_MBPhysics}, \cite{BCS}.\\
 The pairing gap is what makes superconductors so special for topological applications. Because single-particle excitations cost a finite energy, the superconducting condensate is robust against small perturbations and other local noise. When combined with spin-orbit coupling and appropriate confinement or hybridization, this same pairing mechanism can give rise to topological superconductivity, where the quasiparticles at zero energy behave as Majorana modes.\\
 In essence, superconductivity provides both the microscopic pairing mechanism and the macroscopic phase coherence needed to host non-local, topologically protected excitations, making it the natural foundation for exploring Majorana physics in condensed matter systems.
 
 
 \subsection{The Bogoliubov-de Gennes Formalism:}
-While the BCS theory captures the essence of superconductivity as a condensate of Cooper pairs, it assumes a spatially uniform order parameter $Δ$. In real systems, superconductivity can vary across space due to interfaces, impurities, or confinement. To describe such spatially inhomogeneous superconductors, the BCS framework must be generalized. THis leads to the Bogoliubov-de Gennes (BdG) formalism \textcolor{red}{CITATION}[CambridgeBCS.pdf chapter 14 and BCS.pdf].\\
+While the BCS theory captures the essence of superconductivity as a condensate of Cooper pairs, it assumes a spatially uniform order parameter $Δ$. In real systems, superconductivity can vary across space due to interfaces, impurities, or confinement. To describe such spatially inhomogeneous superconductors, the BCS framework must be generalized. This leads to the Bogoliubov-de Gennes (BdG) formalism \cite{Cambridge_MBPhysics}, \cite{BCS}.\\
 \begin{equation}
   \begin{pmatrix}
   H_0(r) & Δ(r) \\
@@ -111,15 +111,15 @@ Each solution of the BdG equations (\ref{eq:BdGintro}) corresponds to a Bogoliub
   Ξ H_{BdG} Ξ^{-1} = -H_{BdG}, \quad Ξ = τ_x K
 \end{equation}
 where $τ_x$ acts in particle-hole space and $K$ is complex conjugation. This ensures that if $E_n$ is an eigenvalue, so is $-E_n$.\\
-This symmetry has an important consequence: superconductors no longer conserve particle number, only fermion parity, and the eigenstate at $± E_n$ correspond to the same physical excitation. A zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode\textcolor{red}{CITATION}[Topocondmat.org].\\
+This symmetry has an important consequence: superconductors no longer conserve particle number, only fermion parity, and the eigenstate at $± E_n$ correspond to the same physical excitation. A zero-energy solution ($E_n = 0$) indicates a self-conjugate quasiparticle, $γ = γ^{†}$, which is the defining property of a Majorana mode \cite{Topocondmat}.\\
 The BdG formalism connects the microscopic BCS theory and the modern descrition of topological superconductivity. It provides a natural framework for modeling hybdrid nanostructures, such as quantum dots coupled to superconducting leads, and low-dimensional systems where topological phases can emerge.  \\
 \subsection{Hybrid Semiconductor–Superconductor Systems}
-Superconductivity on its own already provides a platform for charge transport without resistance, and for pairing electrons into coherent states. However, when a conventional superconductor is coupled to another material, such as a semiconductor, it can transfer its essential properties through what is known as the \textit{proximity effect}. This hybridization allows us to engineer superconductivity in systems that do not exhibit it intrinsically, and forms an experimental foundation for realizing Majorana modes in condensed matter systems \textcolor{red}{CITATION}[Qtech].
+Superconductivity on its own already provides a platform for charge transport without resistance, and for pairing electrons into coherent states. However, when a conventional superconductor is coupled to another material, such as a semiconductor, it can transfer its essential properties through what is known as the \textit{proximity effect}. This hybridization allows us to engineer superconductivity in systems that do not exhibit it intrinsically, and forms an experimental foundation for realizing Majorana modes in condensed matter systems  \cite{Qtech}.
 \subsubsection{The Proximity Effect and Induced Superconductivity}
 At the interface between a semiconductor and a superconductor, the superconducting condensate can penetrate into the semiconductor, through a process called the proximity effect. As a result, electrons in the semiconductor acquire pairing correlations from the superconductor, giving rise to an induced superconducting gap $Δ_{\mathrm{ind}}$, even though the semiconductor itself lacks an intrinsic pairing interaction.\\
 This induced pairing allows the semiconductor to behave as a proximitized superconductor. However, the advantage of using a semiconductor is not just that it becomes superconducting, but that it is highly tunable and has strong spin-related effects that are difficult to achieve in conventional superconductors.\\
 In order to induce a topological transition, the idea is to exploit the competition between three different effects. First, the s-wave superconducting proximity effect provides the pairing mechanism. Second, the Zeeman energy $E_z = \frac{1}{2} g μ_bB$, can break Cooper pairs, by aligning their electron spins. Lastly, the spin-orbit coupling, prevents the spins from reaching full alignment. This allows for opening and closing of the superconducting gap. Such phase transitions occur at $E_z = \sqrt{Δ_{\mathrm{ind}}^2 + μ^2}$, where $μ$ is the chemical potential in the semiconductor. The topological regime corresponds to $E_z > \sqrt{Δ_{\mathrm{ind}}^2 + μ^2}$, where Majorana modes can emerge at the ends of one-dimensional systems.\\
-Another important aspect of hybrid semiconductor-superconductor systems is that applying a magnetic field strong enough to reach the topological regime would break the superconductivity in a pure superconductor. However, in a proximitized semiconductor, the effective g-factor can be much larger than in the superconductor, allowing the Zeeman energy to exceed the induced gap without destroying superconductivity. This, alongside the tunability of the semiconductor's chemical potential via gate voltages, makes these hybrid systems ideal platforms for exploring topological superconductivity and Majorana modes\textcolor{red}{CITATION}[Qtech 3.3 ].\\
+Another important aspect of hybrid semiconductor-superconductor systems is that applying a magnetic field strong enough to reach the topological regime would break the superconductivity in a pure superconductor. However, in a proximitized semiconductor, the effective g-factor can be much larger than in the superconductor, allowing the Zeeman energy to exceed the induced gap without destroying superconductivity. This, alongside the tunability of the semiconductor's chemical potential via gate voltages, makes these hybrid systems ideal platforms for exploring topological superconductivity and Majorana modes \cite{Qtech}.\\
 
 \subsubsection{Andreev Reflection and Cooper-Pair Splitting}
 Microscopically, the proximity effect is a consequence of Andreev reflection, a process where an electron incident on the SM–SC interface is reflected as a hole, while an incomming Cooper pair is absorbed into the superconductor. In confined, or low-dimensional hybrid systems, these reflections can lead to discrete subgap states, \textit{Andreev bound states}, that interpolate between conventional superconducting excitations and emergent Majorana modes.\\
@@ -152,16 +152,16 @@ In summary, hybrid semiconductor–superconductor systems act as the experimenta
 \section{Engineering Majorana Modes in a Minimal System}
 % Connect general theory to specific PMM platform, notes note section 4 and note section 5.2\par
 \subsection{The Kitaev Chain Model}
-We now want to build on the microscopic understanding of superconductivity we investigated in the previous sections. In particular, we want to see how such pairing phenomena can be engineered to host topological excitations, in particular, Majorana bound states. The theoretical foundation for this lies in the Kitaev chain model, a one-dimensional toy model that captures the essential ingredients of topological superconductivity in its simplest form \textcolor{red}{CITATION}[Topocondmat.org].\\
+We now want to build on the microscopic understanding of superconductivity we investigated in the previous sections. In particular, we want to see how such pairing phenomena can be engineered to host topological excitations, in particular, Majorana bound states. The theoretical foundation for this lies in the Kitaev chain model, a one-dimensional toy model that captures the essential ingredients of topological superconductivity in its simplest form \cite{Topocondmat}.\\
 \begin{figure}
   \centering
-  \includegraphics[width=0.45\textwidth]{../External_Figs/no_unpaired.png}
-  \includegraphics[width=0.45\textwidth]{../External_Figs/unpaired.png}
-  \caption{Schematic representation of the Kitaev chain in its two distinct phases. Left: In the trivial phase, Majorana modes on the same site pair to form conventional fermions, leaving no unpaired modes. Right: In the topological phase, Majoranas on adjacent sites couple, leaving unpaired modes at the chain ends, which combine into a non-local fermionic mode. \textcolor{red}{CITATION}Topocondmat.org (Bulk edge correspondence in Kitaev chains)}
+  \includegraphics[width=0.45\textwidth]{no_unpaired.png}
+  \includegraphics[width=0.45\textwidth]{unpaired.png}
+  \caption{Schematic representation of the Kitaev chain in its two distinct phases. Left: In the trivial phase, Majorana modes on the same site pair to form conventional fermions, leaving no unpaired modes. Right: In the topological phase, Majoranas on adjacent sites couple, leaving unpaired modes at the chain ends, which combine into a non-local fermionic mode. \cite{Topocondmat}}
   \label{fig:kitaev}
 \end{figure}
 In the figure above \ref{fig:kitaev}, we see a schematic representation of the Kitaev chain in its two distinct phases, the trivial phase on the left and the topological phase on the right.\\
-In the trivial phase, the Majorana modes on the same site pair to form conventional fermions, leaving no unpaired modes. In contrast, in the topological phase, Majoranas on adjacent sites couple, leaving unpaired modes at the chain ends, which combine into a non-local fermionic mode. At first glance, it may seem impossible to isolate a single Majorana mode, since condensed matter systems are composed of electrons, which always correspond to pairs of Majoranas. However, it turns out that by engineering the Hamiltonian appropriately, one can create a situation where two Majorana modes localize at opposite ends of a one-dimensional system, effectively separating them spatially. This separation is crucial for their non-Abelian statistics and potential applications in topological quantum computing\textcolor{red}{CITATION}[Topocondmat].\\
+In the trivial phase, the Majorana modes on the same site pair to form conventional fermions, leaving no unpaired modes. In contrast, in the topological phase, Majoranas on adjacent sites couple, leaving unpaired modes at the chain ends, which combine into a non-local fermionic mode. At first glance, it may seem impossible to isolate a single Majorana mode, since condensed matter systems are composed of electrons, which always correspond to pairs of Majoranas. However, it turns out that by engineering the Hamiltonian appropriately, one can create a situation where two Majorana modes localize at opposite ends of a one-dimensional system, effectively separating them spatially. This separation is crucial for their non-Abelian statistics and potential applications in topological quantum computing \cite{Topocondmat}.\\
 The Hamiltonian of the Kitaev chain is given by:
 \begin{equation}
 H = -\mu \sum_{j=1}^{N} \left(c_j^\dagger c_j - \frac{1}{2}\right)
@@ -193,7 +193,7 @@ $$
 $$
 See Figure ~\ref{fig:kitaev_bands} for a visualization of the quasiparticle energy spectrum. This marks the critical point separating two distinct superconducting phases. When $μ$ crosses this boundary, the system undergoes a topological phase transition: the character of the ground state changes without any symmetry breaking, but through a change in the topology of the quasiparticle band structure.\\
 \begin{figure}
-  \includegraphics[width=1\textwidth]{../Figures/band_structure.pdf}
+  \includegraphics[width=1\textwidth]{band_structure.pdf}
   \caption{Quasiparticle energy spectrum of the Kitaev chain for different chemical potentials $μ$. Left: In the trivial phase ($|μ| > 2|t|$), the spectrum is fully gapped with no zero-energy modes. Right: In the topological phase ($|μ| < 2|t|$), the gap closes and reopens, signaling the emergence of zero-energy edge modes.}
   \label{fig:kitaev_bands}
 \end{figure}
@@ -255,8 +255,8 @@ When working with Majorana modes, we often consider the two degenerate ground st
 When we try to identify Majorana modes in the QD–SC–QD system, one of the primary signatures we look for is the presence of energy degeneracy (Figure ~\ref{fig:gs_symmetry}) between the even and odd parity ground states. We also want the ground state energies to be separeted by a finite energy gap from the excited states. This energy gap protects the Majorana modes from local perturbations and thermal excitations, which is crucial for their stability and potential use in quantum computing. This is because when we want to do quantum computation using Majorana modes, we need to be able to manipulate the states without causing transitions to higher energy states.\\
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{../External_Figs/gs_symmetry.png}%
-  \caption{Energy spectrum showing how the energy eigenvalues of the system must be symmetric around zero energy due to particle-hole symmetry \textcolor{red}{CITATION}Topocondmat.org (Bulk edge correspondence in Kitaev chains)}
+  \includegraphics[width=0.5\textwidth]{gs_symmetry.png}%
+  \caption{Energy spectrum showing how the energy eigenvalues of the system must be symmetric around zero energy due to particle-hole symmetry \cite{Topocondmat}.}
   \label{fig:gs_symmetry}
 \end{figure}
 \newpage
@@ -265,8 +265,8 @@ A property of the Kitaev chain in its topological phase is that measurements don
 $$
 \text{LD} = \frac{1}{N} \sum_{j=1}^{N} || ρ_j^o - ρ_j^e || = \frac{1}{N} \sum_{j=1}^{N} || δ ρ_j ||
 $$
-\textcolor{red}{CITATION}[Majorana bound states in chains
-of interacting quantum dots Viktor ].\\Here, $ρ_j^{o/e}$ are the reduced density matrices of site $j$ for the odd and even parity ground states, respectively. The norm $|| \cdot ||$ is the trace norm, which measures the difference between the two local states. The LD parameter quantifies how distinguishable the two ground states are when only local measurements are considered. A value of LD close to zero indicates that the two states are nearly indistinguishable locally, which is a hallmark of Majorana modes. Conversely, a value close to one indicates that the states can be easily distinguished by local measurements, suggesting the absence of Majorana modes.\\
+\cite{Lund1}.
+Here, $ρ_j^{o/e}$ are the reduced density matrices of site $j$ for the odd and even parity ground states, respectively. The norm $|| \cdot ||$ is the trace norm, which measures the difference between the two local states. The LD parameter quantifies how distinguishable the two ground states are when only local measurements are considered. A value of LD close to zero indicates that the two states are nearly indistinguishable locally, which is a hallmark of Majorana modes. Conversely, a value close to one indicates that the states can be easily distinguished by local measurements, suggesting the absence of Majorana modes.\\
 \subsubsection{Majorana polarization}
 In interaction Kitaev chains with finite magnetic fields, there are no ideal Majorana sweet spots, as the presence of the other spin species introduces corrections to the simple picture of Majorana modes. However, sweet spots with very good Majorana localization and close to degenerate ground states with even and odd parity can still appear in the system. To quantify how close we are to an ideal Majorana mode, we can use the Majorana polarization (MP) metric. The MP is a measure of how well the Majorana modes are localized at the ends of the chain and how closely they resemble ideal Majorana fermions. The MP is defined as:
 $$
@@ -276,7 +276,7 @@ where,
 $$
 W_α = ∑_{σ} \bra{o} c_{ασ} + c_{ασ}^{†} \ket{e}, \quad Z_α = i ∑_{σ} \bra{o} c_{ασ} - c_{ασ}^{†} \ket{e}
 $$
-Here, $α$ denotes the site index (left or right dot), $σ$ is the spin index, and $\ket{o}$ and $\ket{e}$ are the odd and even parity ground states, respectively. In an ideal sweet spot where two Majoranas are perfectly localized on the left and right dots, the MP values would be $M_L = -M_R = ± 1$. \textcolor{red}{CITATION}[Chap3 qtech].\\
+Here, $α$ denotes the site index (left or right dot), $σ$ is the spin index, and $\ket{o}$ and $\ket{e}$ are the odd and even parity ground states, respectively. In an ideal sweet spot where two Majoranas are perfectly localized on the left and right dots, the MP values would be $M_L = -M_R = ± 1$. \cite{Qtech}.\\
 \subsubsection{Charge expectation and non-locality}
 The last measurable property we will discuss is the charge expectation value of the ground states. This id measured by taking the expectation values of the number operators in the odd and even ground states:
 $$
@@ -380,21 +380,21 @@ To confirm the analytical predictions and illustrate the emergence of Majorana-l
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_eps.png}
+  \includegraphics[width=0.7\textwidth]{singlebody_sweetspot_eps.png}
   \caption{(a) Lowest energy eigenvalues as a function of $\epsilon_L$ with $\epsilon_R = 0$ and $t = \Delta$. Two states remain pinned at zero energy, forming Majorana-like zero modes.}
   \label{fig:sb_epsL}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_epsLR.png}
+  \includegraphics[width=0.7\textwidth]{singlebody_sweetspot_epsLR.png}
   \caption{(b) Eigenvalues as both $\epsilon_L$ and $\epsilon_R$ are varied around zero, showing the preservation of zero-energy modes at the sweet spot, and their splitting away from it.}
   \label{fig:sb_epsLR}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_t.png}
+  \includegraphics[width=0.7\textwidth]{singlebody_sweetspot_t.png}
   \caption{(c) Zero-mode energies versus hopping $t$ at $\Delta = 1$, $\epsilon_L = \epsilon_R = 0$, demonstrating that degeneracy is maintained only at $t = \Delta$.}
   \label{fig:sb_tscan}
 \end{figure}
@@ -404,7 +404,7 @@ At the sweet spot ($\epsilon_L = \epsilon_R = 0$, $t = \Delta$), the eigenvector
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_zero_modes.png}
+  \includegraphics[width=0.7\textwidth]{singlebody_sweetspot_zero_modes.png}
   \caption{Component amplitudes of the zero-energy eigenvectors at the sweet spot. Spatial separation of the modes confirms the Majorana character.}
   \label{fig:sb_zero_modes}
 \end{figure}
@@ -415,7 +415,7 @@ To probe the stability of the zero modes, we vary system parameters away from th
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/singlebody_sweetspot_grid.png}
+  \includegraphics[width=0.7\textwidth]{singlebody_sweetspot_grid.png}
   \caption{Contour map of the lowest energy splitting (excited energy eigenvalue minus ground state energy eigenvalue) as a function of $t$ and $\Delta$. The degeneracy is preserved only along the $|t| = |\Delta|$ line (red dashed).}
   \label{fig:sb_grid}
 \end{figure}
@@ -519,13 +519,13 @@ In order to determine if we have found a many-body sweet spot, we will calculate
 We will start by exploring how the Coulomb interaction $U_{LR}$ and the tunneling amplitude $t$ effect the emergence of Majorana modes. We will use the analytical expression we found for the first part of the parameter search. We will set the dot energies to $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$, and set $Δ = t + \frac{U_{LR}}{2}$. We will then vary $U_{LR}$ and $t$ over a reasonable range, and calculate the Majorana metrics for each parameter set.\\
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/LD_mb.png}
+  \includegraphics[width=0.7\textwidth]{LD_mb.png}
   \caption{Local Distinguishability (LD) as a function of $U_{LR}$ and $t$. The sweet spot region with low (0) LD indicates the presence of Majorana-like modes. We can see that for all positive values of $U_{LR}$, there exists a corresponding $t$ that minimizes LD.}
   \label{fig:mb_LD}
 \end{figure}
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1\textwidth]{../Figures/MP_mb.png}
+  \includegraphics[width=1\textwidth]{MP_mb.png}
   \caption{Majorana Polarization (MP) as a function of $U_{LR}$ and $t$. Here we can see that when LD is minimized, MP approaches the ideal values of ±1, confirming the presence of well-localized Majorana-like modes. Also note that where LD is zero, $MP_R=-MP_L$, which is what we expect for Majorana modes.}
   \label{fig:mb_MP}
 \end{figure}
@@ -533,13 +533,13 @@ Figures ~\ref{fig:mb_LD} and ~\ref{fig:mb_MP} show the results of this parameter
 \newpage 
 \begin{figure}
   \centering
-  \includegraphics[width=1\textwidth]{../Figures/Exp_mb.png}
+  \includegraphics[width=1\textwidth]{Exp_mb.png}
   \caption{Charge expectation values $\bra{e}n_{L(R)}\ket{e}$ and $\bra{o}n_{L(R)}\ket{o}$ as a function of $U_{LR}$ and $t$. The charge expectation values for both ground states converge in the sweet spot region, indicating local indistinguishability.}
   \label{fig:mb_charge}
 \end{figure}
 \begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/degen_mb.png}
+  \includegraphics[width=0.7\textwidth]{degen_mb.png}
   \caption{Normalized energy splitting $\delta E$ as a function of $U_{LR}$ and $t$. The energy splitting approaches zero in the sweet spot region, confirming the degeneracy of the ground states.}
   \label{fig:mb_deltaE}
 \end{figure}
@@ -548,13 +548,13 @@ Figures ~\ref{fig:mb_charge} and ~\ref{fig:mb_deltaE} further support the identi
 In order to further investigate how presise the analytical solutions are, we can take another approach to find the many-body sweet spot. We can do this by fixing $U_{LR}$ and $Δ$, and then varying $ϵ_L, ϵ_R,$ and $t$, and from there we can see if the sweet spots fall in the regions where it was analytically predicted to be.\\
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/LD_anal.png}
+  \includegraphics[width=0.7\textwidth]{LD_anal.png}
   \caption{Local Distinguishability (LD) as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The region of low LD aligns well with the analytical prediction, confirming the presence of Majorana modes.}
   \label{fig:mb_LD_anal}
 \end{figure}
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=1\textwidth]{../Figures/MP_anal.png}
+  \includegraphics[width=1\textwidth]{MP_anal.png}
   \caption{Majorana Polarization (MP) as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The MP approaches ±1 at the dot, confirming the presence of Majorana-like modes as predicted analytically.}
   \label{fig:mb_MP_anal}
 \end{figure}
@@ -562,13 +562,13 @@ Figures ~\ref{fig:mb_LD_anal} and ~\ref{fig:mb_MP_anal} show the results of this
 \newpage  
 \begin{figure}
   \centering
-  \includegraphics[width=1\textwidth]{../Figures/Exp_anal.png}
+  \includegraphics[width=1\textwidth]{Exp_anal.png}
   \caption{Charge expectation values $\bra{e}n_{L(R)}\ket{e}$ and $\bra{o}n_{L(R)}\ket{o}$ as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The charge expectation values converge at the dot, indicating local indistinguishability as predicted.}
   \label{fig:mb_charge_anal}
 \end{figure}
 \begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{../Figures/degen_anal.png}
+  \includegraphics[width=0.7\textwidth]{degen_anal.png}
   \caption{Normalized energy splitting $\delta E$ as a function of $ϵ_L,ϵ_R$ and $t$ for fixed $U_{LR} = 1$ and $Δ = 1$. The white dot indicates the analytically predicted sweet spot condition. The energy splitting approaches zero at the dot, confirming the degeneracy of the ground states as predicted.}
   \label{fig:mb_deltaE_anal}
 \end{figure}
@@ -603,7 +603,7 @@ Future work can extend this study along several directions. Investigating longer
 
 \textbf{Coulomb interaction}: The repulsive interaction between electrons due to their electric charge, often represented as an on-site energy \(U\) in quantum dot systems.
 
-\printbibliography
+\printbibliography[heading=bibintoc,title={References}]
 
 
 \end{document}
