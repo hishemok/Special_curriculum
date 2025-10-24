@@ -169,6 +169,52 @@
       \verb 10.1070/1063-7869/44/10S/S29
       \endverb
     \endentry
+    \entry{sweetspot}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0ee96fdfd7f5e3de224b3b81328f735d}{%
+           family={Brunetti},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb735a3c0e2286d34c0b001b8fdfa78d}{%
+           family={Zazunov},
+           familyi={Z\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a292fd13d0ba2f99b9a5898420a8ade8}{%
+           family={Kundu},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cde3bf5fd3ac25c5f5a8401c29877008}{%
+           family={Egger},
+           familyi={E\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d8cbf38c4a9cd1c4741fc3f7058779f}
+      \strng{fullhash}{9c3496ed0feed97527bd926416e65477}
+      \strng{fullhashraw}{9c3496ed0feed97527bd926416e65477}
+      \strng{bibnamehash}{1d8cbf38c4a9cd1c4741fc3f7058779f}
+      \strng{authorbibnamehash}{1d8cbf38c4a9cd1c4741fc3f7058779f}
+      \strng{authornamehash}{1d8cbf38c4a9cd1c4741fc3f7058779f}
+      \strng{authorfullhash}{9c3496ed0feed97527bd926416e65477}
+      \strng{authorfullhashraw}{9c3496ed0feed97527bd926416e65477}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{14}
+      \field{title}{Anomalous Josephson current, incipient time-reversal symmetry breaking, and Majorana bound states in interacting multilevel dots}
+      \field{volume}{88}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1103/PhysRevB.88.144515
+      \endverb
+    \endentry
     \entry{Cambridge_MBPhysics}{book}{}{}
       \name{author}{1}{}{%
         {{hash=c7f06bf5220bb86c8e795161ca5fb529}{%
@@ -250,6 +296,83 @@
       \field{year}{2023}
       \field{pages}{1\bibrangedash 17}
       \range{pages}{17}
+    \endentry
+    \entry{VikWilMar}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5c7ff76a9a172c5116a732582ac90fa1}{%
+           family={Samuelson},
+           familyi={S\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=18a852b6d591882bb35cf7f17f66d8f7}{%
+           family={Svensson},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3cce9d98df9cbfc214bbaa4ca307906f}{%
+           family={Leijnse},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{fullhash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{fullhashraw}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{bibnamehash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{authorbibnamehash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{authornamehash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{authorfullhash}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \strng{authorfullhashraw}{6cee8236f4d4b5baa10180c55aac8aeb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arxiv org}
+      \field{number}{1}
+      \field{title}{Minimal quantum dot based Kitaev chain with only local superconducting proximity effect}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1103/PhysRevB.109.035415
+      \endverb
+    \endentry
+    \entry{VikMar}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=18a852b6d591882bb35cf7f17f66d8f7}{%
+           family={Svensson},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3cce9d98df9cbfc214bbaa4ca307906f}{%
+           family={Leijnse},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{fullhash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{fullhashraw}{e4f812181fde601fbb22fe6b83706720}
+      \strng{bibnamehash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{authorbibnamehash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{authornamehash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{authorfullhash}{e4f812181fde601fbb22fe6b83706720}
+      \strng{authorfullhashraw}{e4f812181fde601fbb22fe6b83706720}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arxiv preprint arXiv:2310.03536}
+      \field{number}{1}
+      \field{title}{Quantum-dot-based Kitaev chains: Majorana quality measures and scaling with increasing chain length}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1103/PhysRevB.110.155436
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

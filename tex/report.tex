@@ -265,7 +265,7 @@ A property of the Kitaev chain in its topological phase is that measurements don
 $$
 \text{LD} = \frac{1}{N} \sum_{j=1}^{N} || ρ_j^o - ρ_j^e || = \frac{1}{N} \sum_{j=1}^{N} || δ ρ_j ||
 $$
-\cite{Lund1}.
+\cite{Lund1}, \cite{VikMar}.
 Here, $ρ_j^{o/e}$ are the reduced density matrices of site $j$ for the odd and even parity ground states, respectively. The norm $|| \cdot ||$ is the trace norm, which measures the difference between the two local states. The LD parameter quantifies how distinguishable the two ground states are when only local measurements are considered. A value of LD close to zero indicates that the two states are nearly indistinguishable locally, which is a hallmark of Majorana modes. Conversely, a value close to one indicates that the states can be easily distinguished by local measurements, suggesting the absence of Majorana modes.\\
 \subsubsection{Majorana polarization}
 In interaction Kitaev chains with finite magnetic fields, there are no ideal Majorana sweet spots, as the presence of the other spin species introduces corrections to the simple picture of Majorana modes. However, sweet spots with very good Majorana localization and close to degenerate ground states with even and odd parity can still appear in the system. To quantify how close we are to an ideal Majorana mode, we can use the Majorana polarization (MP) metric. The MP is a measure of how well the Majorana modes are localized at the ends of the chain and how closely they resemble ideal Majorana fermions. The MP is defined as:
@@ -512,7 +512,7 @@ $$U_{LR} - \sqrt{(2ϵ + U_{LR})² + 4Δ²} = -2t$$
 Settings $\epsilon= -U/2$ gives:
 $$U_{LR} - 2Δ = -2t$$
 $$Δ = t + \frac{U_{LR}}{2}$$
-So with the parameters $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$ and $t = Δ - \frac{U_{LR}}{2}$, we have found an analytical expression for the many-body sweet spot. This expression shows how the presence of Coulomb interaction $U_{LR}$ shifts the conditions for achieving Majorana-like degeneracy in the QD–SC–QD system.
+So with the parameters $ϵ_L = ϵ_R = -\frac{U_{LR}}{2}$ and $t = Δ - \frac{U_{LR}}{2}$, we have found an analytical expression for the many-body sweet spot, as was also found in \cite{sweetspot}, \cite{VikWilMar}. This expression shows how the presence of Coulomb interaction $U_{LR}$ shifts the conditions for achieving Majorana-like degeneracy in the QD–SC–QD system.
 \subsubsection{Numerical Simulations - Parameter search for the many-body sweet spot:}
 Here, we will start by investigating the parameters needed for the emergence of Majorana-like modes in the many-body Hamiltonian. We will do this by numerically diagonalizing the Hamiltonian matrix in Eq. \ref{eq:mbHamiltonian} for a range of parameters $ϵ_L, ϵ_R, t, Δ, U_{LR}$.\\
 In order to determine if we have found a many-body sweet spot, we will calculate the different measurements that we meantioned in section \ref{sec:IdentifyingMajoranaModes}, where we introduced energy degeneracy, local distinguishability, Majorana polarization, and charge expectation values.\\
@@ -583,7 +583,7 @@ When deviating from these fine-tuned parameters, the degeneracy is lifted and th
 Overall, this work highlights both the promise and the limitations of Poor Man’s Majoranas as a minimal model for exploring topological superconductivity and as a stepping stone toward more robust qubit implementations.
 
 \subsection{Connection to Broader Context}
-The properties examined in this study—particularly energy splitting and wavefunction overlap—carry direct implications for proposed braiding operations involving PMMs. The observed fragility of the zero-energy degeneracy implies that even small deviations from the sweet spot can introduce unwanted dynamical phases during adiabatic parameter exchanges, thereby compromising non-Abelian behavior. These results shows the importance of precise control and stabilization techniques in experimental realizations of Majorana-based qubits, as well as the value of PMMs as a testing ground for understanding the transition between localized and topologically protected regimes.
+The properties examined in this study, particularly energy splitting and wavefunction overlap, carry direct implications for proposed braiding operations involving PMMs. The observed fragility of the zero-energy degeneracy implies that even small deviations from the sweet spot can introduce unwanted dynamical phases during adiabatic parameter exchanges, thereby compromising non-Abelian behavior. These results shows the importance of precise control and stabilization techniques in experimental realizations of Majorana-based qubits, as well as the value of PMMs as a testing ground for understanding the transition between localized and topologically protected regimes.
 
 \subsection{Future Directions}
 Future work can extend this study along several directions. Investigating longer or more complex quantum-dot arrays could reveal new regimes of effective topological protection and controlled coupling between multiple PMMs. Incorporating disorder, spin–orbit coupling, or magnetic field variations would allow systematic exploration of robustness under realistic conditions. Finally, introducing time-dependent Hamiltonians would enable simulation of explicit braiding protocols, providing a direct way to compute Berry phases and test the feasibility of non-Abelian operations in minimal architectures.
@@ -593,15 +593,13 @@ Future work can extend this study along several directions. Investigating longer
 \section{Appendix}
 \subsection{Explanations}
 
-\textbf{Cooper pairs}: Pairs of electrons bound together at low temperatures in a superconductor, leading to superconductivity.
-
-\textbf{p-wave superconductivity}: A type of superconductivity where the Cooper pairs have angular momentum \(l=1\), leading to odd-parity pairing.  
-
-\textbf{s-wave superconductivity}: Conventional superconductivity where Cooper pairs have zero angular momentum (\(l=0\)) and even-parity pairing.  
-
-\textbf{Zeeman effect}: The splitting of energy levels in a magnetic field due to the interaction of the field with electron spins.  
-
-\textbf{Coulomb interaction}: The repulsive interaction between electrons due to their electric charge, often represented as an on-site energy \(U\) in quantum dot systems.
+\textbf{Cooper pairs}: Pairs of electrons bound together at low temperatures in a superconductor, leading to superconductivity.\\
+\textbf{p-wave superconductivity}: A type of superconductivity where the Cooper pairs have angular momentum \(l=1\), leading to odd-parity pairing.  \\
+\textbf{s-wave superconductivity}: Conventional superconductivity where Cooper pairs have zero angular momentum (\(l=0\)) and even-parity pairing. \\
+\textbf{Zeeman effect}: The splitting of energy levels in a magnetic field due to the interaction of the field with electron spins.\\
+\textbf{Coulomb interaction}: The repulsive interaction between electrons due to their electric charge, often represented as an on-site energy \(U\) in quantum dot systems.\\
+\textbf{Fermi Sea}: Refers to the collection of fermions, such as electrons, that occupy the lowest energy states up to the Fermi level at absolute zero temperature.\\
+\textbf{Fermi level:} The energy level at which the probability of finding an electron is 50\% at absolute zero temperature.
 
 \printbibliography[heading=bibintoc,title={References}]
 

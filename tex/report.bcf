@@ -2388,7 +2388,10 @@
     <bcf:citekey order="14" intorder="1">Topocondmat</bcf:citekey>
     <bcf:citekey order="15" intorder="1">Topocondmat</bcf:citekey>
     <bcf:citekey order="16" intorder="1">Lund1</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Qtech</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">VikMar</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Qtech</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">sweetspot</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">VikWilMar</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
